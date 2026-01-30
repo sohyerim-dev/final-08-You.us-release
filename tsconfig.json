@@ -1,34 +1,82 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "react-jsx",
-    "incremental": true,
+    /* ===== 언어 및 환경 ===== */
+    "target": "ES2017", // 컴파일될 JavaScript 버전 (async/await 지원)
+    "lib": [
+      // 사용할 타입 정의 라이브러리
+      "dom", // - DOM API (document, window 등)
+      "dom.iterable", // - DOM 반복자 (NodeList 등)
+      "esnext" // - 최신 JavaScript 기능
+    ],
+    "jsx": "react-jsx", // JSX를 그대로 유지 (Next.js가 처리)
+    /* ===== 모듈 시스템 ===== */
+    "module": "esnext", // 최신 ES 모듈 사용 (import/export)
+    "moduleResolution": "bundler", // Next.js 번들러 방식으로 모듈 해석
+    "resolveJsonModule": true, // JSON 파일 import 허용
+    "allowImportingTsExtensions": false, // .ts/.tsx 확장자로 import 금지
+    /* ===== JavaScript 지원 ===== */
+    "allowJs": true, // .js 파일도 컴파일 대상에 포함
+    "checkJs": false, // .js 파일은 타입 체크 안 함 (점진적 마이그레이션 가능)
+    /* ===== 컴파일 결과물 ===== */
+    "noEmit": true, // .js 파일 생성 안 함 (Next.js가 처리)
+    "incremental": true, // 증분 컴파일로 빌드 속도 향상
+    "isolatedModules": true, // 각 파일을 독립적으로 컴파일 (Babel 호환)
+    /* ===== 상호 운용성 ===== */
+    "esModuleInterop": true, // CommonJS 모듈을 ES6처럼 import 가능
+    "allowSyntheticDefaultImports": true, // default export 없어도 import 허용
+    "forceConsistentCasingInFileNames": true, // 파일명 대소문자 일치 강제 (OS 간 호환성)
+    /* ===== 타입 체킹 (엄격 모드 - 팀 협업 필수!) ===== */
+    "strict": true, // 모든 엄격한 타입 체크 활성화 (아래 항목들 자동 포함)
+    "noImplicitAny": true, // 암묵적 any 금지
+    "strictNullChecks": true, // null/undefined 엄격 체크
+    "strictFunctionTypes": true, // 함수 타입 엄격 체크
+    // ↳ "strictBindCallApply": true,    // bind/call/apply 엄격 체크
+    // ↳ "strictPropertyInitialization": true, // 클래스 속성 초기화 체크
+    // ↳ "noImplicitThis": true,         // this의 타입이 any인 경우 에러
+    // ↳ "alwaysStrict": true,           // "use strict" 자동 추가
+    "noUnusedLocals": true, // 사용하지 않는 지역 변수 에러
+    "noUnusedParameters": true, // 사용하지 않는 함수 파라미터 에러
+    "noImplicitReturns": true, // 함수의 모든 경로에서 return 강제
+    "noFallthroughCasesInSwitch": true, // switch문에서 break 누락 방지
+    "noUncheckedIndexedAccess": true, // 배열/객체 접근 시 undefined 체크 강제
+    // "noImplicitOverride": true, // 오버라이드 시 override 키워드 필수
+    "allowUnusedLabels": false, // 사용하지 않는 레이블 금지
+    "allowUnreachableCode": false, // 도달할 수 없는 코드 금지
+    /* ===== 기타 ===== */
+    "skipLibCheck": true, // 라이브러리 타입 체크 건너뛰기 (빌드 속도 향상)
+    /* ===== Path Alias - 절대 경로 설정 ===== */
+    "baseUrl": ".", // 경로의 기준점 (프로젝트 루트)
+    "paths": {
+      // import 단축 경로 설정
+      "@/*": ["./src/*"], // @/components/Button → src/components/Button
+      "@/components/*": ["./src/components/*"], // 컴포넌트 전용 경로
+      "@/hooks/*": ["./src/hooks/*"], // 커스텀 훅 전용 경로
+      "@/lib/*": ["./src/lib/*"], // 라이브러리/유틸리티 경로
+      "@/types/*": ["./src/types/*"], // 타입 정의 전용 경로
+      "@/utils/*": ["./src/utils/*"], // 유틸 함수 전용 경로
+      "@/styles/*": ["./src/styles/*"] // 스타일 파일 전용 경로
+    },
+    /* ===== Next.js 플러그인 ===== */
     "plugins": [
       {
-        "name": "next"
+        "name": "next" // Next.js 타입 지원 플러그인
       }
-    ],
-    "paths": {
-      "@/*": ["./*"]
-    }
+    ]
   },
+  /* ===== 컴파일 대상 파일 ===== */
   "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    "next-env.d.ts", // Next.js 환경 타입 정의
+    "**/*.ts", // 모든 .ts 파일
+    "**/*.tsx", // 모든 .tsx 파일
+    ".next/types/**/*.ts", // Next.js 생성 타입 파일
+    ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  /* ===== 컴파일 제외 파일 ===== */
+  "exclude": [
+    "node_modules", // npm 패키지 제외
+    ".next", // Next.js 빌드 결과물 제외
+    "out", // export 결과물 제외
+    "dist", // 배포용 빌드 결과물 제외
+    "build" // 일반 빌드 결과물 제외
+  ]
 }

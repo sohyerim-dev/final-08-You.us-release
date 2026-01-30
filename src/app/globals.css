@@ -1,0 +1,102 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Pretendard-Medium.woff2') format('woff2');
+  font-display: swap;
+}
+
+@layer utilities {
+  .text-title-lg,
+  .text-title-md,
+  .text-title-sm {
+    font-weight: 700; /* Bold까지 포함 */
+  }
+
+  .text-title-lg {
+    font-size: var(--text-title-lg);
+  }
+  .text-title-md {
+    font-size: var(--text-title-md);
+  }
+  .text-title-sm {
+    font-size: var(--text-title-sm);
+  }
+}
+
+@theme {
+  /* Brand */
+  --color-primary: #c93c4f; /* Main Red */
+  --color-primary-hover: #9e3443; /* Hover Red */
+  --color-category: #fff5f7;
+
+  /* State */
+  --color-error: #dc2626;
+  --color-success: #10b981;
+
+  /* Gray Scale */
+  --color-gray-50: #fafafa; /* White */
+  --color-gray-100: #efefef; /* Light Gray */
+  --color-gray-300: #cccccc; /* Gray */
+  --color-gray-500: #929292; /* Disabled Gray */
+  --color-gray-900: #212121; /* Black */
+
+  /* TYPOGRAPHY */
+
+  /* Font Family -> 폰트 도입 필요 */
+  --font-pretendard: 'Pretendard', --font-noto: 'Noto Sans KR', sans-serif;
+
+  /* FONT SIZE (clamp) */
+
+  /* Title */
+  --text-title-lg: clamp(2rem, 3.125vw, 2.813rem); /* 32px ~ 45px */
+  --text-title-md: clamp(1.5rem, 2.292vw, 2.063rem); /* 24px ~ 33px */
+  --text-title-sm: clamp(1.25rem, 1.875vw, 1.688rem); /* 20px ~ 27px */
+
+  /* Body */
+  --text-body-lg: clamp(1.125rem, 1.528vw, 1.375rem); /* 18px ~ 22px */
+  --text-body-md: clamp(1rem, 1.25vw, 1.125rem); /* 16px ~ 18px */
+  --text-body-sm: clamp(0.875rem, 1vw, 0.875rem); /* 14px */
+
+  /* UI */
+  --text-button: 1rem; /* 16px */
+  --text-caption: 1.25rem; /* 20px */
+
+  /* Line Height */
+  --leading-default: 1;
+
+  /* BORDER RADIUS */
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 30px;
+  --radius-full: 9999px;
+
+  /* SPACING (Button 기준) */
+  --spacing-button-x: 2.5rem; /* 40px */
+  --spacing-button-y: 0.9375rem; /* 15px */
+
+  /* COMPONENT SIZE */
+  --size-button-height: 49px;
+  --size-button-min-width: 136px;
+
+  /* STATE OPACITY */
+  --opacity-disabled: 0.4;
+}
+
+@layer base {
+  html {
+    /* 기본 font-size: 16px (1rem = 16px) */
+    font-size: 16px;
+  }
+
+  body {
+    /* @apply font-pretendard text-gray-900 bg-white; */
+  }
+
+  /* 부드러운 스크롤 */
+  html {
+    scroll-behavior: smooth;
+  }
+}

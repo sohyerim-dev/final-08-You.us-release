@@ -1,0 +1,303 @@
+{
+  "user": [
+    {
+      "email": "admin@market.com",
+      "password": "$2b$10$S.8GNMDyvUF0xzujPtHBu.j5gtS19.OhRmYbpJBnCHg2S83WLx1T2",
+      "name": "무지",
+      "phone": "01011112222",
+      "address": {
+        "streetAddress": "서울 종로구 계동길 37, 1층",
+        "postalCode": "03059"
+      },
+      "type": "admin",
+      "loginType": "email",
+      "image": "uploadFiles/user-muzi.png"
+    }
+  ],
+
+  "product": [
+    {
+      "price": 22800,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "캥거루 스턴트 독 로봇완구",
+      "quantity": 320,
+      "buyQuantity": 310,
+      "mainImages": [
+        {
+          "path": "/products/sample-dog.jpg",
+          "name": "sample-dog.jpg"
+        },
+        {
+          "path": "/products/sample-dog.jpg",
+          "name": "sample-dog.jpg"
+        },
+        {
+          "path": "/products/sample-dog.jpg",
+          "name": "sample-dog.jpg"
+        }
+      ],
+      "content": "<div class=\"product-detail\"><p>캥거루 스턴트 독 로봇완구 상세 설명</p></div>",
+      "extra": {
+        "category": ["PC03", "PC0301"],
+        "sort": 1,
+        "tags": [
+          "parent",
+          "teacher",
+          "40s",
+          "50s",
+          "60plus",
+          "thanks",
+          "premium"
+        ]
+      },
+      "options": []
+    }
+  ],
+
+  "order": [
+    {
+      "user_id": 4,
+      "state": "OS020",
+      "products": [
+        {
+          "_id": 2,
+          "seller_id": 1,
+          "name": "헬로카봇 스톰다이버",
+          "image": {
+            "path": "/products/sample-diver.jpg",
+            "name": "sample-diver.jpg"
+          },
+          "quantity": 2,
+          "price": 34520,
+          "review_id": 1
+        }
+      ],
+      "cost": {
+        "products": 34520,
+        "shippingFees": 2500,
+        "total": 37020
+      },
+      "address": {
+        "streetAddress": "서울 종로구 계동길 37, 1층",
+        "postalCode": "03059"
+      }
+    }
+  ],
+
+  "review": [
+    {
+      "user_id": 4,
+      "user": {
+        "_id": 4,
+        "name": "제이지",
+        "image": "uploadFiles/user-jayg.webp"
+      },
+      "order_id": 1,
+      "product_id": 2,
+      "rating": 5,
+      "content": "아이가 좋아해요."
+    }
+  ],
+
+  "cart": [
+    {
+      "user_id": 4,
+      "product_id": 1,
+      "quantity": 2
+    }
+  ],
+
+  "bookmark": [
+    {
+      "user_id": 4,
+      "user": {
+        "_id": 4,
+        "name": "제이지",
+        "image": "uploadFiles/user-jayg.webp"
+      },
+      "type": "product",
+      "target_id": 2,
+      "memo": "첫째 크리스마스 선물."
+    }
+  ],
+
+  "post": [
+    {
+      "type": "qna",
+      "product_id": 1,
+      "seller_id": 2,
+      "views": 5,
+      "user": {
+        "_id": 4,
+        "name": "제이지",
+        "image": "uploadFiles/user-jayg.webp"
+      },
+      "title": "크기가 얼마만한가요?",
+      "content": "아이가 6살인데 가지고 놀기 적당한 크기인가요?",
+      "createdAt": "2026.01.01 14:20:00",
+      "updatedAt": "2026.01.01 14:20:00",
+      "replies": [
+        {
+          "_id": 1,
+          "user": {
+            "_id": 2,
+            "name": "네오",
+            "image": "uploadFiles/user-neo.png"
+          },
+          "content": "크기는 상품 상세정보에 나와 있습니다.",
+          "like": 5,
+          "createdAt": "2026.01.01 15:30:00",
+          "updatedAt": "2026.01.01 15:30:00"
+        },
+        {
+          "_id": 2,
+          "user": {
+            "_id": 4,
+            "name": "제이지",
+            "image": "uploadFiles/user-jayg.webp"
+          },
+          "content": "어디있나 모르겠어요.",
+          "like": 7,
+          "createdAt": "2026.01.01 16:45:00",
+          "updatedAt": "2026.01.01 16:45:00"
+        },
+        {
+          "_id": 3,
+          "user": {
+            "_id": 2,
+            "name": "네오",
+            "image": "uploadFiles/user-neo.png"
+          },
+          "content": "높이 60cm 입니다.",
+          "like": 3,
+          "createdAt": "2026.01.02 10:15:00",
+          "updatedAt": "2026.01.02 10:15:00"
+        }
+      ]
+    }
+  ],
+  "code": [
+    {
+      "_id": "productCategory",
+      "title": "상품 카테고리",
+      "codes": [
+        {
+          "sort": 2,
+          "code": "PC01",
+          "value": "어린이",
+          "depth": 1
+        },
+        {
+          "sort": 3,
+          "code": "PC0101",
+          "value": "퍼즐",
+          "parent": "PC01",
+          "depth": 2
+        },
+        {
+          "sort": 1,
+          "code": "PC0102",
+          "value": "보드게임",
+          "parent": "PC01",
+          "depth": 2
+        },
+        {
+          "sort": 2,
+          "code": "PC010201",
+          "value": "2인용",
+          "parent": "PC0102",
+          "depth": 3
+        },
+        {
+          "sort": 1,
+          "code": "PC010202",
+          "value": "3~4인용",
+          "parent": "PC0102",
+          "depth": 3
+        },
+        {
+          "sort": 2,
+          "code": "PC0103",
+          "value": "레고",
+          "parent": "PC01",
+          "depth": 2
+        },
+        {
+          "sort": 4,
+          "code": "PC0104",
+          "value": "로봇",
+          "parent": "PC01",
+          "depth": 2
+        },
+        {
+          "sort": 1,
+          "code": "PC02",
+          "value": "스포츠",
+          "depth": 1
+        },
+        {
+          "sort": 1,
+          "code": "PC0201",
+          "value": "축구",
+          "parent": "PC02",
+          "depth": 2
+        },
+        {
+          "sort": 3,
+          "code": "PC0202",
+          "value": "야구",
+          "parent": "PC02",
+          "depth": 2
+        },
+        {
+          "sort": 2,
+          "code": "PC0203",
+          "value": "농구",
+          "parent": "PC02",
+          "depth": 2
+        },
+        {
+          "sort": 3,
+          "code": "PC03",
+          "value": "어른",
+          "depth": 1
+        },
+        {
+          "sort": 1,
+          "code": "PC0301",
+          "value": "원격 조종",
+          "parent": "PC03",
+          "depth": 2
+        },
+        {
+          "sort": 2,
+          "code": "PC0302",
+          "value": "퍼즐",
+          "parent": "PC03",
+          "depth": 2
+        },
+        {
+          "sort": 3,
+          "code": "PC0303",
+          "value": "레고",
+          "parent": "PC03",
+          "depth": 2
+        }
+      ]
+    }
+  ],
+  "config": [
+    {
+      "_id": "shippingFees",
+      "title": "배송비",
+      "value": 3500
+    },
+    {
+      "_id": "freeShippingFees",
+      "title": "배송비 무료 금액",
+      "value": 50000
+    }
+  ]
+}
