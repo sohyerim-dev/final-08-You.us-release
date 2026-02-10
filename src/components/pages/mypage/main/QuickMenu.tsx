@@ -1,25 +1,28 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import useUserStore from '@/lib/zustand/auth/userStore';
+import Image from 'next/image';
+import Link from 'next/link';
 
 interface QuickMenuProps {
-  className?: string
+  className?: string;
 }
 
 export default function QuickMenu({ className }: QuickMenuProps) {
+  const { user } = useUserStore();
+  // console.log('회원정보1:', user);
   return (
     <div className={className}>
       {/* 빠른 메뉴 - 주문내역, 찜목록, 리뷰 등 링크 */}
       <nav className="hidden lg:flex lg:flex-col" aria-label="마이페이지 메뉴">
         <figure className="flex flex-col items-center gap-5 bg-white p-10">
           <Image
-            src="/images/common/basic-profile-img.png"
+            src={user?.image ?? '/images/common/basic-profile-img.png'}
             alt="사용자 프로필 이미지"
             width={120}
             height={120}
-            className="border-primary h-30 w-30 rounded-(--radius) border-4"
+            className="border-primary h-30 w-30 rounded-(--radius) border-4 object-cover"
           />
           <figcaption className="text-caption font-bold text-gray-900">
-            홍길동님
+            {user?.name}님
           </figcaption>
           <Link href="/mypage" className="text-body-sm text-gray-500">
             마이페이지
@@ -55,14 +58,14 @@ export default function QuickMenu({ className }: QuickMenuProps) {
                     내 주문 보기
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/mypage/delivery" className="hover:underline">
                     배송 조회
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </li>
-            <li>
+            {/* <li>
               <p className="text-caption pb-4">문의하기</p>
               <ul className="*:text-body-sm flex flex-col space-y-2 pl-4 *:before:content-['>']">
                 <li>
@@ -71,10 +74,10 @@ export default function QuickMenu({ className }: QuickMenuProps) {
                   </Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>
     </div>
-  )
+  );
 }

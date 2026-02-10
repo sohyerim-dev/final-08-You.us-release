@@ -1,14 +1,14 @@
-'use client'
+'use client';
 
-import Button from '@/components/common/Button'
-import { useEffect, useRef, useState } from 'react'
+import Button from '@/components/common/Button';
+import { useEffect, useRef, useState } from 'react';
 
 type Props = {
-  question: string
-  example?: string
-  autoFocus?: boolean
-  onDone: (value: string) => void
-}
+  question: string;
+  example?: string;
+  autoFocus?: boolean;
+  onDone: (value: string) => void;
+};
 
 export default function QuestionBox({
   question,
@@ -16,18 +16,18 @@ export default function QuestionBox({
   autoFocus,
   onDone,
 }: Props) {
-  const [value, setValue] = useState('')
-  const [enter, setEnter] = useState(false)
-  const inputRef = useRef<HTMLInputElement>(null)
+  const [value, setValue] = useState('');
+  const [enter, setEnter] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const id = requestAnimationFrame(() => setEnter(true))
-    return () => cancelAnimationFrame(id)
-  }, [])
+    const id = requestAnimationFrame(() => setEnter(true));
+    return () => cancelAnimationFrame(id);
+  }, []);
 
   useEffect(() => {
-    if (autoFocus) inputRef.current?.focus()
-  }, [autoFocus])
+    if (autoFocus) inputRef.current?.focus();
+  }, [autoFocus]);
 
   return (
     <div
@@ -39,9 +39,9 @@ export default function QuestionBox({
     >
       <form
         onSubmit={(e) => {
-          e.preventDefault()
-          onDone(value)
-          setValue('')
+          e.preventDefault();
+          onDone(value);
+          setValue('');
         }}
         autoComplete="off"
         className="flex flex-col items-center gap-5 lg:gap-0"
@@ -89,5 +89,5 @@ export default function QuestionBox({
         </fieldset>
       </form>
     </div>
-  )
+  );
 }

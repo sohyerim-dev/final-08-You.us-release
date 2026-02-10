@@ -1,8 +1,8 @@
 interface paginationType {
-  currentPage?: number
-  totalPages?: number
-  onPageChange: (page: number) => void
-  maxVisible?: number
+  currentPage?: number;
+  totalPages?: number;
+  onPageChange: (page: number) => void;
+  maxVisible?: number;
 }
 
 const Pagination = ({
@@ -13,33 +13,33 @@ const Pagination = ({
 }: paginationType) => {
   // 페이지 범위 계산
   const getPageNumbers = () => {
-    const pages = []
-    let startPage = Math.max(1, currentPage - Math.floor(maxVisible / 2))
-    let endPage = Math.min(totalPages, startPage + maxVisible - 1)
+    const pages = [];
+    let startPage = Math.max(1, currentPage - Math.floor(maxVisible / 2));
+    let endPage = Math.min(totalPages, startPage + maxVisible - 1);
 
     // 끝쪽에 있을 때 시작 페이지 조정
     if (endPage - startPage < maxVisible - 1) {
-      startPage = Math.max(1, endPage - maxVisible + 1)
+      startPage = Math.max(1, endPage - maxVisible + 1);
     }
 
     for (let i = startPage; i <= endPage; i++) {
-      pages.push(i)
+      pages.push(i);
     }
-    return pages
-  }
+    return pages;
+  };
 
   //이전 버튼
   const handlePrevious = () => {
     if (currentPage > 1) {
-      onPageChange(currentPage - 1)
+      onPageChange(currentPage - 1);
     }
-  }
+  };
   //다음 버튼
   const handleNext = () => {
     if (currentPage < totalPages) {
-      onPageChange(currentPage + 1)
+      onPageChange(currentPage + 1);
     }
-  }
+  };
 
   return (
     <div className="flex items-center gap-2">
@@ -90,7 +90,7 @@ const Pagination = ({
         </svg>
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default Pagination
+export default Pagination;

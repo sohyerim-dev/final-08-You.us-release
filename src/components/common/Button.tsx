@@ -1,5 +1,5 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react'
-import { extendTailwindMerge } from 'tailwind-merge'
+import { ButtonHTMLAttributes, ReactNode } from 'react';
+import { extendTailwindMerge } from 'tailwind-merge';
 
 const twMerge = extendTailwindMerge({
   extend: {
@@ -19,11 +19,11 @@ const twMerge = extendTailwindMerge({
       ],
     },
   },
-})
+});
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode
-  variant?: 'primary' | 'disabled' | 'update'
+  children: ReactNode;
+  variant?: 'primary' | 'disabled' | 'update';
 }
 
 export default function Button({
@@ -36,16 +36,16 @@ export default function Button({
   ...props
 }: ButtonProps) {
   // 기본 버튼 색상/크기 클래스
-  const baseStyles = `border-0 px-[var(--spacing-button-x)] py-[var(--spacing-button-y)] font-pretendard rounded-lg font-bold transition-colors `
+  const baseStyles = `border-0 px-[var(--spacing-button-x)] py-[var(--spacing-button-y)] font-pretendard rounded-lg font-bold transition-colors `;
 
-  const appliedVariant = disabled ? 'disabled' : variant
+  const appliedVariant = disabled ? 'disabled' : variant;
 
   const variantStyle = {
     primary: 'cursor-pointer bg-primary  text-gray-50 hover:bg-primary-hover ',
     disabled: 'opacity-50 cursor-not-allowed bg-gray-300 text-gray-50 ',
     update:
       'cursor-pointer border border-solid border-red-800 text-primary bg-gray-50 ',
-  }
+  };
 
   return (
     <button
@@ -57,5 +57,5 @@ export default function Button({
     >
       {children}
     </button>
-  )
+  );
 }

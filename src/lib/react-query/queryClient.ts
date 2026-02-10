@@ -1,5 +1,5 @@
 // QueryClient 설정 - 캐시 전략, retry 정책, staleTime
-import { QueryClient } from '@tanstack/react-query'
+import { QueryClient } from '@tanstack/react-query';
 
 export const queryClient = new QueryClient({
   defaultOptions: {
@@ -13,4 +13,4 @@ export const queryClient = new QueryClient({
       retry: 1,
     },
   },
-})
+});

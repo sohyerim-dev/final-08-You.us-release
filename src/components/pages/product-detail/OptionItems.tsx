@@ -1,12 +1,12 @@
-'use client'
+'use client';
 
 interface SelectedOptionItemProps {
-  id: string
-  name: string
-  price: number
-  quantity: number
-  onQuantityChange: (id: string, newQuantity: number) => void
-  onRemove?: (id: string) => void // optional로 변경
+  id: string;
+  name: string;
+  price: number;
+  quantity: number;
+  onQuantityChange: (id: string, newQuantity: number) => void;
+  onRemove?: (id: string) => void; // optional로 변경
 }
 
 export default function SelectedOptionItem({
@@ -19,13 +19,13 @@ export default function SelectedOptionItem({
 }: SelectedOptionItemProps) {
   const handleDecrease = () => {
     if (quantity > 1) {
-      onQuantityChange(id, quantity - 1)
+      onQuantityChange(id, quantity - 1);
     }
-  }
+  };
 
   const handleIncrease = () => {
-    onQuantityChange(id, quantity + 1)
-  }
+    onQuantityChange(id, quantity + 1);
+  };
 
   return (
     <div className="bg-category border-primary space-y-2 rounded border-2 p-4">
@@ -80,5 +80,5 @@ export default function SelectedOptionItem({
         </div>
       </div>
     </div>
-  )
+  );
 }

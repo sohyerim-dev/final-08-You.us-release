@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import Loading from '@/components/common/Loading'
+import Loading from '@/components/common/Loading';
 
 export default function RecommendLoading() {
   return (
@@ -10,5 +10,5 @@ export default function RecommendLoading() {
       </h2>
       <Loading />
     </>
-  )
+  );
 }

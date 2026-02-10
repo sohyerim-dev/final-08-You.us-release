@@ -1,23 +1,23 @@
-'use client'
+'use client';
 
-import Button from '@/components/common/Button'
+import Button from '@/components/common/Button';
 
 type Warning = {
-  title: string
-  detail: string
-  level: 'soft' | 'hard'
-}
+  title: string;
+  detail: string;
+  level: 'soft' | 'hard';
+};
 
 type Props = {
-  warnings: Warning[]
-  onReset: () => void
+  warnings: Warning[];
+  onReset: () => void;
   // 나중에 살릴 거면 추가
   // canProceed?: boolean
   // onProceed?: () => void
-}
+};
 
 export default function RecommendWarning({ warnings, onReset }: Props) {
-  if (warnings.length === 0) return null
+  if (warnings.length === 0) return null;
 
   return (
     <div className="mt-14 flex w-[80%] flex-col gap-4">
@@ -53,5 +53,5 @@ export default function RecommendWarning({ warnings, onReset }: Props) {
         )} */}
       </div>
     </div>
-  )
+  );
 }

@@ -1,10 +1,10 @@
-import Link from 'next/link'
-import { ReactNode } from 'react'
+import Link from 'next/link';
+import { ReactNode } from 'react';
 
 interface MyPageSectionProps {
-  title: string
-  moreHref?: string
-  children: ReactNode
+  title: string;
+  moreHref?: string;
+  children: ReactNode;
 }
 
 export default function MyPageSection({
@@ -15,7 +15,9 @@ export default function MyPageSection({
   return (
     <section>
       <div className="flex items-center justify-between pb-1">
-        <h2 className="lg:text-caption text-body-lg font-bold">{title}</h2>
+        <h2 className="text-title-sm font-pretendard mb-3 font-bold text-gray-900 lg:mb-3">
+          {title}
+        </h2>
 
         {moreHref && (
           <Link href={moreHref} className="text-body-sm text-gray-500">
@@ -27,5 +29,5 @@ export default function MyPageSection({
 
       <div>{children}</div>
     </section>
-  )
+  );
 }

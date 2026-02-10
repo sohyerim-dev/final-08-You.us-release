@@ -92,16 +92,29 @@
       "user": {
         "_id": 4,
         "name": "제이지",
-        "image": "uploadFiles/user-jayg.webp"
+        "image": "/products/user-jayg.webp"
       },
       "order_id": 1,
       "product_id": 2,
       "rating": 5,
-      "content": "아이가 좋아해요."
+      "content": "아이가 좋아해요.",
+      "extra": {
+        "images": ["/products/user-jayg.webp", "/products/user-jayg.webp"]
+      }
     }
   ],
 
   "cart": [
+    {
+      "user_id": 4,
+      "product_id": 1,
+      "quantity": 2
+    },
+    {
+      "user_id": 4,
+      "product_id": 1,
+      "quantity": 2
+    },
     {
       "user_id": 4,
       "product_id": 1,
@@ -118,8 +131,7 @@
         "image": "uploadFiles/user-jayg.webp"
       },
       "type": "product",
-      "target_id": 2,
-      "memo": "첫째 크리스마스 선물."
+      "target_id": 2
     }
   ],
 
@@ -168,7 +180,7 @@
           "user": {
             "_id": 2,
             "name": "네오",
-            "image": "uploadFiles/user-neo.png"
+            "image": "/products/user-neo.png"
           },
           "content": "높이 60cm 입니다.",
           "like": 3,
@@ -178,6 +190,7 @@
       ]
     }
   ],
+
   "code": [
     {
       "_id": "productCategory",
@@ -292,12 +305,7 @@
     {
       "_id": "shippingFees",
       "title": "배송비",
-      "value": 3500
-    },
-    {
-      "_id": "freeShippingFees",
-      "title": "배송비 무료 금액",
-      "value": 50000
+      "value": 3000
     }
   ]
 }

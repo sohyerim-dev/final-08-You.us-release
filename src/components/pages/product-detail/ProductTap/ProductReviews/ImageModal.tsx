@@ -1,13 +1,13 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
+import Image from 'next/image';
 
 interface ImageModalProps {
-  images: string[]
-  currentIndex: number
-  onClose: () => void
-  onPrev: () => void
-  onNext: () => void
+  images: string[];
+  currentIndex: number;
+  onClose: () => void;
+  onPrev: () => void;
+  onNext: () => void;
 }
 
 export default function ImageModal({
@@ -22,9 +22,9 @@ export default function ImageModal({
       tabIndex={0}
       autoFocus
       onKeyDown={(e) => {
-        if (e.key === 'Escape') onClose()
-        if (e.key === 'ArrowLeft') onPrev()
-        if (e.key === 'ArrowRight') onNext()
+        if (e.key === 'Escape') onClose();
+        if (e.key === 'ArrowLeft') onPrev();
+        if (e.key === 'ArrowRight') onNext();
       }}
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/70"
     >
@@ -76,5 +76,5 @@ export default function ImageModal({
         </button>
       )}
     </div>
-  )
+  );
 }

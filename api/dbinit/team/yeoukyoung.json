@@ -1,0 +1,1773 @@
+[
+  {
+    "price": 140000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "프라다 디멘션 아이섀도우",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC030101-IMAGE-01.png",
+        "name": "PC030101-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC030101-IMAGE-02.png",
+        "name": "PC030101-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC030101-IMAGE-03.png",
+        "name": "PC030101-IMAGE-03.png"
+      },
+      {
+        "path": "/products/PC030101-IMAGE-04.png",
+        "name": "PC030101-IMAGE-04.png"
+      },
+      {
+        "path": "/products/PC030101-IMAGE-05.png",
+        "name": "PC030101-IMAGE-05.png"
+      },
+      {
+        "path": "/products/PC030101-IMAGE-06.png",
+        "name": "PC030101-IMAGE-06.png"
+      }
+    ],
+    "content": "<p>시아카이브 프린트에서 영감을 받은 프라다 디멘션은 패션 영감의 아이섀도우 팔레트를 선보입니다. 독특한 색조와 텍스처로 구성된 활용도 높은 라인으로 세련된 뉴트럴 컬러와 이색적인 액센트를 조합하여 뛰어난 발색으로 무궁무진한 아이 룩을 연출할 수 있습니다. 각각의 아이 팔레트에는 미니 폼 애플리케이터와 고밀도 섬유와 경사진 모서리가 특징인 미니 블렌딩 브러시가 포함되어 있어 블렌딩이 더욱 쉽고 발림성을 향상시켜 섬세한 메이크업을 연출할 수 있습니다.</p>",
+    "extra": {
+      "category": ["PC03", "PC0301"],
+      "sort": 1,
+      "tags": [
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": ["포트레이트", "프로퓨전", "펄스", "포에트리", "퓨어", "펄프"]
+  },
+  {
+    "price": 100000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "구찌 실크 프리미엄 세럼",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC030102-IMAGE-01.png",
+        "name": "PC030102-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC030102-IMAGE-02.png",
+        "name": "PC030102-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC030102-IMAGE-03.png",
+        "name": "PC030102-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>럭셔리 뷰티 라인 구찌의 프리미엄 안티에이징 세럼입니다. 실크 단백질과 식물성 추출물이 피부에 깊은 영양을 공급하며, 탄력과 광채를 선사합니다. 30ml 용량으로 아침, 저녁 세안 후 사용하기 적합합니다.</p>",
+    "extra": {
+      "category": ["PC03", "PC0301"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 300000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "설화수 진설 세럼",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC030103-IMAGE-01.png",
+        "name": "PC030103-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC030103-IMAGE-02.png",
+        "name": "PC030103-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC030103-IMAGE-03.png",
+        "name": "PC030103-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>설화수의 프리미엄 안티에이징 세럼으로, 귀한 진설단™ 성분이 함유되어 있습니다. 피부 깊숙이 스며들어 탄력과 윤기를 부여하며, 잔주름 개선에 효과적입니다. 한방 명품 화장품의 정수를 담은 고농축 세럼입니다. </p>",
+    "extra": {
+      "category": ["PC03", "PC0301"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": ["30ml", "50ml"]
+  },
+  {
+    "price": 39000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "조 말론 런던 우드 세이지 앤 씨 솔트 바디 앤 핸드 워시",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC030104-IMAGE-01.png",
+        "name": "PC030104-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC030104-IMAGE-02.png",
+        "name": "PC030104-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC030104-IMAGE-03.png",
+        "name": "PC030104-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>영국 럭셔리 향수 브랜드 조 말론 런던의 시그니처 향인 우드 세이지 앤 씨 솔트를 담은 프리미엄 바디 앤 핸드 워시입니다. 바닷가 절벽 위에 자라는 세이지와 바다 소금의 미네랄이 만나 자연 그대로의 신선하고 깨끗한 향을 선사합니다. 젤 타입의 부드러운 제형은 피부에 닿는 순간 풍부한 거품으로 변하며, 건조함 없이 촉촉하게 마무리됩니다. 상쾌한 앰브레트 씨앗으로 시작하여 해초와 세이지의 그린 허브 향이 펼쳐지고, 따뜻한 드리프트우드와 바다 소금의 미네랄 향이 은은하게 지속됩니다. 미니멀하고 세련된 크림색 펌프형 용기로 사용이 편리하며, 250ml 용량으로 손과 몸 전체에 사용 가능합니다. 파라벤 프리 포뮬러로 민감한 피부도 안심하고 사용할 수 있으며, 자연스럽고 세련된 향을 선호하는 분들게 강력 추천합니다. </p>",
+    "extra": {
+      "category": ["PC03", "PC0301"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": ["100ml", "250ml", "500ml"]
+  },
+  {
+    "price": 140000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "디올 캡춰 토탈 OX-C 트리트먼트 아이크림",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC030105-IMAGE-01.png",
+        "name": "PC030105-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC030105-IMAGE-02.png",
+        "name": "PC030105-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC030105-IMAGE-03.png",
+        "name": "PC030105-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>디올의 프리미엄 안티에이징 아이크림으로, 눈가 주름과 다크서클 개선에 탁월합니다. OX-C 복합체가 함유되어 있어 피부 세포 재생을 촉진하고, 눈가 피부를 탄력있고 밝게 가꿔줍니다. 15ml 용량의 고농축 제형입니다. </p>",
+    "extra": {
+      "category": ["PC03", "PC0301"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 45000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "홍삼진고 바이탈스틱 30포",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010301-IMAGE-01.png",
+        "name": "PC010301-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010301-IMAGE-02.png",
+        "name": "PC010301-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC010301-IMAGE-03.png",
+        "name": "PC010301-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>언제 어디서나 간편하게 활력을 충전할 수 있는 스틱형 홍삼 제품입니다. 6년근 홍삼농축액에 숙지황, 복령, 벌꿀 등 엄선된 부원료를 정관장만의 노하우로 배합하여 홍삼의 쓴맛은 줄이고 부드러운 풍미를 살렸습니다. 바쁜 일상 속 면역력 증진과 피로 개선이 필요한 직장인, 학업으로 지친 수험생, 그리고 소중한 분을 위한 품격 있는 선물로 추천드립니다. 하루 한 포로 건강한 에너지를 채워보세요. </p>",
+    "extra": {
+      "category": ["PC01", "PC0103"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 140000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "오쏘몰 이뮨 멀티비타민 오쏘몰 바이탈F 30일",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010302-IMAGE-01.png",
+        "name": "PC010302-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010302-IMAGE-02.png",
+        "name": "PC010302-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC010302-IMAGE-03.png",
+        "name": "PC010302-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>오쏘몰 이뮨 멀티비타민과 오쏘몰 바이탈F 30일분 세트는 면역력과 활력을 동시에 챙길 수 있는 건강기능식품입니다. 비타민, 미네랄, 오메가-3 등 필수 영양소를 균형 있게 담아 매일 간편하게 섭취할 수 있습니다. </p>",
+    "extra": {
+      "category": ["PC01", "PC0103"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 22900,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "고려은단 멀티비타민",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010303-IMAGE-01.png",
+        "name": "PC010303-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010303-IMAGE-02.png",
+        "name": "PC010303-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC010303-IMAGE-03.png",
+        "name": "PC010303-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>한국인의 식습관과 영양 상태를 고려하여 설계된 맞춤형 멀티비타민입니다. 비타민 13종과 미네랄 10종을 단 한 알에 꽉 채워, 기초 건강부터 활력 에너지까지 한 번에 관리할 수 있습니다. </p>",
+    "extra": {
+      "category": ["PC01", "PC0103"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": ["올인원(기존)", "올인원 맨", "올인원 우먼"]
+  },
+  {
+    "price": 22900,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "고려은단 오메가",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010304-IMAGE-01.png",
+        "name": "PC010304-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010304-IMAGE-02.png",
+        "name": "PC010304-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC010304-IMAGE-03.png",
+        "name": "PC010304-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>EPA 및 DHA 함유 유지로 기억력 개선과 혈행 개선에 도움을 줄 수 있는 고려은단 오메가3입니다. 36g(600mg x 60캡슐) 용량으로 1일 2회, 1회 1캡슐 섭취를 권장합니다. 미세조류에서 추출한 식물성 rTG 오메가3로 DHA가 풍부하게 함유되어 있으며, 오메가3 기억력 플러스는 EPA와 DHA를 함께 섭취할 수 있습니다. </p>",
+    "extra": {
+      "category": ["PC01", "PC0103"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": ["1개월분(60캡슐)", "2개월분(120캡슐)", "3개월분(180캡슐)"]
+  },
+  {
+    "price": 33900,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "종근당 프로바이오틱스 유산균 30캡슐 1박스 1개월",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010305-IMAGE-01.png",
+        "name": "PC010305-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010305-IMAGE-02.png",
+        "name": "PC010305-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC010305-IMAGE-03.png",
+        "name": "PC010305-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>하루 한 캡슐로 장 건강을 든든하게 지켜주는 프로바이오틱스 제품입니다. 유익균 증식 및 유해균 억제에 도움을 주는 100억 CFU를 보장하며, 정상적인 면역 기능에 필요한 아연까지 더했습니다. </p>",
+    "extra": {
+      "category": ["PC01", "PC0103"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 30000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "올리브영 기프트 카드",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC020201-IMAGE-01.png",
+        "name": "PC020201-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC020201-IMAGE-02.png",
+        "name": "PC020201-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC020201-IMAGE-03.png",
+        "name": "PC020201-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>올리브영 기프트 카드는 전국 올리브영 매장과 온라인몰에서 화장품, 생활용품, 헬스&뷰티 제품 구매 시 사용할 수 있는 선불 카드입니다. 선물용으로 적합하며, 모바일 앱을 통해 간편하게 전송하고 사용할 수 있습니다. </p>",
+    "extra": {
+      "category": ["PC02", "PC0202"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 30000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "스타벅스 기프트 카드",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC020202-IMAGE-01.png",
+        "name": "PC020202-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC020202-IMAGE-02.png",
+        "name": "PC020202-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC020202-IMAGE-03.png",
+        "name": "PC020202-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>스타벅스 기프트 카드는 전국 스타벅스 매장에서 음료, 푸드, MD 상품 구매 시 사용 가능한 디지털·실물 카드입니다. 선물용으로 적합하며, 모바일 앱을 통해 간편하게 충전하고 사용 가능합니다. </p>",
+    "extra": {
+      "category": ["PC02", "PC0202"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 50000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "카카오톡 기프트 카드",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC020203-IMAGE-01.png",
+        "name": "PC020203-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC020203-IMAGE-02.png",
+        "name": "PC020203-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC020203-IMAGE-03.png",
+        "name": "PC020203-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>카카오톡 기프트 카드는 카카오톡 앱을 통해 간편하게 전송하고 사용할 수 있는 디지털 선불 카드입니다. 카카오톡 선물하기에서 다양한 상품을 자유롭게 구매할 수 있어 선물용으로 적합합니다. </p>",
+    "extra": {
+      "category": ["PC02", "PC0202"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 50000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "배달의민족 기프트 카드",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC020204-IMAGE-01.png",
+        "name": "PC020204-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC020204-IMAGE-02.png",
+        "name": "PC020204-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC020204-IMAGE-03.png",
+        "name": "PC020204-IMAGE-03.png"
+      }
+    ],
+    "content": "<p> 맛있는 즐거움을 선물하세요! 배달의민족 기프트 카드는 앱에서 바로 사용 가능하며, 가족, 친구, 연인에게 손쉽게 전송할 수 있는 모바일 선물 카드입니다. 생일, 기념일, 감사 인사 등 다양한 상황에서 추천드립니다. </p>",
+    "extra": {
+      "category": ["PC02", "PC0202"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 50000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "다이소 기프트 카드",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC020205-IMAGE-01.png",
+        "name": "PC020205-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC020205-IMAGE-02.png",
+        "name": "PC020205-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC020205-IMAGE-03.png",
+        "name": "PC020205-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>전국 다이소 매장에서 자유롭게 사용 가능하며, 일상 생활용품, 문구, 생활 소품 등 다양한 상품 구매에 활용할 수 있습니다. 생일, 기념일, 감사 인사 등 모든 상황에서 추천드립니다. </p>",
+    "extra": {
+      "category": ["PC02", "PC0202"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 100000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "현대백화점 상품권",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC020101-IMAGE-01.png",
+        "name": "PC020101-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC020101-IMAGE-02.png",
+        "name": "PC020201-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC020101-IMAGE-03.png",
+        "name": "PC020201-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>현대백화점 상품권은 현대백화점 전 매장에서 사용 가능한 디지털/실물 상품권입니다. 선물용, 기프트용, 쇼핑 결제용으로 적합합니다. </p>",
+    "extra": {
+      "category": ["PC02", "PC0201"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 100000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "신세계 백화점 상품권",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC020102-IMAGE-01.png",
+        "name": "PC020102-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC020102-IMAGE-02.png",
+        "name": "PC020102-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC020102-IMAGE-03.png",
+        "name": "PC020102-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>신세계 백화점 상품권은 신세계백화점 전 매장에서 사용 가능한 디지털/실물 상품권입니다. 선물용, 기프트용, 쇼핑 결제용으로 적합합니다. </p>",
+    "extra": {
+      "category": ["PC02", "PC0201"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 50000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "롯데 모바일 상품권",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC020103-IMAGE-01.png",
+        "name": "PC020103-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC020103-IMAGE-02.png",
+        "name": "PC020103-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC020103-IMAGE-03.png",
+        "name": "PC020103-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>언제 어디서나 간편하게 선물하세요. 롯데 모바일 상품권은 모바일로 바로 전송 가능하며, 롯데백화점과 제휴 매장에서 다양한 상품 구매에 사용할 수 있습니다.생일, 기념일, 감사 선물 등 모든 상황에 적합합니다. </p>",
+    "extra": {
+      "category": ["PC02", "PC0201"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 200000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "현대 모바일 상품권",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC020104-IMAGE-01.png",
+        "name": "PC020104-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC020104-IMAGE-02.png",
+        "name": "PC020104-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC020104-IMAGE-03.png",
+        "name": "PC020104-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>소중한 사람에게 마음을 전하세요. 현대 모바일 상품권은 모바일로 간편하게 전달할 수 있으며, 현대백화점과 제휴 매장에서 자유롭게 사용 가능합니다. 생일, 기념일, 감사 선물 등 다양한 상황에 활용할 수 있습니다. </p>",
+    "extra": {
+      "category": ["PC02", "PC0201"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 100000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "갤러리아 상품권",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC020105-IMAGE-01.png",
+        "name": "PC020105-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC020105-IMAGE-02.png",
+        "name": "PC020105-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC020105-IMAGE-03.png",
+        "name": "PC020105-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>갤러리아 상품권은 갤러리아백화점 전 매장에서 현금처럼 사용 가능한 디지털 및 실물 상품권입니다. 선물용으로 적합하며, 특별한 날 마음을 전하기에 좋습니다. </p>",
+    "extra": {
+      "category": ["PC02", "PC0201"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 284000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "샹스 오 스플렌디드",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC030201-IMAGE-01.png",
+        "name": "PC030201-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC030201-IMAGE-02.png",
+        "name": "PC030201-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC030201-IMAGE-03.png",
+        "name": "PC030201-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>화사하게 반짝이는 싱그러운 샹스. 샹스 오 스플렌디드는 향기로운 바람처럼 우아하고 매혹적인 프루티 플로랄 향을 풍성하게 채워 줍니다. </p>",
+    "extra": {
+      "category": ["PC03", "PC0302"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 233000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "[불가리 퍼퓸] 옴니아 아메시스트 오 드 뚜왈렛",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC030202-IMAGE-01.png",
+        "name": "PC030202-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC030202-IMAGE-02.png",
+        "name": "PC030202-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC030202-IMAGE-03.png",
+        "name": "PC030202-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>보라빛 아메시스트의 우아함을 담은 불가리 옴니아 아메시스트. 섬세한 아이리스와 로맨틱한 로즈가 조화를 이루어 부드럽고 여성스러운 플로럴 무드를 완성합니다. 과하지 않은 향으로 일상 속에서 자연스럽게 어울리는 향수입니다. </p>",
+    "extra": {
+      "category": ["PC03", "PC0302"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 99000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "미스 디올 블루밍 부케 30ml",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC030203-IMAGE-01.png",
+        "name": "PC030203-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC030203-IMAGE-02.png",
+        "name": "PC030203-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC030203-IMAGE-03.png",
+        "name": "PC030203-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>미스 디올 블루밍 부케는 삶에 대한 사랑의 선언과 같은 향수로, 마음을 순식간에 즐거움으로 물들입니다. 미스 디올 블루밍 부케 오 드 뚜왈렛은 생동감 넘치면서도 부드럽게 다가오는 플로럴 향수입니다. 갓 피어난 꽃들의 다채롭고 자연스러운 매력을 담고 있는 이 향수는 스위트피와 베르가못의 싱그러운 향기로 첫눈에 반한 사랑처럼 강렬한 시작을 알립니다. </p>",
+    "extra": {
+      "category": ["PC03", "PC0302"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 110000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "입생로랑 리브르 오 드 뚜왈렛, 스파클링 플로럴 향수 30ml",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC030204-IMAGE-01.png",
+        "name": "PC030203-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC030203-IMAGE-02.png",
+        "name": "PC030203-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC030203-IMAGE-03.png",
+        "name": "PC030203-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>입생로랑 리브르 오 드 뚜왈렛은 산뜻한 시트러스와 플로럴 노트가 어우러진 스파클링 플로럴 향수입니다. 가볍고 상쾌한 향조로 데일리 사용에 적합하며, 세련되고 자유로운 분위기를 연출합니다.</p>",
+    "extra": {
+      "category": ["PC03", "PC0302"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 49000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "안나수이 판타지아 머메이드 EDT 50ml",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC030205-IMAGE-01.png",
+        "name": "PC030205-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC030205-IMAGE-02.png",
+        "name": "PC030205-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC030205-IMAGE-03.png",
+        "name": "PC030205-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>신비로운 머메이드의 판타지를 담은 안나수이 판타지아 머메이드 EDT. 달콤한 프루티 향과 화사한 플로럴 노트가 조화를 이루어 밝고 사랑스러운 분위기를 완성합니다. 동화 같은 감성을 일상 속에서 가볍게 즐겨보세요.</p>",
+    "extra": {
+      "category": ["PC03", "PC0302"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 69400,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "참나무 표고버섯 3종세트",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010101-IMAGE-01.png",
+        "name": "PC010101-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010101-IMAGE-02.png",
+        "name": "PC010101-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC010101-IMAGE-03.png",
+        "name": "PC010101-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>상품설명: 자연이 키운 깊은 향과 쫄깃한 식감을 담은 프리미엄 참나무 표고버섯 선물세트입니다.맑은 공기와 깨끗한 환경에서 자란 표고버섯을 전통 방식 그대로 참나무 원목에서 재배해, 향·맛·식감 모두 살아있습니다.</p>",
+    "extra": {
+      "category": ["PC01", "PC0101"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 120000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "명품 사과 세트",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010102-IMAGE-01.png",
+        "name": "PC010102-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010102-IMAGE-02.png",
+        "name": "PC010102-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC010102-IMAGE-03.png",
+        "name": "PC010102-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>상품설명: 햇살과 바람을 머금고 자란 최고 품질의 사과만을 엄선한 명품 사과 세트입니다. 아삭한 식감과 풍부한 과즙, 자연 그대로의 달콤함이 살아 있어 한 입 베어 무는 순간 신선함을 느낄 수 있습니다. 정성스러운 선별과 고급 포장으로 명절, 감사 인사, 특별한 날의 선물로 품격을 더합니다.</p>",
+    "extra": {
+      "category": ["PC01", "PC0101"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 350000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "한우 안심 선물세트",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010103-IMAGE-01.png",
+        "name": "PC010103-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010103-IMAGE-02.png",
+        "name": "PC010103-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC010103-IMAGE-03.png",
+        "name": "PC010103-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>한우 부위 중 가장 부드러운 안심만을 엄선해 담은 프리미엄 선물세트입니다. 결이 고우며 육즙이 풍부해 한입 베어 무는 순간 한우 특유의 깊고 담백한 풍미를 느낄 수 있습니다. 특별한 날의 식탁은 물론, 소중한 분께 감사의 마음을 전하는 고급 선물로 손색없는 구성입니다.</p>",
+    "extra": {
+      "category": ["PC01", "PC0101"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 112000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "[햇살푸드] 햇살닭 닭가슴살 선물세트",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010104-IMAGE-01.png",
+        "name": "PC010104-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010104-IMAGE-02.png",
+        "name": "PC010104-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC010104-IMAGE-03.png",
+        "name": "PC010104-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>햇살푸드의 노하우로 만든 햇살닭 닭가슴살 선물세트는 촉촉한 식감과 깔끔한 맛이 특징인 프리미엄 단백질 식품입니다. 엄선한 국내산 닭가슴살을 사용해 담백하면서도 부드럽게 즐길 수 있으며, 바쁜 일상 속 건강한 식단 관리에 안성맞춤입니다. 실속 있는 구성으로 선물용은 물론, 꾸준한 자기관리 식단으로도 좋습니다.</p>",
+    "extra": {
+      "category": ["PC01", "PC0101"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 75000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "자연 벌꿀 스틱 90포입 국산 아카시아 선물 세트",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010105-IMAGE-01.png",
+        "name": "PC010105-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010105-IMAGE-02.png",
+        "name": "PC010105-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC010105-IMAGE-03.png",
+        "name": "PC010105-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>청정 자연에서 채밀한 국산 아카시아 벌꿀을 간편한 스틱 형태로 담은 프리미엄 선물 세트입니다. 은은하고 깔끔한 단맛이 특징인 아카시아 벌꿀을 위생적으로 개별 포장해, 언제 어디서나 부담 없이 즐길 수 있습니다. 넉넉한 90포 구성으로 건강을 생각한 실속 있는 선물로 추천드립니다.</p>",
+    "extra": {
+      "category": ["PC01", "PC0101"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 27900,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "코만스 티라미수 케이크 4종 선물세트",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010201-IMAGE-01.png",
+        "name": "PC010201-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010201-IMAGE-02.png",
+        "name": "PC010201-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC010201-IMAGE-03.png",
+        "name": "PC010201-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>이탈리아 정통 디저트의 감성을 담은 코만스 티라미수 케이크 4종 프리미엄 세트로, 진한 에스프레소와 부드러운 마스카르포네 크림, 촉촉한 케이크 시트가 어우러져 한 입마다 깊고 풍부한 맛을 전해드립니다.</p>",
+    "extra": {
+      "category": ["PC01", "PC0102"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 80500,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "백년화편 밥알찹쌀떡+양갱모둠 세트",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010202-IMAGE-01.png",
+        "name": "PC010201-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010202-IMAGE-02.png",
+        "name": "PC010202-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC010202-IMAGE-03.png",
+        "name": "PC010202-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>전통의 깊은 맛을 담은 백년화편의 대표 디저트 세트로, 쫀득한 찹쌀떡과 부드러운 양갱을 한 번에 즐길 수 있는 프리미엄 구성입니다.</p>",
+    "extra": {
+      "category": ["PC01", "PC0102"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 48000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "마에스트로 쿠키세트",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010203-IMAGE-01.png",
+        "name": "PC010203-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010203-IMAGE-02.png",
+        "name": "PC010203-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC010203-IMAGE-03.png",
+        "name": "PC010203-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>장인의 정성과 노하우로 완성한 마에스트로 쿠키세트는 바삭한 식감과 깊은 풍미가 살아 있는 프리미엄 디저트입니다. 엄선한 원료로 정성껏 구워내어 한 입마다 고급스러운 달콤함을 느낄 수 있으며, 다양한 쿠키를 한 번에 즐길 수 있는 구성으로 선물용은 물론 티타임 디저트로도 잘 어울립니다.</p>",
+    "extra": {
+      "category": ["PC01", "PC0102"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 28500,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "벨기에 수제초콜릿 세트",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010204-IMAGE-01.png",
+        "name": "PC010204-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010204-IMAGE-02.png",
+        "name": "PC010204-IMAGE-03.png"
+      },
+      {
+        "path": "/products/PC010204-IMAGE-03.png",
+        "name": "PC010204-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>세계적으로 인정받는 초콜릿 명가, 벨기에 장인의 레시피로 완성한 프리미엄 수제초콜릿입니다.하나하나 정성껏 만들어, 입안에서 부드럽게 녹는 깊은 풍미와 향을 선사합니다.</p>",
+    "extra": {
+      "category": ["PC01", "PC0102"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 35900,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "하겐다즈 아이스크림 선물 세트",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC010205-IMAGE-01.png",
+        "name": "PC010205-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC010205-IMAGE-02.png",
+        "name": "PC010205-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC010205-IMAGE-03.png",
+        "name": "PC010205-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>하겐다즈의 인기 플레이버를 한 번에 즐길 수 있는 미니 사이즈 구성의 달콤한 아이스크림 세트입니다. 프리미엄 원료로 만든 깊고 진한 맛을 부담 없는 용량으로 담아, 혼자서도 여러 명이서도 즐기기 좋아요. 선물용, 홈디저트, 파티용으로도 딱 맞는 구성입니다.</p>",
+    "extra": {
+      "category": ["PC01", "PC0102"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 36000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "MLB 에이스 언스트럭쳐 볼캡",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC050401-IMAGE-01.png",
+        "name": "PC050401-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC050401-IMAGE-02.png",
+        "name": "PC050401-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC050401-IMAGE-03.png",
+        "name": "PC050401-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>가볍고 편안하게, 스타일리시하게! 에이스 언스트럭쳐 볼캡 뉴욕 양키스는 부드러운 소재와 자연스러운 실루엣으로 데일리 캐주얼 룩에 완벽하게 어울립니다. 스포티하면서도 트렌디한 포인트 아이템으로 추천합니다. </p>",
+    "extra": {
+      "category": ["PC05", "PC0504"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 119000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "아디다스 Y-3 버킷 햇",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC050402-IMAGE-01.png",
+        "name": "PC050402-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC050402-IMAGE-02.png",
+        "name": "PC050402-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC050402-IMAGE-03.png",
+        "name": "PC050402-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>스트리트 감성과 하이패션의 만남, 아디다스 Y-3 버킷 햇. 가볍고 편안한 착용감과 세련된 디자인으로 어디에나 매치 가능하며, 트렌디한 스타일을 완성해 줍니다. 여행, 아웃도어, 데일리 코디에 추천드립니다. </p>",
+    "extra": {
+      "category": ["PC05", "PC0504"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 69000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "라코스테 면 트윌 베이직 야구모자",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC050403-IMAGE-01.png",
+        "name": "PC050403-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC050403-IMAGE-02.png",
+        "name": "PC050403-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC050403-IMAGE-03.png",
+        "name": "PC050403-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>심플하면서도 세련된, 라코스테 베이직 야구모자. 부드러운 면 트윌 소재와 자연스러운 핏으로 편안한 착용감을 제공하며, 클래식한 디자인으로 어느 코디에나 어울립니다. 일상, 야외 활동, 여행 등 다양하게 활용할 수 있는 필수 아이템입니다. </p>",
+    "extra": {
+      "category": ["PC05", "PC0504"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 39000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "나이키 피크 비니",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC050404-IMAGE-01.png",
+        "name": "PC050404-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC050404-IMAGE-02.png",
+        "name": "PC050404-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC050404-IMAGE-03.png",
+        "name": "PC050404-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>추운 날씨에도 스타일을 포기하지 마세요! 나이키 피크 비니는 부드러운 니트로 제작되어 머리를 따뜻하게 보호하며, 심플한 디자인으로 어떤 코디에도 자연스럽게 어울립니다. 겨울철 데일리, 아웃도어, 스포츠 활동용 필수 아이템입니다. </p>",
+    "extra": {
+      "category": ["PC05", "PC0504"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  },
+  {
+    "price": 29900,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "뉴발란스 플라잉로고 볼캡",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC050405-IMAGE-01.png",
+        "name": "PC050405-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC050405-IMAGE-02.png",
+        "name": "PC050405-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC050405-IMAGE-03.png",
+        "name": "PC050405-IMAGE-03.png"
+      }
+    ],
+    "content": "<p>심플하지만 존재감 있는 뉴발란스 플라잉로고 볼캡. 부드러운 소재와 자연스러운 핏으로 편안하게 착용할 수 있으며, 다양한 코디에 스타일 포인트로 활용 가능합니다. 데일리, 아웃도어, 운동용으로 추천드립니다. </p>",
+    "extra": {
+      "category": ["PC05", "PC0504"],
+      "sort": 1,
+      "tags": [
+        "friend",
+        "coworker",
+        "sibling",
+        "child",
+        "teen",
+        "20s",
+        "30s",
+        "anniversary",
+        "housewarming",
+        "celebration",
+        "thanks",
+        "cute",
+        "light"
+      ]
+    },
+    "options": []
+  }
+]

@@ -1,20 +1,31 @@
-'use client'
+import LoginForm from '@/app/(auth)/login/LoginForm';
+import { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import Loading from '@/components/common/Loading';
+import { Suspense } from 'react';
 
-import NormalLogin from '@/components/pages/login/NormalLogin'
-import SocialLogin from '@/components/pages/login/SocialLogin'
-import { LoginType } from '@/types/login.types'
-import { useState } from 'react'
+export const metadata: Metadata = {
+  title: '로그인',
+  description: 'You,Us 계정에 로그인하세요.',
+};
 
 export default function LoginPage() {
-  const [loginType, setLoginType] = useState<LoginType>('normal')
-
-  const handleLoginType = () => {
-    setLoginType((prev) => (prev === 'normal' ? 'social' : 'normal'))
-  }
-
-  return loginType === 'normal' ? (
-    <NormalLogin handleLoginType={handleLoginType} />
-  ) : (
-    <SocialLogin handleLoginType={handleLoginType} />
-  )
+  return (
+    <div className="container mx-auto flex h-screen w-fit flex-col items-center justify-center">
+      <h1 className="sr-only">로그인 페이지</h1>
+      <Link href="/">
+        <Image
+          src="/icons/LOGO.svg"
+          className="mb-15 w-70"
+          alt="유어스"
+          width={250}
+          height={81}
+        />
+      </Link>
+      <Suspense fallback={<Loading />}>
+        <LoginForm />
+      </Suspense>
+    </div>
+  );
 }

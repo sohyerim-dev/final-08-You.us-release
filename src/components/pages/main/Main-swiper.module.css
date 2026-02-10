@@ -112,10 +112,15 @@
 .productSwiper {
   width: 100%;
   height: 100%;
-  padding: 0 60px; /* 좌우에 60px 여백 (카드가 안쪽으로) */
 }
 
 .productSwiper :global(.swiper-wrapper) {
+}
+
+/* Swiper 초기화 전 슬라이드 크기 제한 (CLS 방지) */
+.productSwiper :global(.swiper-slide) {
+  width: 25%;
+  flex-shrink: 0;
 }
 /* 화살표 스타일 */
 .productSwiper :global(.swiper-button-next),

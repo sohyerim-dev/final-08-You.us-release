@@ -1,9 +1,9 @@
-import Image from 'next/image'
-import Button from '@/components/common/Button'
-import { ButtonHTMLAttributes } from 'react'
+import Image from 'next/image';
+import Button from '@/components/common/Button';
+import { ButtonHTMLAttributes } from 'react';
 
 interface MoreButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  className?: string
+  className?: string;
 }
 
 export default function MoreButton({
@@ -24,5 +24,5 @@ export default function MoreButton({
       />
       더보기
     </Button>
-  )
+  );
 }

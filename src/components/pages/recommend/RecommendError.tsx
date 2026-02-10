@@ -1,11 +1,11 @@
-'use client'
+'use client';
 
-import Button from '@/components/common/Button'
+import Button from '@/components/common/Button';
 
 type Props = {
-  message: string
-  onReset: () => void
-}
+  message: string;
+  onReset: () => void;
+};
 
 export default function RecommendError({ message, onReset }: Props) {
   return (
@@ -15,5 +15,5 @@ export default function RecommendError({ message, onReset }: Props) {
         다시 하기
       </Button>
     </div>
-  )
+  );
 }

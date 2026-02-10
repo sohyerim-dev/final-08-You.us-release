@@ -40,4 +40,4 @@ export const queryKeys = {
     profile: () => [...queryKeys.user.all, 'profile'] as const,
     wishlist: () => [...queryKeys.user.all, 'wishlist'] as const,
   },
-}
+};

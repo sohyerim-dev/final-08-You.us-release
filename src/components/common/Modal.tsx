@@ -1,10 +1,10 @@
-'use client'
+'use client';
 
 interface ModalProps {
-  isOpen: boolean
-  onClose: () => void
-  title?: string
-  children: React.ReactNode
+  isOpen: boolean;
+  onClose: () => void;
+  title?: string;
+  children: React.ReactNode;
 }
 
 export default function Modal({
@@ -13,7 +13,7 @@ export default function Modal({
   title,
   children,
 }: ModalProps) {
-  if (!isOpen) return null
+  if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
@@ -23,5 +23,5 @@ export default function Modal({
         {children}
       </div>
     </div>
-  )
+  );
 }

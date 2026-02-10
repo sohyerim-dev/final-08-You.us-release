@@ -1,26 +1,53 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import Link from 'next/link'
-import { categories, categoryData } from './Header'
+import { useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import useUserStore from '@/lib/zustand/auth/userStore';
+import useHasHydrated from '@/hooks/auth/useHasHydrated';
+import { useCategoryStore } from '@/lib/zustand/categoryStore';
 
 interface MobileSidebarProps {
-  isOpen: boolean
-  onClose: () => void
+  isOpen: boolean;
+  onClose: () => void;
 }
 
 export default function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
-  const [openCategory, setOpenCategory] = useState<string | null>(null)
+  const [openCategory, setOpenCategory] = useState<string | null>(null);
+  const { user, resetUser } = useUserStore();
+  const isHydrated = useHasHydrated();
+  const router = useRouter();
 
-  const toggleCategory = (category: string) => {
-    setOpenCategory(openCategory === category ? null : category)
-  }
+  const categories = useCategoryStore((state) => state.categories);
+  const handleLogout = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    resetUser();
+    localStorage.removeItem('refreshToken');
+    sessionStorage.removeItem('naver_state');
+    alert('로그아웃 되었습니다.');
+  };
 
-  if (!isOpen) return null
+  const toggleCategory = (code: string) => {
+    setOpenCategory(openCategory === code ? null : code);
+  };
+
+  const keywordHandler = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const keyword = formData.get('keyword') as string;
+
+    router.push(
+      keyword.trim()
+        ? `/products?keyword=${encodeURIComponent(keyword.trim())}`
+        : '/products',
+    );
+    onClose();
+  };
+
+  if (!isOpen) return null;
 
   return (
     <>
-      {/* 오버레이 - button으로 변경하여 키보드 접근 가능 */}
       <button
         type="button"
         className="fixed inset-0 z-40 cursor-default bg-black/50"
@@ -59,8 +86,7 @@ export default function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
           </button>
         </div>
 
-        {/* 검색 폼 */}
-        <form role="search" className="p-4">
+        <form role="search" className="p-4" onSubmit={keywordHandler}>
           <div className="relative">
             <label htmlFor="mobile-search" className="sr-only">
               상품 검색
@@ -68,14 +94,14 @@ export default function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
             <input
               id="mobile-search"
               type="text"
+              name="keyword"
               placeholder="상품 검색"
               className="focus:border-primary h-10 w-full rounded-lg border border-gray-300 pr-4 pl-10 text-sm placeholder:text-gray-400 focus:outline-none"
             />
-            <Link
-              href="/products"
+            <button
+              type="submit"
               className="absolute top-1/2 left-3 -translate-y-1/2"
               aria-label="검색하기"
-              onClick={onClose}
             >
               <svg
                 className="h-5 w-5"
@@ -97,26 +123,25 @@ export default function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
                   strokeLinecap="round"
                 />
               </svg>
-            </Link>
+            </button>
           </div>
         </form>
 
-        {/* 카테고리 목록 */}
         <nav aria-label="카테고리 메뉴">
           <ul className="py-2">
             {categories.map((category) => (
-              <li key={category}>
+              <li key={category.code}>
                 <button
                   type="button"
-                  onClick={() => toggleCategory(category)}
+                  onClick={() => toggleCategory(category.code)}
                   className="text-primary flex w-full items-center justify-between px-4 py-3 text-left font-medium hover:bg-gray-100"
-                  aria-expanded={openCategory === category}
-                  aria-controls={`subcategory-${category}`}
+                  aria-expanded={openCategory === category.code}
+                  aria-controls={`subcategory-${category.code}`}
                 >
-                  <span>{category}</span>
+                  <span>{category.value}</span>
                   <svg
                     className={`h-5 w-5 transition-transform ${
-                      openCategory === category ? 'rotate-180' : ''
+                      openCategory === category.code ? 'rotate-180' : ''
                     }`}
                     width="27"
                     height="27"
@@ -134,27 +159,28 @@ export default function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
                     />
                     <path
                       d="M17.75 12.0025L12.6417 16.75L7.53346 12.0025"
-                      stroke={openCategory === category ? '#c93c4f' : '#929292'}
+                      stroke={
+                        openCategory === category.code ? '#c93c4f' : '#929292'
+                      }
                       strokeWidth="1.5"
                     />
                   </svg>
                 </button>
 
-                {/* 소분류 (아코디언) */}
                 <ul
-                  id={`subcategory-${category}`}
+                  id={`subcategory-${category.code}`}
                   className={`bg-gray-100 py-2 ${
-                    openCategory === category ? 'block' : 'hidden'
+                    openCategory === category.code ? 'block' : 'hidden'
                   }`}
                 >
-                  {categoryData[category].map((subCategory) => (
-                    <li key={subCategory}>
+                  {category.sub?.map((subCategory) => (
+                    <li key={subCategory.code}>
                       <Link
-                        href={`/products`}
+                        href={`/products/${category.code}/${subCategory.code}`}
                         className="hover:text-primary block px-8 py-2 text-sm text-gray-700"
                         onClick={onClose}
                       >
-                        {subCategory}
+                        {subCategory.value}
                       </Link>
                     </li>
                   ))}
@@ -164,22 +190,33 @@ export default function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
           </ul>
         </nav>
 
-        {/* 하단 링크 */}
-        <nav aria-label="사용자 메뉴" className="m-5.5">
-          <ul className="flex justify-end gap-5">
-            <li>
-              <Link href="/login" onClick={onClose}>
-                로그인
-              </Link>
-            </li>
-            <li>
-              <Link href="/signup" onClick={onClose}>
-                회원가입
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        {isHydrated &&
+          (!user ? (
+            <nav aria-label="사용자 메뉴" className="m-5.5">
+              <ul className="flex justify-end gap-5">
+                <li>
+                  <Link href="/login" onClick={onClose}>
+                    로그인
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/signup" onClick={onClose}>
+                    회원가입
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          ) : (
+            <form onSubmit={handleLogout} className="flex justify-end gap-5">
+              <button
+                type="submit"
+                className="m-5.5 text-gray-700 transition-colors"
+              >
+                로그아웃
+              </button>
+            </form>
+          ))}
       </aside>
     </>
-  )
+  );
 }

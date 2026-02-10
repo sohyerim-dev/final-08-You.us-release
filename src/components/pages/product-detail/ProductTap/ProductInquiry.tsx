@@ -1,3 +1,3 @@
 export default function ProductInquiry() {
-  return <>test ProductInquiry</>
+  return <>test ProductInquiry</>;
 }

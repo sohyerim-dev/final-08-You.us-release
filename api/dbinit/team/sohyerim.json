@@ -1,0 +1,90 @@
+[
+  {
+    "price": 43000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "Pope ring, IVORY 반지",
+    "quantity": 300,
+    "buyQuantity": 200,
+    "mainImages": [
+      {
+        "path": "/products/PC040205-IMAGE-01.png",
+        "name": "PC040205-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC040205-IMAGE-02.png",
+        "name": "PC040205-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC040205-IMAGE-03.png",
+        "name": "PC040205-IMAGE-03.png"
+      }
+    ],
+    "content": "<p><strong>Pope ring, IVORY</strong>는 영리영리의 커스텀 주얼리 라인에서 선보이는 반지로, 고향의 반지(Fishermen’s Ring)에서 모티브를 얻어 재해석한 디자인이며 포마이카와 글라스 소재를 사용해 가볍고 키치한 무드를 살렸고 유기적인 곡선을 따라 비정형적인 아웃라인과 일정하지 않은 두께가 특징으로, 변색에 강한 바디와 단 하나의 오브제 같은 존재감으로 일상 속에서 자유로운 개성을 표현할 수 있는 아이템입니다.</p>",
+    "extra": {
+      "category": ["PC04", "PC0402"],
+      "sort": 1,
+      "tags": [
+        "lover",
+        "friend",
+        "sibling",
+        "teen",
+        "20s",
+        "30s",
+        "birthday",
+        "anniversary",
+        "celebration",
+        "cute",
+        "emotional",
+        "light"
+      ]
+    },
+    "options": ["10-12호", "13-14호", "15-16호", "17-18호"]
+  },
+  {
+    "price": 68000,
+    "shippingFees": 3000,
+    "show": true,
+    "active": true,
+    "name": "H에디션 (W) 볼 레드 제이드 비즈 팔찌",
+    "quantity": 400,
+    "buyQuantity": 300,
+    "mainImages": [
+      {
+        "path": "/products/PC040305-IMAGE-01.png",
+        "name": "PC040305-IMAGE-01.png"
+      },
+      {
+        "path": "/products/PC040305-IMAGE-02.png",
+        "name": "PC040305-IMAGE-02.png"
+      },
+      {
+        "path": "/products/PC040305-IMAGE-03.png",
+        "name": "PC040305-IMAGE-03.png"
+      }
+    ],
+    "content": "<p><strong>H에디션 (W) 볼 레드 제이드 비즈 팔찌</strong>는 산뜻한 레드 제이드 원석이 경쾌한 분위기를 더해주는 비드 팔찌로, 이에르로르만의 육각 기둥 쉐입 잠금 장식을 적용해 간편하고 안정적인 착용감을 제공하며 데일리 룩에 생기 있는 포인트를 더해주는 아이템입니다.</p>",
+    "extra": {
+      "category": ["PC04", "PC0403"],
+      "sort": 1,
+      "tags": [
+        "lover",
+        "friend",
+        "sibling",
+        "coworker",
+        "20s",
+        "30s",
+        "40s",
+        "birthday",
+        "anniversary",
+        "celebration",
+        "thanks",
+        "cute",
+        "emotional",
+        "light"
+      ]
+    },
+    "options": []
+  }
+]

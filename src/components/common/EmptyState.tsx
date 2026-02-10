@@ -1,8 +1,8 @@
 type EmptyStateProps = {
-  message: string
-  description?: string
-  action?: React.ReactNode
-}
+  message: string;
+  description?: string;
+  action?: React.ReactNode;
+};
 
 export default function EmptyState({
   message,
@@ -19,5 +19,5 @@ export default function EmptyState({
 
       {action && <div className="mt-4">{action}</div>}
     </div>
-  )
+  );
 }

@@ -1,0 +1,25 @@
+meta {
+  name: 상품목록조회
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/products?page=3&limit=2
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 3
+  limit: 2
+  ~sort: {"price":1}
+  ~sort: {"price":-1}
+  ~sort: {"bootkmarks":1}
+  ~sort: {"bootkmarks":-1}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
