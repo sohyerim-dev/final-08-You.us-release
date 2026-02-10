@@ -30,6 +30,7 @@ export type ReviewCardProps = {
 
 export default function ReviewCard({
   type,
+  productId,
   imageSrc,
   imageAlt,
   name,
@@ -39,6 +40,7 @@ export default function ReviewCard({
   createdAt,
   reviewContent,
   reviewImages = [],
+  orderItemId,
 }: ReviewCardProps) {
   const [modal, dispatch] = useReducer(modalReducer, initialModalState);
 
