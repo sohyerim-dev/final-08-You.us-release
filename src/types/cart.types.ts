@@ -19,7 +19,6 @@ export interface CartItemOnList {
     size?: string[];
   };
   image: string;
-  storeName: string;
 }
 
 export interface CartItem {

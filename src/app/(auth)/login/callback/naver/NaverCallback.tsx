@@ -50,6 +50,12 @@ export default function NaverCallback() {
 
           sessionStorage.removeItem('naver_state');
 
+          if (result.user.token?.refreshToken) {
+            sessionStorage.setItem(
+              'refreshToken',
+              result.user.token.refreshToken,
+            );
+          }
           await mergeLocalCartToServer();
 
           const redirectPath =

@@ -1,10 +1,35 @@
+import type { Metadata } from 'next';
+import { cache } from 'react';
 import ImageGallery from '@/components/pages/product-detail/ImageGallery';
 import ProductDetailInfo from '@/components/pages/product-detail/ProductDetailInfo';
 import ProductTabs from '@/components/pages/product-detail/ProductTabs';
 import fetchClient from '@/lib/api/fetchClient';
 import { SingleProductResponse } from '@/types/product.types';
 
-// page.tsx
+type Props = {
+  params: Promise<{ category: string; subcategory: string; id: string }>;
+};
+
+const getProduct = cache((id: string) =>
+  fetchClient<SingleProductResponse>(`/products/${id}`),
+);
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+  const res = await getProduct(id);
+
+  if ('ok' in res && res.ok === 0) {
+    return { title: '상품을 찾을 수 없습니다 | You,Us' };
+  }
+
+  const product = (res as SingleProductResponse).item;
+
+  return {
+    title: `${product.name} 상품 상세보기 | You,Us`,
+    description: `${product.name} 상품 상세보기 | You,Us. ${product.price.toLocaleString()}원`,
+  };
+}
+
 export default async function ProductDetailPage({
   params,
 }: {
@@ -14,13 +39,9 @@ export default async function ProductDetailPage({
     id: string;
   }>;
 }) {
-  //상품 id
   const { id } = await params;
+  const res = await getProduct(id);
 
-  //상품정보
-  const res = await fetchClient<SingleProductResponse>(`/products/${id}`);
-
-  // 에러 체크
   if ('ok' in res && res.ok === 0) {
     return <div>상품을 찾을 수 없습니다.</div>;
   }

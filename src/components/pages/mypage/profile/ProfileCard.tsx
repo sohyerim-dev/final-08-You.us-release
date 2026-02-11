@@ -7,7 +7,7 @@ export default function ProfileCard() {
   return (
     <div className="border-primary flex items-center gap-3 border-y bg-white p-5 px-3 lg:gap-3">
       <Image
-        src={user?.image ?? '/images/common/basic-profile-img.png'}
+        src={user?.image || '/images/common/basic-profile-img.png'}
         alt="사용자 프로필 이미지"
         width={70}
         height={70}
@@ -17,17 +17,23 @@ export default function ProfileCard() {
         <p>
           <span className="shrink-0">이름</span>
           <span>|</span>
-          <span className="line-clamp-1">{user?.name}</span>
+          <span className="line-clamp-1">
+            {user?.name || '이름을 추가해주세요'}
+          </span>
         </p>
         <p>
           <span className="shrink-0">전화</span>
           <span>|</span>
-          <span className="line-clamp-1">{user?.phone}</span>
+          <span className="line-clamp-1">
+            {user?.phone || '연락처를 추가해주세요'}
+          </span>
         </p>
         <p>
           <span className="shrink-0">주소</span>
           <span>|</span>
-          <span className="line-clamp-1">{user?.address?.streetAddress}</span>
+          <span className="line-clamp-1">
+            {user?.address?.streetAddress || '주소를 추가해주세요'}
+          </span>
         </p>
       </div>
     </div>

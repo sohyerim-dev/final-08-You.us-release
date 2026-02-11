@@ -6,8 +6,23 @@ import Button from '@/components/common/Button';
 interface TermsModalProps {
   isOpen: boolean;
   onClose: () => void;
-  type: 'terms' | 'privacy';
+  type: 'terms' | 'privacy' | 'company' | 'dispute';
 }
+
+const MODAL_TITLE: Record<TermsModalProps['type'], string> = {
+  terms: '이용약관',
+  privacy: '개인정보 처리방침',
+  company: '회사소개',
+  dispute: '분쟁사항',
+};
+
+const MODAL_CONTENT: Record<TermsModalProps['type'], () => React.JSX.Element> =
+  {
+    terms: TermsContent,
+    privacy: PrivacyContent,
+    company: CompanyContent,
+    dispute: DisputeContent,
+  };
 
 export default function TermsModal({ isOpen, onClose, type }: TermsModalProps) {
   // ESC 키로 닫기
@@ -41,9 +56,7 @@ export default function TermsModal({ isOpen, onClose, type }: TermsModalProps) {
       >
         {/* 헤더 */}
         <div className="sticky top-0 flex items-center justify-between border-b bg-white px-6 py-4">
-          <h2 className="text-xl font-bold">
-            {type === 'terms' ? '이용약관' : '개인정보 처리방침'}
-          </h2>
+          <h2 className="text-xl font-bold">{MODAL_TITLE[type]}</h2>
           <button
             onClick={onClose}
             className="text-2xl text-gray-500 hover:text-gray-700"
@@ -55,7 +68,7 @@ export default function TermsModal({ isOpen, onClose, type }: TermsModalProps) {
 
         {/* 내용 */}
         <div className="h-[calc(80vh-130px)] overflow-y-auto px-6 py-4">
-          {type === 'terms' ? <TermsContent /> : <PrivacyContent />}
+          {MODAL_CONTENT[type]()}
         </div>
 
         {/* 푸터 */}
@@ -402,6 +415,122 @@ function PrivacyContent() {
       <p>
         본 방침은 2025년 2월 5일부터 적용되며, 변경사항이 있는 경우 시행 7일
         전부터 공지합니다.
+        <br />
+        <br />
+      </p>
+    </div>
+  );
+}
+
+// 회사소개 내용
+function CompanyContent() {
+  return (
+    <div className="prose max-w-none">
+      <h3 className="mt-6 text-lg font-bold">You,Us 소개</h3>
+      <p>
+        You,Us는 AI 기반 맞춤형 선물 추천 서비스를 제공하는 플랫폼입니다. 소중한
+        사람에게 마음을 전하는 가장 좋은 방법을 함께 고민합니다.
+      </p>
+
+      <h3 className="mt-6 text-lg font-bold">회사 정보</h3>
+      <div className="mt-2 space-y-1 rounded bg-gray-50 p-4">
+        <p>
+          <strong>회사명:</strong> (주)유앤어스
+        </p>
+        <p>
+          <strong>대표이사:</strong> 소혜림
+        </p>
+        <p>
+          <strong>사업자등록번호:</strong> 105-813-5526
+        </p>
+        <p>
+          <strong>전화번호:</strong> 070-1234-5678
+        </p>
+        <p>
+          <strong>주소:</strong> 서울 마포구 강변북로 141 5층 5호 2동(목해동,
+          서울센터)
+        </p>
+      </div>
+
+      <h3 className="mt-6 text-lg font-bold">서비스 소개</h3>
+      <ul className="list-disc pl-5">
+        <li>AI 기반 선물 추천 서비스</li>
+        <li>다양한 카테고리별 상품 제공</li>
+        <li>맞춤형 선물 큐레이션</li>
+      </ul>
+
+      <h3 className="mt-6 text-lg font-bold">고객센터</h3>
+      <div className="mt-2 space-y-1 rounded bg-gray-50 p-4">
+        <p>
+          <strong>이메일:</strong> support@you-us.com
+        </p>
+        <p>
+          <strong>전화:</strong> 1577-XXXX
+        </p>
+        <p>
+          <strong>운영시간:</strong> 평일 09:00 - 18:00 (주말 및 공휴일 제외)
+        </p>
+      </div>
+    </div>
+  );
+}
+
+// 분쟁사항 내용
+function DisputeContent() {
+  return (
+    <div className="prose max-w-none">
+      <p className="text-sm text-gray-600">시행일: 2025년 2월 5일</p>
+
+      <h3 className="mt-6 text-lg font-bold">제1조 (목적)</h3>
+      <p>
+        본 규정은 You,Us(이하 &apos;회사&apos;)와 이용자 간에 발생하는 분쟁의
+        해결 절차 및 방법에 관한 사항을 규정함을 목적으로 합니다.
+      </p>
+
+      <h3 className="mt-6 text-lg font-bold">제2조 (분쟁 해결 원칙)</h3>
+      <ol className="list-decimal pl-5">
+        <li>
+          회사는 이용자의 불만 및 분쟁을 신속하고 공정하게 처리하기 위해
+          노력합니다.
+        </li>
+        <li>분쟁 발생 시 상호 협의를 통한 원만한 해결을 우선으로 합니다.</li>
+        <li>협의가 이루어지지 않을 경우, 관련 법령에 따라 처리합니다.</li>
+      </ol>
+
+      <h3 className="mt-6 text-lg font-bold">제3조 (분쟁 접수)</h3>
+      <p>이용자는 다음과 같은 방법으로 분쟁을 접수할 수 있습니다:</p>
+      <ul className="list-disc pl-5">
+        <li>고객센터 이메일: support@you-us.com</li>
+        <li>고객센터 전화: 1577-XXXX (평일 09:00 - 18:00)</li>
+      </ul>
+
+      <h3 className="mt-6 text-lg font-bold">제4조 (분쟁 처리 절차)</h3>
+      <ol className="list-decimal pl-5">
+        <li>분쟁 접수 후 3영업일 이내에 처리 결과를 안내합니다.</li>
+        <li>
+          복잡한 사안의 경우, 처리 기간이 연장될 수 있으며 이용자에게 사전
+          통지합니다.
+        </li>
+        <li>
+          이용자가 처리 결과에 이의가 있는 경우, 재심을 요청할 수 있습니다.
+        </li>
+      </ol>
+
+      <h3 className="mt-6 text-lg font-bold">제5조 (외부 분쟁 해결 기관)</h3>
+      <p>
+        회사와 이용자 간의 분쟁이 원만하게 해결되지 않을 경우, 다음 기관에 분쟁
+        조정을 신청할 수 있습니다:
+      </p>
+      <ul className="list-disc pl-5">
+        <li>한국소비자원 (www.kca.go.kr / 1372)</li>
+        <li>전자거래분쟁조정위원회 (www.ecmc.or.kr)</li>
+        <li>서울특별시 전자상거래센터 (ecc.seoul.go.kr)</li>
+      </ul>
+
+      <h3 className="mt-6 text-lg font-bold">제6조 (관할 법원)</h3>
+      <p>
+        서비스 이용으로 발생한 분쟁에 대해 소송이 제기될 경우, 회사의 본사
+        소재지를 관할하는 법원을 전속 관할 법원으로 합니다.
         <br />
         <br />
       </p>

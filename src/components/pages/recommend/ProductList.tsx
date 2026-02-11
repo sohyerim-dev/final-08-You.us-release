@@ -21,7 +21,7 @@ interface ProductListProps {
 
 export default function ProductList({ products }: ProductListProps) {
   return (
-    <ul className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <ul className="grid w-full grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {products.map((product) => (
         <ProductCard
           key={product._id}
@@ -31,6 +31,8 @@ export default function ProductList({ products }: ProductListProps) {
           price={product.price}
           rating={product.rating ?? 0}
           reviewCount={product.replies ?? 0}
+          mainCategory={product.extra?.category?.[0] || ''}
+          subCategory={product.extra?.category?.[1] || ''}
         />
       ))}
     </ul>

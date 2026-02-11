@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Button from '../Button';
+import FooterLinks from './FooterLinks';
 
 export default function Footer() {
   return (
@@ -53,23 +54,7 @@ export default function Footer() {
             </svg>
 
             <div className="flex flex-col gap-1 lg:gap-5">
-              <div className="mb-6 flex items-center justify-start gap-1 text-[10px] lg:text-xs">
-                {['회사소개', '이용약관', '개인정보처리방침', '분쟁사항'].map(
-                  (link, index) => (
-                    <div key={index}>
-                      <Link
-                        href="#"
-                        className="font-medium text-gray-700 transition-colors active:text-rose-600"
-                      >
-                        {link}
-                      </Link>
-                      {index < 3 && (
-                        <span className="mx-0.5 text-gray-400">|</span>
-                      )}
-                    </div>
-                  ),
-                )}
-              </div>
+              <FooterLinks />
 
               <div className="mb-5 space-y-1.5 text-[10px] text-gray-600 lg:text-xs">
                 <div>
@@ -106,7 +91,12 @@ export default function Footer() {
             href={'https://m.epost.go.kr/'}
             className="ml-2 hidden shrink-0 lg:block"
           >
-            <Button className="h-12.5">우체국 조회하기</Button>
+            <Button
+              tabIndex={-1}
+              className="flex h-12.5 items-center justify-center"
+            >
+              우체국 조회하기
+            </Button>
           </Link>
         </div>
         <div className="mb-6 border-t border-gray-200 pt-4 pb-1 text-center lg:mb-0">

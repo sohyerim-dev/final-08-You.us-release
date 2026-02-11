@@ -2,6 +2,7 @@
 
 import Button from '@/components/common/Button';
 import { PaymentButtonProps } from '@/types/checkout.types';
+import { toast } from 'react-toastify';
 
 export default function PaymentButton({
   paymentMethod,
@@ -12,7 +13,7 @@ export default function PaymentButton({
 }: PaymentButtonProps) {
   const handleClick = async () => {
     if (!agreePayment) {
-      alert('주문 내용 확인 및 결제 동의를 체크해주세요.');
+      toast.warn('주문 내용 확인 및 결제 동의를 체크해주세요.');
       return;
     }
 

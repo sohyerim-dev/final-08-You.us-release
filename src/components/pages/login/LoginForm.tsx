@@ -1,11 +1,17 @@
+'use client';
 import Button from '@/components/common/Button';
 import Input from '@/components/common/Input';
 import { login } from '@/lib/api/users';
-import { getNaverLoginUrl } from '@/lib/auth/naver';
 import useUserStore from '@/lib/zustand/auth/userStore';
+import { mergeLocalCartToServer } from '@/lib/zustand/cartStore';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useActionState, useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
+
+const NAVER_CLIENT_ID = process.env.NEXT_PUBLIC_NAVER_CLIENT_ID;
+const NAVER_REDIRECT_URI = process.env.NEXT_PUBLIC_NAVER_REDIRECT_URI;
 
 export default function LoginForm() {
   const [autoLogin, setAutoLogin] = useState(false);
@@ -27,30 +33,41 @@ export default function LoginForm() {
   const router = useRouter();
   const redirect = useSearchParams().get('redirect');
 
-  console.log(autoLogin);
-
   useEffect(() => {
-    if (userState?.ok) {
-      setUser({
-        _id: userState.item._id,
-        email: userState.item.email,
-        name: userState.item.name,
-        image: userState.item.image,
-        phone: userState.item.phone,
-        address: userState.item.address,
-        token: {
-          accessToken: userState.item.token?.accessToken || '',
-          refreshToken: userState.item.token?.refreshToken || '',
-        },
-      });
-      setAutoLoginStore(autoLogin);
+    if (!userState) return;
 
-      if (autoLogin && userState.item.token?.refreshToken) {
-        localStorage.setItem('refreshToken', userState.item.token.refreshToken);
-      }
+    if (userState.ok) {
+      const handleLoginSuccess = async () => {
+        setUser({
+          _id: userState.item._id,
+          email: userState.item.email,
+          name: userState.item.name,
+          image: userState.item.image,
+          phone: userState.item.phone,
+          address: userState.item.address,
+          token: {
+            accessToken: userState.item.token?.accessToken || '',
+            refreshToken: userState.item.token?.refreshToken || '',
+          },
+        });
+        setAutoLoginStore(autoLogin);
 
-      alert(`${userState.item.name}님 로그인이 완료되었습니다.`);
-      router.replace(redirect || '/');
+        if (autoLogin && userState.item.token?.refreshToken) {
+          localStorage.setItem(
+            'refreshToken',
+            userState.item.token.refreshToken,
+          );
+        }
+
+        await mergeLocalCartToServer();
+
+        toast.success(`${userState.item.name}님 로그인이 완료되었습니다.`);
+        router.replace(redirect || '/');
+      };
+
+      handleLoginSuccess();
+    } else {
+      toast.error('로그인에 실패했습니다. 이메일과 비밀번호를 확인해주세요.');
     }
   }, [userState, router, redirect, setUser, setAutoLoginStore, autoLogin]);
 
@@ -69,8 +86,8 @@ export default function LoginForm() {
     if (!password) {
       return '비밀번호를 입력해주세요.';
     }
-    if (password.length < 6) {
-      return '비밀번호는 최소 6자 이상이어야 합니다.';
+    if (password.length < 8) {
+      return '비밀번호는 최소 8자 이상이어야 합니다.';
     }
     return '';
   };
@@ -102,8 +119,16 @@ export default function LoginForm() {
   };
 
   const handleNaverLogin = () => {
-    const naverLoginUrl = getNaverLoginUrl();
-    window.location.href = naverLoginUrl;
+    const state = Math.random().toString(36).substring(2, 15);
+    sessionStorage.setItem('naver_state', state);
+
+    const searchParams = new URLSearchParams(window.location.search);
+    const redirectPath = searchParams.get('redirect') || '/';
+    sessionStorage.setItem('redirect_after_login', redirectPath);
+
+    const naverAuthUrl = `https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=${NAVER_CLIENT_ID}&redirect_uri=${encodeURIComponent(NAVER_REDIRECT_URI!)}&state=${state}`;
+
+    window.location.href = naverAuthUrl;
   };
 
   return (
@@ -116,6 +141,7 @@ export default function LoginForm() {
         type="email"
         autoComplete="email"
         name="email"
+        defaultValue="youus@likelion.com"
         labelClassName="sr-only"
         onBlur={handleEmailBlur}
         onChange={handleEmailChange}
@@ -130,6 +156,7 @@ export default function LoginForm() {
         type="password"
         name="password"
         autoComplete="current-password"
+        defaultValue="12341234"
         placeholder="패스워드"
         className="mt-button-y w-75 lg:w-82.5"
         labelClassName="sr-only"
@@ -183,8 +210,22 @@ export default function LoginForm() {
       <Button
         onClick={handleNaverLogin}
         disabled={isPending}
-        className="mt-button-y px-button-x py-button-y w-full cursor-pointer rounded-lg border border-[#03C75A] bg-white text-center font-bold text-[#02B350] transition-colors outline-none hover:bg-[#03C75A] hover:text-[white] focus:border-gray-900"
+        className="mt-button-y px-button-x py-button-y group flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-[#03C75A] bg-white text-center font-bold text-[#02B350] transition-colors outline-none hover:bg-[#03C75A] hover:text-white focus:border-gray-900"
       >
+        <Image
+          src="/icons/Naver.png"
+          width={14}
+          height={14}
+          alt=""
+          className="block group-hover:hidden"
+        />
+        <Image
+          src="/icons/Naver-hover.png"
+          width={14}
+          height={14}
+          alt=""
+          className="hidden group-hover:block"
+        />
         네이버 로그인
       </Button>
     </form>

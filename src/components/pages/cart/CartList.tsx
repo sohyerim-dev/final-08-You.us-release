@@ -1,7 +1,7 @@
 'use client';
 
-import { ModalItem } from '@/app/(with-layout)/cart/page';
 import CartListItem from '@/components/pages/cart/CartListItem';
+import { ModalItem } from '@/components/pages/cart/CartPageClient';
 import { CartItemOnList } from '@/types/cart.types';
 
 interface CartListProps {

@@ -53,7 +53,7 @@ export async function getProducts(
 export async function getFilteredProducts(
   category: string | undefined,
   subCategory: string | undefined,
-  sortOption?: 'price_high' | 'price_low' | 'latest' | 'oldest',
+  sortOption?: 'price_high' | 'price_low' | 'latest' | 'bookmarks',
   page: number = 1,
 ): Promise<ProductResponse> {
   let customFilter = '';
@@ -77,7 +77,7 @@ export async function getFilteredProducts(
       case 'latest':
         sortParam = `&sort={"createdAt":-1}`;
         break;
-      case 'oldest':
+      case 'bookmarks':
         sortParam = `&sort={"createdAt":1}`;
         break;
     }
@@ -90,7 +90,7 @@ export async function getFilteredProducts(
 export async function searchProducts(
   keyword: string,
   category?: string,
-  sortOption?: 'price_high' | 'price_low' | 'latest' | 'oldest',
+  sortOption?: 'price_high' | 'price_low' | 'latest' | 'bookmarks',
   page: number = 1,
 ): Promise<ProductResponse> {
   // customFilter
@@ -112,8 +112,8 @@ export async function searchProducts(
       case 'latest':
         sortParam = `&sort={"createdAt":-1}`;
         break;
-      case 'oldest':
-        sortParam = `&sort={"createdAt":1}`;
+      case 'bookmarks':
+        sortParam = `sort={"bookmarks":-1}`;
         break;
     }
   }

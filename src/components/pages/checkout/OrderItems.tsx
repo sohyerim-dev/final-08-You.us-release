@@ -13,7 +13,7 @@ export default function OrderItems({ items }: OrderItemsProps) {
       <header className="mb-3 flex items-center justify-between">
         <h2
           id="order-products-title"
-          className="text-body-md flex items-baseline gap-1 font-medium"
+          className="text-body-lg flex items-baseline gap-1 font-medium"
         >
           <span>주문상품</span>
           <span className="sr-only">총 수량 {totalQuantity}개</span>
@@ -40,11 +40,11 @@ export default function OrderItems({ items }: OrderItemsProps) {
             </figure>
 
             <div className="min-w-0 flex-1">
-              <h3 className="text-body-sm truncate font-medium text-gray-900">
+              <h3 className="text-body-md truncate font-medium text-gray-900">
                 {item.name}
               </h3>
 
-              <p className="mt-1 flex items-center gap-1 text-xs text-gray-900">
+              <p className="text-body-sm mt-1 flex items-center gap-1 text-gray-900">
                 <span aria-label="가격">{item.price.toLocaleString()}원</span>
                 <span className="text-gray-500" aria-hidden="true">
                   ×
@@ -56,7 +56,7 @@ export default function OrderItems({ items }: OrderItemsProps) {
 
               {/* size와 color가 있으면 표시 */}
               {(item.size || item.color) && (
-                <p className="mt-1 text-xs text-gray-500">
+                <p className="text-body-sm mt-1 text-gray-500">
                   {item.size && <span>사이즈: {item.size}</span>}
                   {item.size && item.color && <span> / </span>}
                   {item.color && <span>색상: {item.color}</span>}

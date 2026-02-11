@@ -1,4 +1,5 @@
 import fetchClient from '@/lib/api/fetchClient';
+import { toast } from 'react-toastify';
 import { CartListResponse } from '@/types/cart.types';
 import { create, StateCreator } from 'zustand';
 import { persist } from 'zustand/middleware';
@@ -123,6 +124,6 @@ export const mergeLocalCartToServer = async () => {
     });
     clearCart();
   } catch (error) {
-    alert(`장바구니 병합 실패: ${error}`);
+    toast.error(`장바구니 병합 실패: ${error}`);
   }
 };

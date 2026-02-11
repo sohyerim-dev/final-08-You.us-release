@@ -4,8 +4,9 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Button from '@/components/common/Button';
 import { CartItemForCreate, CartItemOnList } from '@/types/cart.types';
-import { ModalItem } from '@/app/(with-layout)/cart/page';
+
 import { addToCart, updateCart } from '@/lib/api/cart';
+import { ModalItem } from '@/components/pages/cart/CartPageClient';
 
 interface CartAddOptionProps {
   modalItem: ModalItem; // 모달에 표시할 상품 정보

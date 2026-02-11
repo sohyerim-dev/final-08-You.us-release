@@ -64,45 +64,63 @@ export default function MobileHeader({
 
       <nav aria-label="빠른 메뉴">
         <ul className="flex gap-4">
-          <li>
-            {isHydrated && (
-              <Link href="/mypage">
-                {user ? (
-                  <Image
-                    src="/icons/MyPage.svg"
-                    alt="마이페이지"
-                    width={120}
-                    height={32}
-                    className="h-8 w-auto"
-                  />
-                ) : (
-                  <Image
-                    src="/icons/User.svg"
-                    alt="마이페이지"
-                    width={120}
-                    height={32}
-                    className="h-8 w-auto"
-                  />
-                )}
-              </Link>
-            )}
-          </li>
-          <li>
-            <Link href="/cart" className="relative">
-              <Image
-                src="/icons/Basket.svg"
-                alt="장바구니"
-                width={120}
-                height={32}
-                className="h-8 w-auto"
-              />
-              {cartCount > 0 && (
-                <span className="bg-primary absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full text-[10px] font-bold text-white">
-                  {cartCount > 99 ? '99+' : cartCount}
-                </span>
-              )}
-            </Link>
-          </li>
+          {isHydrated &&
+            (user ? (
+              <>
+                <li>
+                  <Link href="/mypage" className="block">
+                    <Image
+                      src="/icons/MyPage.svg"
+                      alt="마이페이지"
+                      width={120}
+                      height={32}
+                      className="h-10 w-auto"
+                    />
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/cart" className="relative block">
+                    <Image
+                      src="/icons/Basket.svg"
+                      alt="장바구니"
+                      width={120}
+                      height={32}
+                      className="h-10 w-auto"
+                    />
+                    {cartCount > 0 && (
+                      <span className="bg-primary absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full text-xs font-bold text-white">
+                        {cartCount > 99 ? '99+' : cartCount}
+                      </span>
+                    )}
+                  </Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <Link href="/mypage" className="block">
+                    <Image
+                      src="/icons/User.svg"
+                      alt="마이페이지"
+                      width={120}
+                      height={32}
+                      className="h-10 w-auto"
+                    />
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/cart" className="relative block">
+                    <Image
+                      src="/icons/disabled-basket.svg"
+                      alt="장바구니"
+                      width={120}
+                      height={32}
+                      className="h-10 w-auto"
+                    />
+                  </Link>
+                </li>
+              </>
+            ))}
         </ul>
       </nav>
     </div>

@@ -13,6 +13,7 @@ interface AddressInfoProps {
     name: string;
     phone: string;
     address: string;
+    detailAddress: string;
     postalCode: string;
     isDefault: boolean;
   }) => void;
@@ -47,27 +48,22 @@ export default function AddressInfo({
     phone: '',
   });
 
-  // 주소 정보 변경 시 부모 컴포넌트에 전달
   useEffect(() => {
     if (isDefaultAddress && hasUserAddress) {
-      // 기본 배송지 사용
       onAddressChange({
         name: user.name,
         phone: user.phone,
         address: user.address.streetAddress,
+        detailAddress: addressLine2,
         postalCode: user.address.postalCode,
         isDefault: true,
       });
     } else {
-      // 새 배송지 사용
-      const fullAddress = addressData.detailAddress
-        ? `${addressData.address}, ${addressData.detailAddress}`
-        : addressData.address;
-
       onAddressChange({
         name: receiverInfo.name,
         phone: receiverInfo.phone,
-        address: fullAddress,
+        address: addressData.address,
+        detailAddress: addressData.detailAddress,
         postalCode: addressData.postalCode,
         isDefault: false,
       });
@@ -79,6 +75,7 @@ export default function AddressInfo({
     user,
     onAddressChange,
     hasUserAddress,
+    addressLine2,
   ]);
 
   const handleSearchAddress = () => {
@@ -143,9 +140,9 @@ export default function AddressInfo({
   return (
     <fieldset className="mb-7.5 flex flex-col gap-2.5">
       <div className="flex flex-row items-center gap-2.5">
-        <legend className="text-body-sm">배송지 정보</legend>
+        <legend className="text-body-md">배송지 정보</legend>
         {hasUserAddress && (
-          <div className="flex flex-row items-center gap-1 text-[12px]">
+          <div className="text-body-sm flex flex-row items-center gap-1">
             <Input
               id="isDefaultAddress"
               name="isDefaultAddress"
@@ -161,7 +158,7 @@ export default function AddressInfo({
       </div>
       {isDefaultAddress && hasUserAddress ? (
         <div key="default" className="flex flex-col gap-2.5">
-          <div className="flex flex-row items-center gap-2.5 text-[12px]">
+          <div className="text-body-sm flex flex-row items-center gap-2.5">
             <label htmlFor="receiverName">수령인</label>
             <span>|</span>
             <Input
@@ -175,7 +172,7 @@ export default function AddressInfo({
               readOnly
             />
           </div>
-          <div className="flex flex-row items-center gap-2.5 text-[12px]">
+          <div className="text-body-sm flex flex-row items-center gap-2.5">
             <label htmlFor="receiverTel">연락처</label>
             <span>|</span>
             <Input
@@ -191,7 +188,7 @@ export default function AddressInfo({
             />
           </div>
           <div className="flex flex-col gap-2.5">
-            <div className="flex flex-row items-center gap-2.5 text-[12px]">
+            <div className="text-body-sm flex flex-row items-center gap-2.5">
               <span id="addressLabel" className="shrink-0">
                 주소
               </span>
@@ -234,7 +231,7 @@ export default function AddressInfo({
                 type="text"
                 autoComplete="address-line1"
                 defaultValue={addressLine1}
-                className="text-[12px]"
+                className="text-body-sm"
                 readOnly
               />
             </div>
@@ -248,7 +245,7 @@ export default function AddressInfo({
                 type="text"
                 autoComplete="address-line2"
                 defaultValue={addressLine2}
-                className="text-[12px]"
+                className="text-body-sm"
                 readOnly
               />
             </div>
@@ -256,7 +253,7 @@ export default function AddressInfo({
         </div>
       ) : (
         <div key="custom" className="flex flex-col gap-2.5">
-          <div className="flex flex-row items-center gap-2.5 text-[12px]">
+          <div className="text-body-sm flex flex-row items-center gap-2.5">
             <label htmlFor="receiverName">수령인</label>
             <span>|</span>
             <Input
@@ -270,7 +267,7 @@ export default function AddressInfo({
               className="lg:w-82.5"
             />
           </div>
-          <div className="flex flex-row items-center gap-2.5 text-[12px]">
+          <div className="text-body-sm flex flex-row items-center gap-2.5">
             <label htmlFor="receiverTel">연락처</label>
             <span>|</span>
             <Input
@@ -286,7 +283,7 @@ export default function AddressInfo({
             />
           </div>
           <div className="flex flex-col gap-2.5">
-            <div className="flex flex-row items-center gap-2.5 text-[12px]">
+            <div className="text-body-sm flex flex-row items-center gap-2.5">
               <span id="addressLabel" className="shrink-0">
                 주소
               </span>
@@ -329,7 +326,7 @@ export default function AddressInfo({
                 type="text"
                 value={addressData.address}
                 autoComplete="address-line1"
-                className="text-[12px]"
+                className="text-body-sm"
                 readOnly
               />
             </div>
@@ -344,7 +341,7 @@ export default function AddressInfo({
                 value={addressData.detailAddress}
                 onChange={handleDetailAddressChange}
                 autoComplete="address-line2"
-                className="text-[12px]"
+                className="text-body-sm"
               />
             </div>
           </div>

@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import useUserStore from '@/lib/zustand/auth/userStore';
 import useHasHydrated from '@/hooks/auth/useHasHydrated';
 import { useCategoryStore } from '@/lib/zustand/categoryStore';
+import { toast } from 'react-toastify';
 
 interface MobileSidebarProps {
   isOpen: boolean;
@@ -24,7 +25,7 @@ export default function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
     resetUser();
     localStorage.removeItem('refreshToken');
     sessionStorage.removeItem('naver_state');
-    alert('로그아웃 되었습니다.');
+    toast.success('로그아웃 되었습니다.');
   };
 
   const toggleCategory = (code: string) => {
@@ -131,60 +132,74 @@ export default function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
           <ul className="py-2">
             {categories.map((category) => (
               <li key={category.code}>
-                <button
-                  type="button"
-                  onClick={() => toggleCategory(category.code)}
-                  className="text-primary flex w-full items-center justify-between px-4 py-3 text-left font-medium hover:bg-gray-100"
-                  aria-expanded={openCategory === category.code}
-                  aria-controls={`subcategory-${category.code}`}
-                >
-                  <span>{category.value}</span>
-                  <svg
-                    className={`h-5 w-5 transition-transform ${
-                      openCategory === category.code ? 'rotate-180' : ''
-                    }`}
-                    width="27"
-                    height="27"
-                    viewBox="0 0 27 27"
-                    fill="none"
-                    aria-hidden="true"
+                {category.code === 'PC00' ? (
+                  <Link
+                    href="/products"
+                    className="text-primary flex w-full items-center px-4 py-3 text-left font-medium hover:bg-gray-100"
+                    onClick={onClose}
                   >
-                    <circle
-                      cx="13.25"
-                      cy="13.25"
-                      r="12.5"
-                      fill="#FAFAFA"
-                      stroke="#EFEFEF"
-                      strokeWidth="1.5"
-                    />
-                    <path
-                      d="M17.75 12.0025L12.6417 16.75L7.53346 12.0025"
-                      stroke={
-                        openCategory === category.code ? '#c93c4f' : '#929292'
-                      }
-                      strokeWidth="1.5"
-                    />
-                  </svg>
-                </button>
-
-                <ul
-                  id={`subcategory-${category.code}`}
-                  className={`bg-gray-100 py-2 ${
-                    openCategory === category.code ? 'block' : 'hidden'
-                  }`}
-                >
-                  {category.sub?.map((subCategory) => (
-                    <li key={subCategory.code}>
-                      <Link
-                        href={`/products/${category.code}/${subCategory.code}`}
-                        className="hover:text-primary block px-8 py-2 text-sm text-gray-700"
-                        onClick={onClose}
+                    <span>{category.value}</span>
+                  </Link>
+                ) : (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => toggleCategory(category.code)}
+                      className="text-primary flex w-full items-center justify-between px-4 py-3 text-left font-medium hover:bg-gray-100"
+                      aria-expanded={openCategory === category.code}
+                      aria-controls={`subcategory-${category.code}`}
+                    >
+                      <span>{category.value}</span>
+                      <svg
+                        className={`h-5 w-5 transition-transform ${
+                          openCategory === category.code ? 'rotate-180' : ''
+                        }`}
+                        width="27"
+                        height="27"
+                        viewBox="0 0 27 27"
+                        fill="none"
+                        aria-hidden="true"
                       >
-                        {subCategory.value}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+                        <circle
+                          cx="13.25"
+                          cy="13.25"
+                          r="12.5"
+                          fill="#FAFAFA"
+                          stroke="#EFEFEF"
+                          strokeWidth="1.5"
+                        />
+                        <path
+                          d="M17.75 12.0025L12.6417 16.75L7.53346 12.0025"
+                          stroke={
+                            openCategory === category.code
+                              ? '#c93c4f'
+                              : '#929292'
+                          }
+                          strokeWidth="1.5"
+                        />
+                      </svg>
+                    </button>
+
+                    <ul
+                      id={`subcategory-${category.code}`}
+                      className={`bg-gray-100 py-2 ${
+                        openCategory === category.code ? 'block' : 'hidden'
+                      }`}
+                    >
+                      {category.sub?.map((subCategory) => (
+                        <li key={subCategory.code}>
+                          <Link
+                            href={`/products/${category.code}/${subCategory.code}`}
+                            className="hover:text-primary block px-8 py-2 text-sm text-gray-700"
+                            onClick={onClose}
+                          >
+                            {subCategory.value}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
               </li>
             ))}
           </ul>

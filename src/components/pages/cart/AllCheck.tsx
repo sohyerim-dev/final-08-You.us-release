@@ -1,4 +1,6 @@
+import Button from '@/components/common/Button';
 import { deleteCartItem } from '@/lib/api/cart';
+import { fetchServerCartCount } from '@/lib/zustand/cartStore';
 import { CartItemOnList } from '@/types/cart.types';
 
 interface AllcheckProps {
@@ -25,6 +27,7 @@ export default function Allcheck({ items, setItems }: AllcheckProps) {
 
       // 3. 체크되지 않은 상품만 남김
       setItems(items.filter((item) => !item.checked));
+      fetchServerCartCount();
     } catch (error) {
       console.error('선택 삭제 실패:', error);
     }
@@ -50,13 +53,13 @@ export default function Allcheck({ items, setItems }: AllcheckProps) {
           </span>
         </label>
 
-        <button
-          className="text-body-sm cursor-pointer rounded-sm border border-gray-300 bg-gray-50 px-3 py-2 text-gray-900 lg:mr-[465px]"
+        <Button
+          className="text-primary hover:bg-primary text-body-sm bg-white px-3 py-2 hover:text-white lg:mr-[465px]"
           aria-label="선택한 상품 삭제"
           onClick={handleDeleteSelected}
         >
           선택삭제
-        </button>
+        </Button>
       </nav>
     </section>
   );

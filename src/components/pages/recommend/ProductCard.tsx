@@ -10,6 +10,8 @@ interface ProductCardProps {
   price: number;
   rating?: number;
   reviewCount?: number;
+  mainCategory: string;
+  subCategory: string;
 }
 
 export default function ProductCard({
@@ -19,10 +21,15 @@ export default function ProductCard({
   price,
   rating = 0,
   reviewCount = 0,
+  mainCategory,
+  subCategory,
 }: ProductCardProps) {
   return (
     <li className="product-card p-button-y flex h-auto w-full flex-col rounded-[3%] border-2 border-[#E8E8E8] bg-white">
-      <Link href={`/products/${id}`} className="product-link">
+      <Link
+        href={`/products/${mainCategory}/${subCategory}/${id}`}
+        className="product-link"
+      >
         <figure className="product-image relative aspect-square w-full overflow-hidden bg-gray-200">
           <Image src={image} alt={name} fill className="object-contain" />
         </figure>

@@ -2,7 +2,7 @@
 
 import Button from '@/components/common/Button';
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+
 import SelectedOptionItem from '@/components/pages/product-detail/OptionItems';
 import BookmarkButton from '@/components/pages/product-detail/BookmarkButton';
 import { ProductItem } from '@/types/product.types';
@@ -47,7 +47,6 @@ export default function ProductDetailInfo({
   const { name, price, extra } = product;
   //로그인 여부관리
   const user = useUserStore((state) => state.user);
-  const router = useRouter();
 
   const optionList = buildOptionCombinations(extra.options);
   const hasOptions = optionList.length > 0;
@@ -145,37 +144,39 @@ export default function ProductDetailInfo({
       return;
     }
 
-    setIsCartLoading(true);
-
-    if (user) {
-      try {
-        for (const opt of selectedOptions) {
-          await fetchClient<CartResponse>('/carts', {
-            method: 'POST',
-            body: JSON.stringify({
-              product_id: product._id,
-              quantity: opt.quantity,
-              ...(opt.color && { color: opt.color }),
-              // ...(opt.size && { size: opt.size }),
-            }),
-          });
-        }
-        toast.success('장바구니에 담았습니다.');
-        fetchServerCartCount();
-        resetOptions();
-      } catch (error) {
-        if (error instanceof Error) {
-          toast.error(error.message);
-        }
-      }
-    } else {
-      if (confirm('로그인이 필요한 기능입니다. 이동하시겠습니까?')) {
-        router.push('/login');
-      }
+    if (!user) {
+      toast.error('로그인이 필요한 기능입니다.');
       return;
     }
 
-    setIsCartLoading(false);
+    setIsCartLoading(true);
+
+    try {
+      for (const opt of selectedOptions) {
+        const res = await fetchClient<CartResponse>('/carts', {
+          method: 'POST',
+          body: JSON.stringify({
+            product_id: product._id,
+            quantity: opt.quantity,
+            ...(opt.color && { color: opt.color }),
+            // ...(opt.size && { size: opt.size }),
+          }),
+        });
+
+        if (!res.ok) {
+          throw new Error('장바구니 담기에 실패했습니다.');
+        }
+      }
+      toast.success('장바구니에 담았습니다.');
+      fetchServerCartCount();
+      resetOptions();
+    } catch (error) {
+      if (error instanceof Error) {
+        toast.error(error.message);
+      }
+    } finally {
+      setIsCartLoading(false);
+    }
   };
 
   return (

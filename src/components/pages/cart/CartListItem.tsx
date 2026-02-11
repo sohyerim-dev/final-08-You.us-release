@@ -1,9 +1,8 @@
-import { ModalItem } from '@/app/(with-layout)/cart/page';
+import { ModalItem } from '@/components/pages/cart/CartPageClient';
 import { deleteCartItem, updateCartItem } from '@/lib/api/cart';
 import { fetchServerCartCount } from '@/lib/zustand/cartStore';
 import { CartItemOnList } from '@/types/cart.types';
 import Image from 'next/image';
-import Link from 'next/link';
 
 interface CartListItem {
   item: CartItemOnList; // 표시할 상품 정보
@@ -60,22 +59,8 @@ export default function CartListItem({
     <>
       <article
         key={item._id}
-        className="mb-4 rounded border border-gray-300 bg-white px-[24px] pt-[24px] lg:px-[36px] lg:pt-[36px]"
+        className="relative mb-4 rounded border border-gray-300 bg-white px-[24px] pt-[24px] lg:px-[36px] lg:pt-[36px]"
       >
-        {/* 스토어 정보 */}
-        <nav aria-label="Breadcrumb" className="mb-4">
-          <ol className="text-body-md flex items-center gap-2">
-            <li className="flex items-center gap-2">
-              <Link href="/" className="cursor-pointer">
-                {item.storeName}
-              </Link>
-              <span aria-hidden="true" className="text-gray-400">
-                &gt;
-              </span>
-            </li>
-          </ol>
-        </nav>
-
         {/* 상품 상세 */}
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <input
@@ -175,7 +160,7 @@ export default function CartListItem({
                   aria-label="상품 삭제"
                   title="상품 삭제"
                   onClick={() => handleDelete(item._id)}
-                  className="text-body-md cursor-pointer text-gray-900"
+                  className="absolute top-4 right-4 cursor-pointer text-2xl text-gray-500 hover:text-gray-900 lg:top-6 lg:right-6"
                 >
                   ×
                 </button>

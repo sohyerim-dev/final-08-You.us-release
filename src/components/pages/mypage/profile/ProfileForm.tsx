@@ -10,6 +10,7 @@ import { uploadFile } from '@/lib/api/files';
 import useUserStore from '@/lib/zustand/auth/userStore';
 import useDaumPostcode from '@/hooks/auth/useDaumPostcode';
 import { DaumPostcodeData } from '@/types/daum.types';
+import { toast } from 'react-toastify';
 
 const API_SERVER = process.env.NEXT_PUBLIC_API_URL;
 
@@ -40,8 +41,8 @@ export default function ProfileForm({ user }: ProfileFormProps) {
 
   // 편집 중인 값
   const [editValues, setEditValues] = useState({
-    name: user.name,
-    phone: formatPhone(user.phone),
+    name: user.name || '',
+    phone: formatPhone(user.phone || ''),
     streetAddress: user.address?.streetAddress || '',
     postalCode: user.address?.postalCode || '',
   });
@@ -99,6 +100,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
     setError(null);
 
     const result = await updateProfile(user._id, { name: editValues.name });
+    toast.success(`이름이 수정되었습니다.`);
 
     if (result.ok === 1) {
       setUser({ ...user, name: editValues.name });
@@ -122,6 +124,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
     setError(null);
 
     const result = await updateProfile(user._id, { phone: phoneNumbers });
+    toast.success(`연락처가 수정되었습니다.`);
 
     if (result.ok === 1) {
       setUser({ ...user, phone: phoneNumbers });
@@ -182,6 +185,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
         postalCode: editValues.postalCode,
       },
     });
+    toast.success(`주소가 수정되었습니다.`);
 
     if (result.ok === 1) {
       setUser({
@@ -236,6 +240,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
       // 프로필에 이미지 경로 저장
       const result = await updateProfile(user._id, { image: imagePath });
       console.log('응답: ', result);
+      toast.success(`프로필 이미지가 수정되었습니다.`);
 
       if (result.ok === 1 && 'item' in result) {
         setUser({ ...user, image: result.item.image });
@@ -265,7 +270,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
   return (
     <div className="lg:pl-6">
       {/* 프로필 이미지 */}
-      <div className="border-primary py-button-y px-button-y flex flex-row items-center gap-3 border-y bg-white lg:w-104.5 lg:gap-[40px] lg:px-11.25 lg:py-[40px]">
+      <div className="border-primary py-button-y px-button-y flex flex-row items-center gap-3 border-y bg-white lg:w-125 lg:gap-[40px] lg:px-11.25 lg:py-[40px]">
         <div className="h-12.5 w-12.5 shrink-0 overflow-hidden rounded-lg border-2 border-gray-500 lg:h-34.25 lg:w-34.25 lg:rounded-[100px] lg:border-4">
           <Image
             width={137}
@@ -319,7 +324,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
       {error && <p className="mt-2 text-[14px] text-red-500">{error}</p>}
 
       {/* 회원 정보 목록 */}
-      <ul className="border-primary mt-7.5 mb-7.5 border-y bg-white pr-4 lg:mb-63">
+      <ul className="border-primary mt-7.5 mb-7.5 border-y bg-white pr-4">
         {/* 이름 */}
         <li className="py-button-y flex flex-row items-center border-b border-gray-300 lg:py-[20px]">
           <dt className="lg:text-body-md w-14 text-center text-[12px] lg:w-25">
@@ -336,7 +341,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
                 }
                 className="text-body-sm w-35 lg:w-60"
               />
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-1 lg:flex-row">
                 <Button
                   type="button"
                   onClick={saveName}
@@ -358,7 +363,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
           ) : (
             <>
               <dd className="lg:text-body-md pl-4 text-[12px] lg:pl-7.5">
-                {user.name}
+                {user.name || '이름을 추가해주세요'}
               </dd>
               <Button
                 type="button"
@@ -386,7 +391,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
                 maxLength={13}
                 className="text-body-sm w-35 lg:w-60"
               />
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-1 lg:flex-row">
                 <Button
                   type="button"
                   onClick={savePhone}
@@ -408,7 +413,12 @@ export default function ProfileForm({ user }: ProfileFormProps) {
           ) : (
             <>
               <dd className="lg:text-body-md pl-4 text-[12px] lg:pl-7.5">
-                {user.phone.replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, `$1-$2-$3`)}
+                {user.phone
+                  ? user.phone.replace(
+                      /^(\d{2,3})(\d{3,4})(\d{4})$/,
+                      `$1-$2-$3`,
+                    )
+                  : '연락처를 추가해주세요'}
               </dd>
               <Button
                 type="button"
@@ -474,7 +484,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
           ) : (
             <>
               <dd className="lg:text-body-md w-40 pl-4 text-[12px] lg:w-110 lg:pl-7.5">
-                {user.address?.streetAddress || '-'}
+                {user.address?.streetAddress || '주소를 추가해주세요'}
               </dd>
               <Button
                 type="button"

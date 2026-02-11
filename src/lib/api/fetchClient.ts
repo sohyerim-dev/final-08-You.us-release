@@ -1,5 +1,6 @@
 import useUserStore from '@/lib/zustand/auth/userStore';
 import { ServerValidationError } from '@/types/api.types';
+import { toast } from 'react-toastify';
 
 const API_SERVER = process.env.NEXT_PUBLIC_API_URL;
 const CLIENT_ID = process.env.NEXT_PUBLIC_CLIENT_ID || '';
@@ -176,7 +177,10 @@ export async function fetchClient<T>(
       resetUser(); // Zustand store 초기화
       localStorage.removeItem('refreshToken'); // localStorage 삭제
       sessionStorage.removeItem('refreshToken'); // sessionStorage 삭제
-      navigateLogin(); // 로그인 페이지로
+      // ApiError면 이미 navigateLogin 호출됐으니 스킵
+      if (!(refreshError instanceof ApiError)) {
+        navigateLogin();
+      }
       throw refreshError; // 에러 다시 던지기
     }
   }
@@ -195,27 +199,27 @@ export async function fetchClient<T>(
   return data as T;
 }
 
+let isNavigating = false;
+
 // 로그인 페이지로 이동하는 함수
 function navigateLogin() {
   // window는 브라우저에만 존재
   // 서버 사이드에서 실행되면 window가 없으니까
   // 서버 환경에선 아무것도 안 하고 리턴
   if (typeof window === 'undefined') return;
+  // 이미 토스트가 떠 있으면 중복 방지
+  if (isNavigating) return;
+  isNavigating = true;
 
-  // 사용자에게 로그인 페이지로 갈지 물어보기
-  // 나중에 모달로 수정하기
-  const gotoLogin = confirm(
-    '로그인 후 이용 가능합니다.\n로그인 페이지로 이동하시겠습니까?',
-  );
-
-  // 여기부터 브라우저에서 실행
-  if (gotoLogin) {
-    // 현재 페이지 경로 저장 (로그인 후 다시 돌아오려고)
-    const currentPath = window.location.pathname;
-    // 로그인 페이지로 이동 + redirect 파라미터에 현재 경로 저장
-    // 예: /login?redirect=%2Fproducts
-    window.location.href = `/login?redirect=${encodeURIComponent(currentPath)}`;
-  }
+  toast.warn('로그인 후 이용 가능합니다.', {
+    toastId: 'navigate-login', // 동일 ID면 중복 토스트 방지
+    onClose: () => {
+      const currentPath = window.location.pathname;
+      // 로그인 페이지로 이동 + redirect 파라미터에 현재 경로 저장
+      window.location.href = `/login?redirect=${encodeURIComponent(currentPath)}`;
+    },
+    autoClose: 4000,
+  });
 }
 
 // 다른 파일에서 import 할 수 있게 export

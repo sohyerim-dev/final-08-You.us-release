@@ -12,6 +12,8 @@ import type {
   RecommendResult as RecommendResultType,
 } from '@/types/aitest.types';
 import { Product } from '@/types/recommend.types';
+import Loading from '@/components/common/Loading';
+import { toast } from 'react-toastify';
 
 export default function RecommendResultClient() {
   const router = useRouter();
@@ -85,11 +87,11 @@ export default function RecommendResultClient() {
         if (productResult.ok) {
           setProducts(productResult.items);
         } else {
-          alert(productResult.message);
+          toast.error(productResult.message);
         }
       } catch (error) {
         console.error('상품 조회 오류:', error);
-        alert('상품을 불러오는데 실패했습니다.');
+        toast.error('상품을 불러오는데 실패했습니다.');
       } finally {
         setIsLoading(false);
       }
@@ -104,11 +106,7 @@ export default function RecommendResultClient() {
   };
 
   if (!data) {
-    return (
-      <div className="flex min-h-screen items-center justify-center">
-        <p className="text-lg">로딩중...</p>
-      </div>
-    );
+    return <Loading />;
   }
 
   if (!isAllFilled) return null;
@@ -135,20 +133,41 @@ export default function RecommendResultClient() {
       <Header />
       <section className="mx-auto mt-15 mb-30 flex flex-col items-center gap-4 px-2.5 lg:max-w-375 lg:min-w-256.25">
         <h2 className="text-title-md">AI가 추천한 선물은 바로!!</h2>
-        <h3 className="text-title-sm text-gary-900 w-fit border-gray-900 text-center">
-          ({stripGiftWord(a(2))}) ({stripGiftWord(a(1))}) ({stripGiftWord(a(0))}
-          )에게 선물하기 좋은 <br className="block lg:hidden" />(
-          {stripGiftWord(a(5))}) ({stripGiftWord(a(4))}) ({stripGiftWord(a(3))})
-          선물
+        <h3
+          className="text-title-sm text-center text-gray-900"
+          aria-label={`${a(2)} ${a(1)} ${a(0)}에게 선물하기 좋은 ${a(5)} ${a(4)} ${a(3)} 선물`}
+        >
+          <span
+            aria-hidden="true"
+            className="flex flex-wrap items-center justify-center gap-2"
+          >
+            {[a(2), a(1), a(0)].map((tag, i) => (
+              <span
+                key={i}
+                className="bg-primary/10 text-primary rounded-full px-3 py-1 text-sm font-semibold"
+              >
+                {stripGiftWord(tag)}
+              </span>
+            ))}
+            <span>에게 선물하기 좋은</span>
+            <span className="w-full lg:hidden" />
+            {[a(5), a(4), a(3)].map((tag, i) => (
+              <span
+                key={i}
+                className="bg-primary/10 text-primary rounded-full px-3 py-1 text-sm font-semibold"
+              >
+                {stripGiftWord(tag)}
+              </span>
+            ))}
+            <span>선물</span>
+          </span>
         </h3>
         <Button type="button" className="mb-15 leading-4" onClick={handleReset}>
           다시 하기
         </Button>
 
         {isLoading ? (
-          <div className="py-20 text-center">
-            <p className="text-lg">상품을 불러오는 중...</p>
-          </div>
+          <Loading />
         ) : products.length === 0 ? (
           <div className="py-20 text-center">
             <p className="text-lg">조건에 맞는 상품이 없습니다.</p>

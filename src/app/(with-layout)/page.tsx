@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: 'You,Us',
     images: [
       {
-        url: 'images/og-image.png',
+        url: 'https://final-08-you-us-release.vercel.app/images/og-image.png',
         width: 1200,
         height: 630,
         alt: 'You,Us 선물 추천 플랫폼',
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'You,Us - 선물 추천 플랫폼',
     description: '소중한 사람에게 딱 맞는 선물을 AI가 추천해드립니다.',
-    images: ['/og-image.png'],
+    images: ['https://final-08-you-us-release.vercel.app/images/og-image.png'],
   },
 };
 
 const CATEGORIES = [
   { code: 'PC01', title: '식품' },
   { code: 'PC03', title: '뷰티' },
-  { code: 'PC04', title: '쥬얼리' },
+  { code: 'PC04', title: '주얼리' },
 ] as const;
 
 export default async function MainPage() {

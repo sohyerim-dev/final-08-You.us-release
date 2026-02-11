@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useRef, useState } from 'react';
+import { toast } from 'react-toastify';
 
 type ReviewFormProps = {
   mode: 'create' | 'edit';
@@ -91,8 +92,8 @@ export default function ReviewForm({
           extra: { title: productInfo.name, images: allImages },
         };
         await createReview(body);
-        alert('후기가 등록되었습니다.');
-        router.push('/mypage');
+        toast.success('후기가 등록되었습니다.');
+        router.push('/mypage/reviews');
       }
 
       // edit 모드일 때
@@ -103,11 +104,11 @@ export default function ReviewForm({
           extra: { title: productInfo.name, images: allImages },
         };
         await updateReview(reviewId, body);
-        alert('후기가 수정되었습니다.');
-        router.push('/mypage');
+        toast.success('후기가 수정되었습니다.');
+        router.push('/mypage/reviews');
       }
     } catch (error) {
-      alert(
+      toast.error(
         mode === 'edit'
           ? '후기 수정에 실패했습니다.'
           : '후기 등록에 실패했습니다.',
@@ -280,7 +281,11 @@ export default function ReviewForm({
                   </Button>
                 ) : (
                   <Link href="/mypage/reviews" className="w-75 lg:w-40.5">
-                    <Button variant="update" className="text-body-sm w-full">
+                    <Button
+                      tabIndex={-1}
+                      variant="update"
+                      className="text-body-sm w-full"
+                    >
                       취소
                     </Button>
                   </Link>

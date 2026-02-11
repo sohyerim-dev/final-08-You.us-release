@@ -30,6 +30,11 @@ export default function BookmarkButton({ productId }: { productId: number }) {
   }, [productId]);
 
   const handleBookmarkToggle = async () => {
+    if (!useUserStore.getState().user) {
+      toast.error('로그인이 필요한 기능입니다.');
+      return;
+    }
+
     setIsLoading(true);
     try {
       if (isBookmarked && bookmarkId) {

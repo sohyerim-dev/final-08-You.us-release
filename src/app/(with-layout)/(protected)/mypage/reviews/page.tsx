@@ -58,8 +58,9 @@ export default function ReviewsPage() {
             </ul>
           )}
         </MyPageSection>
+        {/* 마이페이지로 돌아가는 버튼 */}
         <Link href="/mypage" className="w-75 lg:w-full">
-          <Button variant="update" className="text-body-sm w-full">
+          <Button variant="update" className="text-body-sm mb-5 w-full">
             마이페이지로 돌아가기
           </Button>
         </Link>

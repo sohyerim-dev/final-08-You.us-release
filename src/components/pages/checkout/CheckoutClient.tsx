@@ -13,6 +13,8 @@ import Link from 'next/link';
 import Script from 'next/script';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useMemo, useState } from 'react';
+import Loading from '@/components/common/Loading';
+import { toast } from 'react-toastify';
 
 export default function CheckoutClient() {
   const { user } = useUserStore();
@@ -33,10 +35,21 @@ export default function CheckoutClient() {
     name: '',
     phone: '',
     address: '',
+    detailAddress: '',
     postalCode: '',
     isDefault: true,
   });
   const [isDefaultAddress, setIsDefaultAddress] = useState(true);
+
+  const isAddressValid =
+    isDefaultAddress ||
+    !!(
+      addressInfo.name &&
+      addressInfo.phone &&
+      addressInfo.address &&
+      addressInfo.detailAddress &&
+      addressInfo.postalCode
+    );
 
   useEffect(() => {
     if (!user) {
@@ -58,6 +71,7 @@ export default function CheckoutClient() {
           name: user.name,
           phone: user.phone || '',
           address: user.address.streetAddress,
+          detailAddress: user.address.streetAddress.split(',')[1] || '',
           postalCode: user.address.postalCode,
           isDefault: true,
         });
@@ -66,6 +80,7 @@ export default function CheckoutClient() {
           name: '',
           phone: '',
           address: '',
+          detailAddress: '',
           postalCode: '',
           isDefault: false,
         });
@@ -111,6 +126,11 @@ export default function CheckoutClient() {
   const handleOrder = async () => {
     if (!user) return;
 
+    if (!isAddressValid) {
+      toast.warn('배송지 정보를 모두 입력해주세요.');
+      return;
+    }
+
     setIsLoading(true);
     try {
       const orderData = {
@@ -122,7 +142,7 @@ export default function CheckoutClient() {
         })),
         address: {
           name: addressInfo.name,
-          value: `${addressInfo.postalCode} ${addressInfo.address}`,
+          value: `${addressInfo.postalCode} ${addressInfo.address}, ${addressInfo.detailAddress}`,
         },
         state: 'OS010',
       };
@@ -141,11 +161,11 @@ export default function CheckoutClient() {
 
         router.push(`/checkout/result?orderId=${result.item._id}`);
       } else {
-        alert('주문에 실패했습니다.');
+        toast.error('주문에 실패했습니다.');
       }
     } catch (error) {
       console.error('주문 실패:', error);
-      alert('주문 중 오류가 발생했습니다.');
+      toast.error('주문 중 오류가 발생했습니다.');
     } finally {
       setIsLoading(false);
     }
@@ -153,17 +173,17 @@ export default function CheckoutClient() {
 
   const handleCardPayment = async () => {
     if (!user || !window.IMP) {
-      alert('결제 모듈을 불러오는 중입니다. 잠시 후 다시 시도해주세요.');
+      toast.warn('결제 모듈을 불러오는 중입니다. 잠시 후 다시 시도해주세요.');
       return;
     }
 
-    if (!addressInfo.name || !addressInfo.address || !addressInfo.postalCode) {
-      alert('배송지 정보를 입력해주세요.');
+    if (!isAddressValid) {
+      toast.warn('배송지 정보를 모두 입력해주세요.');
       return;
     }
 
     if (orderItems.length === 0) {
-      alert('주문할 상품이 없습니다.');
+      toast.warn('주문할 상품이 없습니다.');
       return;
     }
 
@@ -188,7 +208,7 @@ export default function CheckoutClient() {
           buyer_email: user.email,
           buyer_name: addressInfo.name,
           buyer_tel: addressInfo.phone || user.phone || '',
-          buyer_addr: addressInfo.address,
+          buyer_addr: `${addressInfo.address}, ${addressInfo.detailAddress}`,
           buyer_postcode: addressInfo.postalCode,
         },
         async (response) => {
@@ -205,7 +225,7 @@ export default function CheckoutClient() {
                 })),
                 address: {
                   name: addressInfo.name,
-                  value: `${addressInfo.postalCode} ${addressInfo.address}`,
+                  value: `${addressInfo.postalCode} ${addressInfo.address}, ${addressInfo.detailAddress}`,
                 },
                 state: 'OS020',
               };
@@ -222,24 +242,24 @@ export default function CheckoutClient() {
 
                 router.push(`/checkout/result?orderId=${result.item._id}`);
               } else {
-                alert('주문 생성에 실패했습니다.');
+                toast.error('주문 생성에 실패했습니다.');
                 setIsLoading(false);
               }
             } catch (error) {
               console.error('주문 생성 실패:', error);
-              alert('주문 처리 중 오류가 발생했습니다.');
+              toast.error('주문 처리 중 오류가 발생했습니다.');
               setIsLoading(false);
             }
           } else {
             console.error('결제 실패:', response);
-            alert(`결제에 실패했습니다: ${response.error_msg}`);
+            toast.error(`결제에 실패했습니다: ${response.error_msg}`);
             setIsLoading(false);
           }
         },
       );
     } catch (error) {
       console.error('카드결제 오류:', error);
-      alert('결제 중 오류가 발생했습니다.');
+      toast.error('결제 중 오류가 발생했습니다.');
       setIsLoading(false);
     }
   };
@@ -249,7 +269,7 @@ export default function CheckoutClient() {
   }
 
   if (orderItems.length === 0) {
-    return <div>주문 상품을 불러오는 중...</div>;
+    return <Loading />;
   }
 
   return (
@@ -265,7 +285,7 @@ export default function CheckoutClient() {
         }}
       />
 
-      <div className="mx-auto max-w-5xl bg-gray-50 px-6.25 pt-6.25 lg:flex lg:flex-row lg:gap-37.5">
+      <div className="mx-auto max-w-375 min-w-5xl bg-gray-50 px-6.25 pt-6.25 lg:flex lg:flex-row lg:justify-center lg:gap-15">
         <h1 className="sr-only">주문・결제 페이지</h1>
         <div className="mb-15 lg:w-200">
           <OrderItems items={orderItems} />
@@ -289,24 +309,24 @@ export default function CheckoutClient() {
         >
           <h2
             id="final-payment-title"
-            className="text-primary border-primary text-body-sm inline-block border-b-2 pb-1 font-bold"
+            className="text-primary border-primary text-body-md inline-block border-b-2 pb-1 font-bold"
           >
             최종 결제 금액
           </h2>
 
           <dl className="mt-6">
             <div className="flex items-center justify-between border-b border-gray-200 py-1">
-              <dt className="text-[12px] font-medium text-gray-900">
+              <dt className="text-body-sm font-medium text-gray-900">
                 주문금액
               </dt>
-              <dd className="text-[12px] text-gray-900">
+              <dd className="text-body-sm text-gray-900">
                 <data value={sumPrice}>{sumPrice.toLocaleString()}원</data>
               </dd>
             </div>
 
             <div className="flex items-center justify-between py-1">
-              <dt className="text-[12px] font-medium text-gray-900">배송비</dt>
-              <dd className="text-[12px] text-gray-900">
+              <dt className="text-body-sm font-medium text-gray-900">배송비</dt>
+              <dd className="text-body-sm text-gray-900">
                 <data value={shippingFees}>
                   {shippingFees.toLocaleString()}원
                 </data>
@@ -318,10 +338,10 @@ export default function CheckoutClient() {
             aria-live="polite"
             className="mt-5 flex items-baseline justify-end gap-6"
           >
-            <strong className="text-body-sm font-bold text-gray-900">
+            <strong className="text-body-md font-bold text-gray-900">
               총 금액
             </strong>
-            <strong className="text-primary text-body-sm font-extrabold">
+            <strong className="text-primary text-body-md font-extrabold">
               <data value={sumPrice + shippingFees}>
                 {(sumPrice + shippingFees).toLocaleString()}원
               </data>
@@ -344,21 +364,21 @@ export default function CheckoutClient() {
             />
             <label
               htmlFor="agreePayment"
-              className="text-[12px] font-medium text-gray-900"
+              className="text-body-sm font-medium text-gray-900"
             >
               주문 내용 확인 및 결제 동의{' '}
               <span className="text-gray-900">(필수)</span>
             </label>
           </div>
 
-          <div className="mt-3 space-y-2 pl-6 text-[12px] text-gray-400">
+          <div className="text-body-sm mt-3 space-y-2 pl-6 text-gray-400">
             <Link href="#" className="underline underline-offset-4">
               개인정보 수집 및 이용 동의
             </Link>
           </div>
           <PaymentButton
             paymentMethod={paymentMethod}
-            agreePayment={agreePayment}
+            agreePayment={agreePayment && isAddressValid}
             onOrder={handleOrder}
             onCardPayment={handleCardPayment}
             isLoading={isLoading}

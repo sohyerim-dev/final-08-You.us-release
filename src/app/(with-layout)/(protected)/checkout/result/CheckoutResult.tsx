@@ -7,6 +7,8 @@ import Image from 'next/image';
 import { getOrderDetail } from '@/lib/api/checkout';
 import { OrderDetailResponse } from '@/types/checkout.types';
 import { fetchServerCartCount } from '@/lib/zustand/cartStore';
+import Loading from '@/components/common/Loading';
+import { toast } from 'react-toastify';
 
 export default function CheckoutResult() {
   const searchParams = useSearchParams();
@@ -29,7 +31,7 @@ export default function CheckoutResult() {
         }
       } catch (error) {
         console.error('주문 조회 실패:', error);
-        alert('주문 정보를 불러오는데 실패했습니다.');
+        toast.error('주문 정보를 불러오는데 실패했습니다.');
       } finally {
         setIsLoading(false);
       }
@@ -39,11 +41,7 @@ export default function CheckoutResult() {
   }, [orderId]);
 
   if (isLoading) {
-    return (
-      <div className="flex min-h-screen items-center justify-center">
-        주문 정보를 불러오는 중...
-      </div>
-    );
+    return <Loading />;
   }
 
   if (!orderData) {

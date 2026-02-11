@@ -50,6 +50,7 @@ export default function CartEmpty() {
             {/* 버튼 */}
             <Link href="/" className="w-full">
               <Button
+                tabIndex={-1}
                 variant="primary"
                 className="px-16 py-2 tracking-tighter lg:w-full lg:py-4"
               >

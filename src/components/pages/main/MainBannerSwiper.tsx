@@ -56,7 +56,7 @@ export default function MainBannerSwiper() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex h-full w-full items-center justify-center bg-gray-900 bg-linear-to-r">
-            <Link href="/">
+            <Link href="/products/PC01">
               <Image
                 width={1024}
                 height={500}

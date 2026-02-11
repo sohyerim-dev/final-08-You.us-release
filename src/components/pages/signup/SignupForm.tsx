@@ -171,7 +171,7 @@ export default function SignupForm() {
           <Input
             name="password"
             id="password"
-            placeholder="패스워드 (최소 6자)"
+            placeholder="패스워드 (최소 8자)"
             className="w-90 lg:w-112.5"
             type="password"
             autoComplete="new-password"

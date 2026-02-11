@@ -8,6 +8,7 @@ import Image from 'next/image';
 import useUserStore from '@/lib/zustand/auth/userStore';
 import useHasHydrated from '@/hooks/auth/useHasHydrated';
 import { useCategoryStore } from '@/lib/zustand/categoryStore';
+import { toast } from 'react-toastify';
 
 export default function DesktopHeader() {
   const { user, resetUser } = useUserStore();
@@ -20,7 +21,7 @@ export default function DesktopHeader() {
     resetUser();
     localStorage.removeItem('refreshToken');
     sessionStorage.removeItem('naver_state');
-    alert('로그아웃 되었습니다.');
+    toast.success('로그아웃 되었습니다.');
   };
 
   const keywordHandler = (e: React.FormEvent<HTMLFormElement>) => {
@@ -50,6 +51,7 @@ export default function DesktopHeader() {
           <Link href="/recommend" className="shrink-0">
             <Button
               variant="primary"
+              tabIndex={-1}
               className="flex h-10 items-center gap-2 px-4 text-sm leading-none whitespace-nowrap"
             >
               <Image src="/icons/AiButton.svg" width={9} height={15} alt="" />

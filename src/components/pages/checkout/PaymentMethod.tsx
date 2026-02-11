@@ -38,7 +38,11 @@ export default function PaymentMethod({
             <Image
               width={15}
               height={15}
-              src="/icons/deposit-icon.svg"
+              src={
+                payment === 'deposit'
+                  ? '/icons/deposit-icon.svg'
+                  : '/icons/disabled-deposit-icon.svg'
+              }
               alt=""
               aria-hidden="true"
             />
