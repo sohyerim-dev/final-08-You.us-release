@@ -69,9 +69,7 @@ export default function MyPage() {
                 {order.item.slice(0, 2).map((orderItem: OrderList) => (
                   <li key={orderItem._id} className="mb-2">
                     <OrderStatusHeader
-                      status={
-                        orderItem.state === 'OS040' ? 'DELIVERED' : 'SHIPPING'
-                      }
+                      status={orderItem.state}
                       date={orderItem.createdAt}
                     />
                     <div className="border-primary ml-3 flex flex-col border-b bg-white lg:flex-row lg:items-center lg:justify-between">

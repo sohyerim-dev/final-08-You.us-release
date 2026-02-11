@@ -88,9 +88,11 @@ export default function CartListItem({
             <div className="flex flex-col">
               <div className="mb-2">
                 <h3 className="text-body-md mb-1">상품명:{item.name}</h3>
-                <p className="text-body-md text-gray-900">옵션:{item.option}</p>
+                <p className="text-body-md text-gray-900">
+                  옵션: {item.option || '없음'}
+                </p>
               </div>
-              {item.options.color && (
+              {(item.options?.color || item.options?.size) && (
                 <button
                   type="button"
                   className="text-body-sm cursor-pointer rounded-sm border border-gray-300 px-[50px] py-2 text-gray-900 max-[639px]:w-full max-[639px]:px-4 sm:self-start"
@@ -104,7 +106,7 @@ export default function CartListItem({
             {/* 수량 및 가격 */}
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-2">
-                {item.options && (
+                {(item.options?.color || item.options?.size) && (
                   <button
                     className="text-body-sm mt-4 cursor-pointer rounded-sm border border-gray-300 px-3 py-1 text-gray-900"
                     aria-label="옵션 변경"

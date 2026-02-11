@@ -11,6 +11,7 @@ import { fetchServerCartCount } from '@/lib/zustand/cartStore';
 import { toast } from 'react-toastify';
 import fetchClient from '@/lib/api/fetchClient';
 import { CartResponse } from '@/types/cart.types';
+import { useCategoryStore } from '@/lib/zustand/categoryStore';
 
 interface SelectedOption {
   id: string;
@@ -47,9 +48,18 @@ export default function ProductDetailInfo({
   const { name, price, extra } = product;
   //로그인 여부관리
   const user = useUserStore((state) => state.user);
+  const category = useCategoryStore((state) => state.categories);
 
   const optionList = buildOptionCombinations(extra.options);
   const hasOptions = optionList.length > 0;
+
+  //카테고리 value찾기
+  const [parentCode, subCode] = extra.category;
+
+  const parentCategory = category.find((cat) => cat.code === parentCode)!;
+  const subCategory = parentCategory.sub!.find((sub) => sub.code === subCode)!;
+
+  const categoryString = `${parentCategory.value} > ${subCategory.value}`;
 
   // 옵션 없으면 기본 상품 1개 선택, 옵션 있으면 빈 배열
   const [selectedOptions, setSelectedOptions] = useState<SelectedOption[]>(
@@ -82,14 +92,6 @@ export default function ProductDetailInfo({
       if (hasColor) {
         color = value;
       }
-
-      // if (hasColor && hasSize) {
-      //   [color, size] = value.split(' - ');
-      // } else if (hasColor) {
-      //   color = value;
-      // } else if (hasSize) {
-      //   size = value;
-      // }
 
       setSelectedOptions([
         ...selectedOptions,
@@ -183,7 +185,7 @@ export default function ProductDetailInfo({
     <div className="relative h-full min-w-0">
       <div className="min-w-0 space-y-7 pb-20">
         <p className="bg-category text-primary w-fit rounded-2xl p-1 text-sm">
-          {extra.category.join(' > ')}
+          {categoryString}
         </p>
 
         <h1 className="sr-only">상품 상세 페이지</h1>

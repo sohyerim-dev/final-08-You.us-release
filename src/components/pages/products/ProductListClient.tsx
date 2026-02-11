@@ -63,7 +63,7 @@ export default function ProductListClient({
   useEffect(() => {
     const loadInitialData = async () => {
       const resolvedParams = await params;
-      const cats = resolvedParams.categories || [];
+      const cats = resolvedParams.categories || ['PC00'];
       setCategories(cats);
 
       // 검색어가 있으면 검색

@@ -3,6 +3,8 @@ export interface Orders {
   item: OrderList[];
 }
 
+export type OrderState = 'OS010' | 'OS020' | 'OS030' | 'OS035' | 'OS040';
+
 export interface OrderList {
   cost: {
     discount: {
@@ -16,7 +18,7 @@ export interface OrderList {
   createdAt: string;
   updatedAt: string;
   products: OrderItem[];
-  state: 'OS035' | 'OS040';
+  state: OrderState;
   user_id: number;
   _id: number;
 }
@@ -29,7 +31,7 @@ export interface OrderItem {
     name: string;
     image: string;
   };
-  state: 'OS035' | 'OS040';
+  state: OrderState;
   name: string;
   image: {
     path: string;

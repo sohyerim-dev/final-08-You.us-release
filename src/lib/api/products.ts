@@ -78,7 +78,7 @@ export async function getFilteredProducts(
         sortParam = `&sort={"createdAt":-1}`;
         break;
       case 'bookmarks':
-        sortParam = `&sort={"createdAt":1}`;
+        sortParam = `&sort={"bookmarks":-1}`;
         break;
     }
   }
@@ -113,7 +113,7 @@ export async function searchProducts(
         sortParam = `&sort={"createdAt":-1}`;
         break;
       case 'bookmarks':
-        sortParam = `sort={"bookmarks":-1}`;
+        sortParam = `&sort={"bookmarks":-1}`;
         break;
     }
   }

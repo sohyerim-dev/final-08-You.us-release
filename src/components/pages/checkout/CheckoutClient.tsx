@@ -70,7 +70,7 @@ export default function CheckoutClient() {
         setAddressInfo({
           name: user.name,
           phone: user.phone || '',
-          address: user.address.streetAddress,
+          address: user.address.streetAddress.split(',')[0] || '',
           detailAddress: user.address.streetAddress.split(',')[1] || '',
           postalCode: user.address.postalCode,
           isDefault: true,

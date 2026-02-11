@@ -45,7 +45,7 @@ export default function ReviewForm({
   const [isLoading, setIsLoading] = useState(false);
   const fileImage = useRef<HTMLInputElement>(null);
 
-  const title = mode === 'create' ? '후기 작성' : '후기 수정';
+  const title = mode === 'create' ? '후기 작성' : '후기 상세';
   console.log('product정보테스트', productInfo);
   // 별점 렌더링
   const renderStars = () => {
@@ -153,7 +153,7 @@ export default function ReviewForm({
             </div>
             {createdAt && (
               <span className="text-body-sm text-gray-500">
-                작성일 : {createdAt}
+                작성일 : {createdAt.slice(0, 10)}
               </span>
             )}
           </div>

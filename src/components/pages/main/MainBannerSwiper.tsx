@@ -81,6 +81,33 @@ export default function MainBannerSwiper() {
             </Link>
           </div>
         </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex h-full w-full items-center justify-center bg-[#FEF9ED] bg-linear-to-r">
+            <Link href="/products/PC01">
+              <Image
+                width={1024}
+                height={500}
+                className="mx-auto hidden md:hidden lg:block"
+                alt=""
+                src="/images/banners/swiper-image-4-lg.png"
+              />
+              <Image
+                width={738}
+                height={280}
+                className="mx-auto hidden md:block lg:hidden"
+                alt=""
+                src="/images/banners/swiper-image-4-md.png"
+              />
+              <Image
+                width={360}
+                height={280}
+                className="mx-auto block md:hidden lg:hidden"
+                alt=""
+                src="/images/banners/swiper-image-4-sm.png"
+              />
+            </Link>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );

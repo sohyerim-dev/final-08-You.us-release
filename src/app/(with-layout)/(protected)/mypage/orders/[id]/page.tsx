@@ -49,10 +49,7 @@ export default function OrderDetailPage({ params }: OrderDetailPageProps) {
     <div className="mt-10 flex w-full flex-col gap-8.5 px-4 pb-8.5 *:text-gray-900 md:px-8 lg:px-12">
       <MyPageSection title={'주문/배송내역'}>
         <div className="mb-2">
-          <OrderStatusHeader
-            status={order.state === 'OS040' ? 'DELIVERED' : 'SHIPPING'}
-            date={order.createdAt}
-          />
+          <OrderStatusHeader status={order.state} date={order.createdAt} />
           <ul>
             {order.products.map((product) => (
               <li

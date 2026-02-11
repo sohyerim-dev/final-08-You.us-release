@@ -96,6 +96,11 @@ export function validateAnswers(answerValues: string[]): Warning[] {
     '지인부모님',
     '친구의부모',
     '친구의부모님',
+    '선생님',
+    '교수님',
+    '강사',
+    '튜터',
+    '코치',
   ].map((k) => k.toLowerCase());
 
   const youngHints = [

@@ -36,15 +36,35 @@ export default function ProfileForm({ user }: ProfileFormProps) {
   const { openPostcode } = useDaumPostcode();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
+  // 전화번호 포맷팅
+  function formatPhone(phone: string): string {
+    const numbers = phone.replace(/[^0-9]/g, '');
+    if (numbers.length <= 3) return numbers;
+    if (numbers.length <= 7)
+      return `${numbers.slice(0, 3)}-${numbers.slice(3)}`;
+    return `${numbers.slice(0, 3)}-${numbers.slice(3, 7)}-${numbers.slice(7, 11)}`;
+  }
+
   // 편집 중인 필드
   const [editingField, setEditingField] = useState<EditingField>(null);
 
   // 편집 중인 값
-  const [editValues, setEditValues] = useState({
-    name: user.name || '',
-    phone: formatPhone(user.phone || ''),
-    streetAddress: user.address?.streetAddress || '',
-    postalCode: user.address?.postalCode || '',
+  const [editValues, setEditValues] = useState(() => {
+    const fullAddress = user.address?.streetAddress || '';
+    const commaIndex = fullAddress.indexOf(',');
+    const streetAddress =
+      commaIndex !== -1
+        ? fullAddress.substring(0, commaIndex).trim()
+        : fullAddress;
+    const detailAddress =
+      commaIndex !== -1 ? fullAddress.substring(commaIndex + 1).trim() : '';
+    return {
+      name: user.name || '',
+      phone: formatPhone(user.phone || ''),
+      streetAddress,
+      detailAddress,
+      postalCode: user.address?.postalCode || '',
+    };
   });
 
   // 이미지 관련 상태
@@ -55,15 +75,6 @@ export default function ProfileForm({ user }: ProfileFormProps) {
   // 저장 중 상태
   const [isSaving, setIsSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
-  // 전화번호 포맷팅
-  function formatPhone(phone: string): string {
-    const numbers = phone.replace(/[^0-9]/g, '');
-    if (numbers.length <= 3) return numbers;
-    if (numbers.length <= 7)
-      return `${numbers.slice(0, 3)}-${numbers.slice(3)}`;
-    return `${numbers.slice(0, 3)}-${numbers.slice(3, 7)}-${numbers.slice(7, 11)}`;
-  }
 
   // 전화번호 입력 핸들러
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -79,10 +90,17 @@ export default function ProfileForm({ user }: ProfileFormProps) {
 
   // 편집 취소
   const cancelEditing = () => {
+    const fullAddress = user.address?.streetAddress || '';
+    const commaIndex = fullAddress.indexOf(',');
     setEditValues({
       name: user.name,
       phone: formatPhone(user.phone),
-      streetAddress: user.address?.streetAddress || '',
+      streetAddress:
+        commaIndex !== -1
+          ? fullAddress.substring(0, commaIndex).trim()
+          : fullAddress,
+      detailAddress:
+        commaIndex !== -1 ? fullAddress.substring(commaIndex + 1).trim() : '',
       postalCode: user.address?.postalCode || '',
     });
     setEditingField(null);
@@ -179,9 +197,13 @@ export default function ProfileForm({ user }: ProfileFormProps) {
     setIsSaving(true);
     setError(null);
 
+    const fullAddress = editValues.detailAddress.trim()
+      ? `${editValues.streetAddress}, ${editValues.detailAddress.trim()}`
+      : editValues.streetAddress;
+
     const result = await updateProfile(user._id, {
       address: {
-        streetAddress: editValues.streetAddress,
+        streetAddress: fullAddress,
         postalCode: editValues.postalCode,
       },
     });
@@ -191,7 +213,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
       setUser({
         ...user,
         address: {
-          streetAddress: editValues.streetAddress,
+          streetAddress: fullAddress,
           postalCode: editValues.postalCode,
         },
       });
@@ -297,7 +319,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
                 disabled={isUploading}
                 className="border-primary bg-primary lg:text-button px-button-y lg:py-button-y lg:px-button-x rounded-[5px] border py-1.25 text-[12px] text-white lg:rounded-[10px]"
               >
-                {isUploading ? '업로드 중...' : '저장'}
+                {isUploading ? '수정중..' : '저장'}
               </Button>
               <Button
                 type="button"
@@ -461,8 +483,20 @@ export default function ProfileForm({ user }: ProfileFormProps) {
                   readOnly
                   className="mt-3 w-full lg:w-80"
                 />
+                <Input
+                  id="edit-detail-address"
+                  value={editValues.detailAddress}
+                  onChange={(e) =>
+                    setEditValues((prev) => ({
+                      ...prev,
+                      detailAddress: e.target.value,
+                    }))
+                  }
+                  placeholder="상세주소를 입력해주세요"
+                  className="mt-3 w-full lg:w-80"
+                />
               </div>
-              <div className="flex gap-2 lg:flex-col">
+              <div className="flex gap-2 lg:flex-col lg:justify-center">
                 <Button
                   type="button"
                   onClick={saveAddress}

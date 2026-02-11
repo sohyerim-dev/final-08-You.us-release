@@ -49,11 +49,11 @@
 
 @media (min-width: 1024px) {
   .bannerSwiper :global(.swiper-button-prev) {
-    left: 10% !important; /* 데스크톱: 10% */
+    left: 3% !important; /* 데스크톱: 10% */
   }
 
   .bannerSwiper :global(.swiper-button-next) {
-    right: 10% !important;
+    right: 3% !important;
   }
 }
 

@@ -50,12 +50,24 @@ export default function LoginForm() {
             refreshToken: userState.item.token?.refreshToken || '',
           },
         });
+
         setAutoLoginStore(autoLogin);
 
         if (autoLogin && userState.item.token?.refreshToken) {
           localStorage.setItem(
             'refreshToken',
             userState.item.token.refreshToken,
+          );
+          // autoLogin true 상태로 localStorage에 user 저장
+          localStorage.setItem(
+            'user',
+            JSON.stringify({
+              state: {
+                ...useUserStore.getState(),
+                autoLogin: true,
+              },
+              version: 0,
+            }),
           );
         }
 

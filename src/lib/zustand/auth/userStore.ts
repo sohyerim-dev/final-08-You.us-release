@@ -26,18 +26,29 @@ const UserStore: StateCreator<UserStoreState> = (set) => ({
   _hasHydrated: false,
 });
 
-// 스토리지를 사용하지 않을 경우
-// const useUserStore = create<UserStoreState>(UserStore);
+// autoLogin 여부에 따라 localStorage 또는 sessionStorage를 동적으로 선택
+const getStorage = () => {
+  if (typeof window === 'undefined') return sessionStorage;
+  try {
+    // localStorage에 저장된 user 데이터에서 autoLogin 여부 확인
+    const stored = localStorage.getItem('user');
+    const parsed = stored ? JSON.parse(stored) : null;
+    // autoLogin이 true면 localStorage, 아니면 sessionStorage
+    return parsed?.state?.autoLogin ? localStorage : sessionStorage;
+  } catch {
+    return sessionStorage;
+  }
+};
 
-// 스토리지를 사용할 경우 (sessionStorage에 저장)
 const useUserStore = create<UserStoreState>()(
   persist(UserStore, {
     name: 'user',
-    storage: createJSONStorage(() => sessionStorage), // 기본은 localStorage
+    storage: createJSONStorage(getStorage),
     // 스토리지에서 데이터를 불러온 직후 호출되는 콜백
     onRehydrateStorage: () => (state) => {
       state?.setHasHydrated(true); // 로그인 정보 복원 완료 플래그를 true로 설정
     },
   }),
 );
+
 export default useUserStore;

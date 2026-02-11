@@ -7,6 +7,7 @@ import { CartItemForCreate, CartItemOnList } from '@/types/cart.types';
 
 import { addToCart, updateCart } from '@/lib/api/cart';
 import { ModalItem } from '@/components/pages/cart/CartPageClient';
+import { fetchServerCartCount } from '@/lib/zustand/cartStore';
 
 interface CartAddOptionProps {
   modalItem: ModalItem; // 모달에 표시할 상품 정보
@@ -50,6 +51,7 @@ export default function CartOptionModal({
         storeName: item.product.seller?.name || '',
       }));
       setItems(items); // 전체 장바구니 목록 갱신
+      fetchServerCartCount();
     }
     handleClose(); // 모달 닫기
   };

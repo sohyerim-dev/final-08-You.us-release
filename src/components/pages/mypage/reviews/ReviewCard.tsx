@@ -92,21 +92,21 @@ export default function ReviewCard({
         <div className="gap-2 lg:flex lg:flex-col">
           <div className="flex flex-col gap-2">
             {type === 'written' ? (
-              <>
+              <div className="flex flex-col items-center gap-2">
                 <Link href={`/mypage/reviews/${reviewId}/edit`}>
                   <Button
                     tabIndex={-1}
                     className="text-body-sm w-full lg:w-[162px]"
                   >
-                    수정하기
+                    내 후기 보기
                   </Button>
                 </Link>
                 {createdAt && (
                   <span className="text-body-sm text-gray-500">
-                    작성일 : {createdAt}
+                    작성일 : {createdAt.slice(0, 10)}
                   </span>
                 )}
-              </>
+              </div>
             ) : (
               <>
                 <Link href={`/mypage/orders/1`}>
@@ -138,27 +138,31 @@ export default function ReviewCard({
       {type === 'written' && reviewContent && (
         <div className="border-primary border-t-2 p-4">
           {/* 리뷰 이미지 */}
-          <div className="mb-4 flex min-h-[40px] gap-2">
-            {reviewImages.map((img, idx) => (
-              <button
-                key={idx}
-                type="button"
-                onClick={() => handleImageClick(idx)}
-                className="cursor-pointer"
-              >
-                <Image
-                  src={img}
-                  alt={`리뷰 이미지 ${idx + 1}`}
-                  width={80}
-                  height={80}
-                  className="h-15 w-15 rounded border border-gray-200 object-cover"
-                />
-              </button>
-            ))}
+          <div className="mb-4 ml-2 flex min-h-[40px] gap-2">
+            {reviewImages.length > 0 ? (
+              reviewImages.map((img, idx) => (
+                <button
+                  key={idx}
+                  type="button"
+                  onClick={() => handleImageClick(idx)}
+                  className="cursor-pointer"
+                >
+                  <Image
+                    src={img}
+                    alt={`리뷰 이미지 ${idx + 1}`}
+                    width={80}
+                    height={80}
+                    className="h-15 w-15 rounded border border-gray-200 object-cover"
+                  />
+                </button>
+              ))
+            ) : (
+              <div className="h-15 w-15 rounded border border-gray-200 bg-gray-50"></div>
+            )}
           </div>
           {/* 리뷰 텍스트 */}
           <div className="border-primary min-h-[150px] border-t-2 pt-4">
-            <p className="text-body-md leading-relaxed text-gray-900">
+            <p className="text-body-md ml-4 leading-relaxed text-gray-900">
               &gt; {reviewContent}
             </p>
           </div>
