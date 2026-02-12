@@ -29,18 +29,18 @@ export default function FooterLinks() {
 
   return (
     <>
-      <div className="mb-6 flex items-center justify-start gap-1 text-[10px] lg:text-xs">
+      <div className="mb-6 flex flex-wrap items-center justify-start gap-x-2 gap-y-1 text-xs lg:text-xs">
         {links.map((link, index) => (
-          <div key={index}>
+          <div key={index} className="flex items-center">
             <button
               type="button"
               onClick={link.action}
-              className="ont-medium cursor-pointer text-gray-700 transition-colors active:text-rose-600"
+              className="cursor-pointer font-medium text-gray-700 transition-colors hover:text-rose-500 active:text-rose-600"
             >
               {link.label}
             </button>
             {index < links.length - 1 && (
-              <span className="mx-0.5 text-gray-400">|</span>
+              <span className="mx-1.5 text-gray-400">|</span>
             )}
           </div>
         ))}

@@ -32,28 +32,48 @@ export const metadata: Metadata = {
 
 export default function IntroPage() {
   return (
-    <div className="flex h-screen w-full flex-col items-center overflow-hidden bg-[#F3E7E9] pt-35 lg:justify-center lg:pt-0">
+    <div
+      className="flex h-screen w-full flex-col items-center overflow-hidden pt-35 lg:justify-center lg:pt-0"
+      style={{
+        background:
+          'linear-gradient(135deg, #F3E7E9 0%, #E8DEE0 50%, #F3E7E9 100%)',
+        backgroundSize: '200% 200%',
+        animation: 'gradientShift 8s ease infinite',
+      }}
+    >
       <h1 className="sr-only">인트로 페이지</h1>
+
       <h2
-        className={`color-gray-900 text-title-md lg:text-title-lg ${styles.content}`}
+        className={`color-gray-900 text-title-md lg:text-title-lg ${styles.title}`}
       >
         선물 추천 쇼핑몰
       </h2>
-      <Image
-        src="/icons/LOGO.svg"
-        className={`w-72.5 lg:w-112.5 ${styles.logo}`}
-        width="450"
-        height="146"
-        alt="유어스"
-      />
+
+      <div className="relative">
+        <Image
+          src="/icons/LOGO.svg"
+          className={`w-72.5 lg:w-112.5 ${styles.logo}`}
+          width="450"
+          height="146"
+          alt="유어스"
+          priority
+        />
+      </div>
+
       <div className={`mt-6 flex flex-col items-center ${styles.content}`}>
-        <h3 className="text-[1.5rem] font-bold md:text-[3rem]">
+        <h3
+          className={`text-[1.5rem] font-bold md:text-[3rem] ${styles.stagger1}`}
+        >
           선물 고르기 힘들 때,
         </h3>
-        <h3 className="text-[1.5rem] font-bold md:text-[3rem]">
+        <h3
+          className={`text-[1.5rem] font-bold md:text-[3rem] ${styles.stagger2} ${styles.heartbeating}`}
+        >
           AI에게 선물 추천받자!
         </h3>
-        <IntroActions />
+        <div className={styles.buttonContainer}>
+          <IntroActions />
+        </div>
       </div>
     </div>
   );

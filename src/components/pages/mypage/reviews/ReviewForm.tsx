@@ -291,7 +291,7 @@ export default function ReviewForm({
                   </Link>
                 )}
                 <Button
-                  className="text-body-sm w-75 lg:w-40.5"
+                  className="text-body-sm w-55 px-8 lg:w-40.5"
                   onClick={handleSubmit}
                   disabled={isLoading} // 로딩 중 클릭 방지
                 >

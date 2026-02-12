@@ -56,10 +56,13 @@ export default function ProductDetailInfo({
   //카테고리 value찾기
   const [parentCode, subCode] = extra.category;
 
-  const parentCategory = category.find((cat) => cat.code === parentCode)!;
-  const subCategory = parentCategory.sub!.find((sub) => sub.code === subCode)!;
+  const parentCategory = category.find((cat) => cat.code === parentCode);
+  const subCategory = parentCategory?.sub?.find((sub) => sub.code === subCode);
 
-  const categoryString = `${parentCategory.value} > ${subCategory.value}`;
+  const categoryString =
+    parentCategory && subCategory
+      ? `${parentCategory.value} > ${subCategory.value}`
+      : '';
 
   // 옵션 없으면 기본 상품 1개 선택, 옵션 있으면 빈 배열
   const [selectedOptions, setSelectedOptions] = useState<SelectedOption[]>(

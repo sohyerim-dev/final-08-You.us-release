@@ -285,7 +285,7 @@ export default function CheckoutClient() {
         }}
       />
 
-      <div className="mx-auto max-w-375 min-w-5xl bg-gray-50 px-6.25 pt-6.25 lg:flex lg:flex-row lg:justify-center lg:gap-15">
+      <div className="mx-auto w-full bg-gray-50 px-4 pt-6.25 lg:flex lg:max-w-375 lg:min-w-5xl lg:flex-row lg:justify-center lg:gap-15 lg:px-6.25">
         <h1 className="sr-only">주문・결제 페이지</h1>
         <div className="mb-15 lg:w-200">
           <OrderItems items={orderItems} />
@@ -305,7 +305,7 @@ export default function CheckoutClient() {
         </div>
         <section
           aria-labelledby="final-payment-title"
-          className="mt-7.5 mb-7.5 h-fit rounded-[14px] border border-gray-200 bg-white px-6 py-7 lg:w-115"
+          className="mt-7.5 mb-7.5 h-fit rounded-[14px] border border-gray-200 bg-white px-4 py-7 lg:w-115 lg:px-6"
         >
           <h2
             id="final-payment-title"
