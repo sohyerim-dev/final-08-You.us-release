@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 8조 선물상자 - 유어스(You,Us)
 
-## Getting Started
+![title-image](C:\Users\UserK\.vscode\febc15\project-final\final-08-You.us\public\docs\images\title-image.png)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎁 프로젝트 소개
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> **선물은 단순한 소비가 아니라 관계를 표현하는 행위입니다.**
+>
+> 그러나 대부분의 온라인 쇼핑몰은 카테고리와 가격 필터 중심으로 구성되어 있어, **사용자가 수많은 상품 속에서 스스로 답을 찾아야 하는 구조**입니다.
+>
+> You, Us는 이 문제를 해결하기 위해 AI 설문을 통해 받는 사람, 상황, 예산 등을 자연어로 입력받고, 이를 분석하여 태그 기반으로 상품을 매칭하는 **선물 추천 쇼핑몰**입니다.
+>
+> 복잡한 필터를 조합하지 않아도 “20대 여자친구 생일 선물”처럼 **상황 중심으로 탐색**할 수 있으며, 조건에 맞는 상품을 **직관적인 카드 형태로 추천**하는 경험을 제공합니다.
+>
+> 또한 AI를 단순한 마케팅 요소가 아니라 설계 단계부터 핵심 기능으로 포함하여, 사용자의 자연어 답변을 구조화·태그화함으로써 단순 필터링을 넘어 **맥락 기반 선물 추천 경험을 구현한 프로젝트**입니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## 🎁 핵심 기능
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **AI 기반 선물 추천 테스트 및 맞춤형 상품 추천**
+- 카테고리 / 정렬 / 검색 기반 상품 탐색
+- 상품 찜하기
+- 장바구니 및 주문 / 결제
+- 마이페이지에서 주문 & 관심 상품 & 후기 관리
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎁 프로젝트 기간
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **2026.1.14 ~ 2026.2.13** (총 30일)
+
+
+
+## 🎁 팀원 역할 및 소개
+
