@@ -189,8 +189,8 @@ export default function CheckoutClient() {
 
     setIsLoading(true);
 
-    // const totalAmount = sumPrice + shippingFees;
-    const totalAmount = 1000;
+    const totalAmount = sumPrice + shippingFees;
+    // const totalAmount = 1000;
     const merchantUid = `order_${Date.now()}`;
     const productName =
       orderItems.length > 1

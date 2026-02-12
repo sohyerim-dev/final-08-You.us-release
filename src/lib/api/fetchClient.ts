@@ -1,6 +1,5 @@
 import useUserStore from '@/lib/zustand/auth/userStore';
 import { ServerValidationError } from '@/types/api.types';
-import { toast } from 'react-toastify';
 
 const API_SERVER = process.env.NEXT_PUBLIC_API_URL;
 const CLIENT_ID = process.env.NEXT_PUBLIC_CLIENT_ID || '';
@@ -112,7 +111,7 @@ export async function fetchClient<T>(
 
     // 로그인 상태가 아니면 로그인 페이지로
     if (!user) {
-      navigateLogin();
+      // navigateLogin();
       throw new ApiError('로그인이 필요합니다.', 401);
     }
 
@@ -203,23 +202,16 @@ let isNavigating = false;
 
 // 로그인 페이지로 이동하는 함수
 function navigateLogin() {
-  // window는 브라우저에만 존재
-  // 서버 사이드에서 실행되면 window가 없으니까
-  // 서버 환경에선 아무것도 안 하고 리턴
+  // 서버 사이드에서는 실행 안 함
   if (typeof window === 'undefined') return;
-  // 이미 토스트가 떠 있으면 중복 방지
+
+  // 중복 클릭 방지
   if (isNavigating) return;
   isNavigating = true;
 
-  toast.warn('로그인 후 이용 가능합니다.', {
-    toastId: 'navigate-login', // 동일 ID면 중복 토스트 방지
-    onClose: () => {
-      const currentPath = window.location.pathname;
-      // 로그인 페이지로 이동 + redirect 파라미터에 현재 경로 저장
-      window.location.href = `/login?redirect=${encodeURIComponent(currentPath)}`;
-    },
-    autoClose: 4000,
-  });
+  const currentPath = window.location.pathname;
+  // 바로 로그인 페이지로 이동 + redirect 파라미터에 현재 경로 저장
+  window.location.href = `/login?redirect=${encodeURIComponent(currentPath)}`;
 }
 
 // 다른 파일에서 import 할 수 있게 export

@@ -4,8 +4,30 @@ import type { Metadata } from 'next';
 import IntroActions from '@/components/pages/intro/IntroActions';
 
 export const metadata: Metadata = {
-  title: 'Intro - 소개',
-  description: 'You,Us 선물 추천 서비스를 소개합니다.',
+  title: 'You,Us - 선물 추천 플랫폼',
+  description: '소중한 사람에게 딱 맞는 선물을 AI가 추천해드립니다.',
+  openGraph: {
+    title: 'You,Us - 선물 추천 플랫폼',
+    description: '소중한 사람에게 딱 맞는 선물을 AI가 추천해드립니다.',
+    url: 'https://final-08-you-us-release.vercel.app/',
+    siteName: 'You,Us',
+    images: [
+      {
+        url: 'https://final-08-you-us-release.vercel.app/images/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'You,Us 선물 추천 플랫폼',
+      },
+    ],
+    type: 'website',
+    locale: 'ko_KR',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'You,Us - 선물 추천 플랫폼',
+    description: '소중한 사람에게 딱 맞는 선물을 AI가 추천해드립니다.',
+    images: ['https://final-08-you-us-release.vercel.app/images/og-image.png'],
+  },
 };
 
 export default function IntroPage() {

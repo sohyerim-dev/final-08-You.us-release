@@ -152,7 +152,7 @@ export default function ReviewForm({
               </div>
             </div>
             {createdAt && (
-              <span className="text-body-sm text-gray-500">
+              <span className="text-body-sm hidden text-gray-500 md:block">
                 작성일 : {createdAt.slice(0, 10)}
               </span>
             )}

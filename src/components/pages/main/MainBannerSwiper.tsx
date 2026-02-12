@@ -28,60 +28,6 @@ export default function MainBannerSwiper() {
         speed={500}
       >
         <SwiperSlide>
-          <div className="flex h-full w-full items-center justify-center bg-gray-900 bg-linear-to-r">
-            <Link href="/recommend">
-              <Image
-                width={1024}
-                height={500}
-                className="mx-auto hidden md:hidden lg:block"
-                alt=""
-                src="/images/banners/swiper-image-1-lg.svg"
-              />
-              <Image
-                width={738}
-                height={280}
-                className="mx-auto hidden md:block lg:hidden"
-                alt=""
-                src="/images/banners/swiper-image-1-md.svg"
-              />
-              <Image
-                width={360}
-                height={280}
-                className="mx-auto block md:hidden lg:hidden"
-                alt=""
-                src="/images/banners/swiper-image-1-mo.svg"
-              />
-            </Link>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex h-full w-full items-center justify-center bg-gray-900 bg-linear-to-r">
-            <Link href="/products/PC01">
-              <Image
-                width={1024}
-                height={500}
-                className="mx-auto hidden md:hidden lg:block"
-                alt=""
-                src="/images/banners/swiper-image-2-lg.svg"
-              />
-              <Image
-                width={738}
-                height={280}
-                className="mx-auto hidden md:block lg:hidden"
-                alt=""
-                src="/images/banners/swiper-image-2-md.svg"
-              />
-              <Image
-                width={360}
-                height={280}
-                className="mx-auto block md:hidden lg:hidden"
-                alt=""
-                src="/images/banners/swiper-image-2-mo.svg"
-              />
-            </Link>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
           <div className="flex h-full w-full items-center justify-center bg-[#FEF9ED] bg-linear-to-r">
             <Link href="/products/PC01">
               <Image
@@ -104,6 +50,33 @@ export default function MainBannerSwiper() {
                 className="mx-auto block md:hidden lg:hidden"
                 alt=""
                 src="/images/banners/swiper-image-4-sm.png"
+              />
+            </Link>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex h-full w-full items-center justify-center bg-[#FAE0C9] bg-linear-to-r">
+            <Link href="/products/PC01">
+              <Image
+                width={1024}
+                height={500}
+                className="mx-auto hidden md:hidden lg:block"
+                alt=""
+                src="/images/banners/swiper-image-6-lg.png"
+              />
+              <Image
+                width={738}
+                height={280}
+                className="mx-auto hidden md:block lg:hidden"
+                alt=""
+                src="/images/banners/swiper-image-6-md.png"
+              />
+              <Image
+                width={360}
+                height={280}
+                className="mx-auto block md:hidden lg:hidden"
+                alt=""
+                src="/images/banners/swiper-image-6-sm.png"
               />
             </Link>
           </div>

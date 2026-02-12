@@ -9,6 +9,8 @@ import Button from '@/components/common/Button';
 import CartOptionModal from '@/components/pages/cart/CartOptionModal';
 import Allcheck from '@/components/pages/cart/AllCheck';
 import { useRouter } from 'next/navigation';
+import useUserStore from '@/lib/zustand/auth/userStore';
+import useHasHydrated from '@/hooks/auth/useHasHydrated';
 
 export interface ModalItem extends CartItemOnList {
   type: 'edit' | 'add';
@@ -17,9 +19,19 @@ export interface ModalItem extends CartItemOnList {
 export default function CartPageClient() {
   const [items, setItems] = useState<CartItemOnList[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-
+  const { user } = useUserStore();
   const router = useRouter();
   const [modalItem, setModalItem] = useState<ModalItem | null>(null);
+  const isHydrated = useHasHydrated();
+
+  // hydration 완료 후에만 인증 체크
+  useEffect(() => {
+    if (!isHydrated) return;
+    if (!user) {
+      const currentPath = window.location.pathname;
+      router.push(`/login?redirect=${encodeURIComponent(currentPath)}`);
+    }
+  }, [isHydrated, user, router]);
 
   // 장바구니 데이터 불러오기
   useEffect(() => {

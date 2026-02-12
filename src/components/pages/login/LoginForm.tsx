@@ -32,7 +32,16 @@ export default function LoginForm() {
   const [userState, formAction, isPending] = useActionState(login, null);
   const router = useRouter();
   const redirect = useSearchParams().get('redirect');
+  const searchParams = useSearchParams();
 
+  useEffect(() => {
+    const redirect = searchParams.get('redirect');
+    if (redirect) {
+      toast.warn('로그인 후 이용 가능합니다.', {
+        toastId: 'login-required',
+      });
+    }
+  }, [searchParams]);
   useEffect(() => {
     if (!userState) return;
 
