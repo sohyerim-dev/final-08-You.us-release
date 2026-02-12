@@ -29,8 +29,8 @@ export async function getRecommendProducts({
     // params 생성
     const params: Record<string, string> = {
       limit: String(limit),
-      ...(minPrice !== undefined && { minPrice: String(minPrice) }),
-      ...(maxPrice !== undefined && { maxPrice: String(maxPrice) }),
+      ...(minPrice != null && { minPrice: String(minPrice) }),
+      ...(maxPrice != null && { maxPrice: String(maxPrice) }),
     };
 
     // API 호출

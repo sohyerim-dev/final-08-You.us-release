@@ -7325,6 +7325,749 @@
         ],
         "options": {}
       }
+    },
+    {
+      "seller_id": 1,
+      "price": 53000,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "제주 은갈치 선물세트",
+      "quantity": 300,
+      "buyQuantity": 100,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/KtlB7Pv7L.png",
+          "name": "PC010106-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/X0DUnOvbs0.png",
+          "name": "PC010106-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/YIsxcLxQgw.png",
+          "name": "PC010106-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">제주 은갈치 선물세트</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">53,000원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/KtlB7Pv7L.png\" alt=\"제주 은갈치 선물세트 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>제주 은갈치 선물세트</strong>는 청정 제주 바다에서 잡은 신선한 은갈치로 만든 프리미엄 선물세트입니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 감사와 사랑의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/X0DUnOvbs0.png\" alt=\"제주 은갈치 선물세트 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 소중한 분께 감사의 마음을 전하고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 특별한 날을 기념하고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 품격 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 건강한 먹거리를 선물하고 싶은 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">청정 제주 바다에서 잡은 신선한 은갈치만을 사용하여 품질에 자신 있습니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/YIsxcLxQgw.png\" alt=\"제주 은갈치 선물세트 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">제주 은갈치 선물세트</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">53,000원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC01", "PC0101"],
+        "sort": 1,
+        "tags": [
+          "parent",
+          "teacher",
+          "friend",
+          "coworker",
+          "sibling",
+          "male",
+          "female",
+          "unspecified",
+          "30s",
+          "40s",
+          "50s",
+          "60plus",
+          "thanks",
+          "anniversary",
+          "holiday",
+          "practical",
+          "premium",
+          "emotional"
+        ],
+        "options": {}
+      }
+    },
+    {
+      "seller_id": 1,
+      "price": 35900,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "제주 서귀포 한라봉 선물세트",
+      "quantity": 200,
+      "buyQuantity": 100,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/3-oPjqhadv.png",
+          "name": "PC010107-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/9ca3h6GsnG.png",
+          "name": "PC010107-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/_TwvyqKkLS.png",
+          "name": "PC010107-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">제주 서귀포 한라봉 선물세트</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">35,900원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/3-oPjqhadv.png\" alt=\"제주 서귀포 한라봉 선물세트 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>제주 서귀포 한라봉 선물세트</strong>는 청정 제주 서귀포에서 재배한 달콤한 한라봉으로 구성된 프리미엄 선물세트입니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 감사와 사랑의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/9ca3h6GsnG.png\" alt=\"제주 서귀포 한라봉 선물세트 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 소중한 분께 감사의 마음을 전하고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 특별한 날을 기념하고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 품격 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 건강한 과일을 선물하고 싶은 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">청정 제주 서귀포에서 재배한 당도 높은 한라봉만을 엄선했습니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/_TwvyqKkLS.png\" alt=\"제주 서귀포 한라봉 선물세트 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">제주 서귀포 한라봉 선물세트</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">35,900원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC01", "PC0101"],
+        "sort": 1,
+        "tags": [
+          "parent",
+          "teacher",
+          "friend",
+          "coworker",
+          "sibling",
+          "male",
+          "female",
+          "unspecified",
+          "30s",
+          "40s",
+          "50s",
+          "60plus",
+          "thanks",
+          "anniversary",
+          "holiday",
+          "practical",
+          "light",
+          "emotional"
+        ],
+        "options": {}
+      }
+    },
+    {
+      "seller_id": 1,
+      "price": 55900,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "미스치프 목도리",
+      "quantity": 200,
+      "buyQuantity": 100,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/P9RWpJtXey.png",
+          "name": "PC050106-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/gv-ZM2U0WNj.png",
+          "name": "PC050106-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/_yV2FfybaUB.png",
+          "name": "PC050106-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">미스치프 목도리</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">55,900원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/P9RWpJtXey.png\" alt=\"미스치프 목도리 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>미스치프 목도리</strong>는 부드러운 촉감과 세련된 디자인으로 겨울철 필수 아이템입니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 감사와 사랑의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/gv-ZM2U0WNj.png\" alt=\"미스치프 목도리 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 소중한 분께 감사의 마음을 전하고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 특별한 날을 기념하고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 품격 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 실용적이면서 스타일리시한 아이템을 원하는 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">부드럽고 따뜻한 고급 소재를 사용하여 착용감이 우수합니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/_yV2FfybaUB.png\" alt=\"미스치프 목도리 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">미스치프 목도리</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">55,900원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC05", "PC0501"],
+        "sort": 1,
+        "tags": [
+          "parent",
+          "teacher",
+          "friend",
+          "coworker",
+          "sibling",
+          "lover",
+          "male",
+          "unspecified",
+          "20s",
+          "30s",
+          "40s",
+          "birthday",
+          "thanks",
+          "anniversary",
+          "celebration",
+          "practical",
+          "emotional",
+          "light"
+        ],
+        "options": {}
+      }
+    },
+    {
+      "seller_id": 1,
+      "price": 122000,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "블랙 브리프케이스",
+      "quantity": 300,
+      "buyQuantity": 200,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/GHiyhZa0WmY.png",
+          "name": "PC050306-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/sdiQvY9sIdX.png",
+          "name": "PC050306-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/ckxFafyq6Wo.png",
+          "name": "PC050306-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">블랙 브리프케이스</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">122,000원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/GHiyhZa0WmY.png\" alt=\"블랙 브리프케이스 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>블랙 브리프케이스</strong>는 세련된 디자인과 실용성을 겸비한 프리미엄 비즈니스 가방입니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 감사와 사랑의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/sdiQvY9sIdX.png\" alt=\"블랙 브리프케이스 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 비즈니스맨에게 실용적인 선물을 찾는 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 특별한 날을 기념하고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 품격 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 프로페셔널한 이미지를 연출하고 싶은 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">고급 가죽 소재를 사용하여 내구성과 품질에 자신 있습니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/ckxFafyq6Wo.png\" alt=\"블랙 브리프케이스 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">블랙 브리프케이스</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">122,000원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC05", "PC0503"],
+        "sort": 1,
+        "tags": [
+          "parent",
+          "teacher",
+          "friend",
+          "coworker",
+          "sibling",
+          "lover",
+          "male",
+          "unspecified",
+          "20s",
+          "30s",
+          "40s",
+          "50s",
+          "60plus",
+          "birthday",
+          "thanks",
+          "anniversary",
+          "celebration",
+          "practical",
+          "premium"
+        ],
+        "options": {}
+      }
+    },
+    {
+      "seller_id": 1,
+      "price": 58000,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "프라이탁 휴대폰 케이스",
+      "quantity": 200,
+      "buyQuantity": 100,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/yvjnteXBXt.png",
+          "name": "PC080306-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/tmZPPw2Mp-.png",
+          "name": "PC080306-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/DnM085vfu0.png",
+          "name": "PC080306-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">프라이탁 휴대폰 케이스</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">58,000원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/yvjnteXBXt.png\" alt=\"프라이탁 휴대폰 케이스 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>프라이탁 휴대폰 케이스</strong>는 친환경 소재로 만든 유니크한 디자인의 프리미엄 케이스입니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 감사와 사랑의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/tmZPPw2Mp-.png\" alt=\"프라이탁 휴대폰 케이스 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 친환경 제품을 선호하는 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 특별한 날을 기념하고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 품격 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 유니크한 디자인을 좋아하는 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">재활용 소재로 만든 친환경적이면서도 내구성이 뛰어난 제품입니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/DnM085vfu0.png\" alt=\"프라이탁 휴대폰 케이스 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">프라이탁 휴대폰 케이스</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">58,000원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC08", "PC0803"],
+        "sort": 1,
+        "tags": [
+          "parent",
+          "teacher",
+          "friend",
+          "coworker",
+          "sibling",
+          "lover",
+          "male",
+          "unspecified",
+          "20s",
+          "30s",
+          "40s",
+          "birthday",
+          "thanks",
+          "anniversary",
+          "celebration",
+          "practical",
+          "premium"
+        ],
+        "options": {}
+      }
+    },
+    {
+      "seller_id": 1,
+      "price": 38000,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "십자가 체인 목걸이",
+      "quantity": 300,
+      "buyQuantity": 200,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925328/febc15-final08-ecad/jPPKhK6E5l.png",
+          "name": "PC040106-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/0AityWFLVq.png",
+          "name": "PC040106-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/_dRQ_VHOFm.png",
+          "name": "PC040106-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">십자가 체인 목걸이</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">38,000원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925328/febc15-final08-ecad/jPPKhK6E5l.png\" alt=\"십자가 체인 목걸이 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>십자가 체인 목걸이</strong>는 심플하면서도 의미 있는 디자인의 액세서리입니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 감사와 사랑의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/0AityWFLVq.png\" alt=\"십자가 체인 목걸이 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 의미 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 특별한 날을 기념하고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 심플한 액세서리를 선호하는 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 일상에서 착용 가능한 아이템을 원하는 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">고품질 소재를 사용하여 변색에 강하고 오래 착용할 수 있습니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/_dRQ_VHOFm.png\" alt=\"십자가 체인 목걸이 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">십자가 체인 목걸이</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">38,000원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC04", "PC0401"],
+        "sort": 1,
+        "tags": [
+          "lover",
+          "friend",
+          "male",
+          "unspecified",
+          "20s",
+          "30s",
+          "40s",
+          "emotional",
+          "light"
+        ],
+        "options": {}
+      }
+    },
+    {
+      "seller_id": 1,
+      "price": 105000,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "목어깨 안마 마사지기",
+      "quantity": 300,
+      "buyQuantity": 200,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/btezetvZRN.png",
+          "name": "PC080106-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/xX0TTyyvzw.png",
+          "name": "PC080106-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/_GflpALtU_.png",
+          "name": "PC080106-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">목어깨 안마 마사지기</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">105,000원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/btezetvZRN.png\" alt=\"목어깨 안마 마사지기 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>목어깨 안마 마사지기</strong>는 일상의 피로를 풀어주는 프리미엄 건강 가전제품입니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 건강과 휴식의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/xX0TTyyvzw.png\" alt=\"목어깨 안마 마사지기 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 목과 어깨 통증으로 고생하시는 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 건강을 챙겨드리고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 품격 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 집에서 편안하게 관리하고 싶은 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">인체공학적 디자인과 다양한 마사지 모드로 효과적인 관리가 가능합니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/_GflpALtU_.png\" alt=\"목어깨 안마 마사지기 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">목어깨 안마 마사지기</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">105,000원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC08", "PC0801"],
+        "sort": 1,
+        "tags": [
+          "parent",
+          "teacher",
+          "sibling",
+          "male",
+          "female",
+          "unspecified",
+          "30s",
+          "40s",
+          "50s",
+          "60plus",
+          "birthday",
+          "thanks",
+          "housewarming",
+          "anniversary",
+          "celebration",
+          "practical",
+          "premium",
+          "emotional"
+        ],
+        "options": {}
+      }
+    },
+    {
+      "seller_id": 1,
+      "price": 143000,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "토종 발효 도라지즙 진액 선물세트",
+      "quantity": 300,
+      "buyQuantity": 100,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/O-mygCzXr5.png",
+          "name": "PC010306-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/bSgsedWTUE.png",
+          "name": "PC010306-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/_0VpbJ5VaN.png",
+          "name": "PC010306-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">토종 발효 도라지즙 진액 선물세트</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">143,000원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/O-mygCzXr5.png\" alt=\"토종 발효 도라지즙 진액 선물세트 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>토종 발효 도라지즙 진액 선물세트</strong>는 국내산 토종 도라지를 정성껏 발효시켜 만든 프리미엄 건강 선물입니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 건강과 사랑의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/bSgsedWTUE.png\" alt=\"토종 발효 도라지즙 진액 선물세트 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 건강을 챙겨드리고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 특별한 날을 기념하고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 품격 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 천연 발효 건강식품을 찾는 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">국내산 토종 도라지를 장기간 발효시켜 영양과 맛을 극대화했습니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/_0VpbJ5VaN.png\" alt=\"토종 발효 도라지즙 진액 선물세트 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">토종 발효 도라지즙 진액 선물세트</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">143,000원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC01", "PC0103"],
+        "sort": 1,
+        "tags": [
+          "parent",
+          "teacher",
+          "sibling",
+          "coworker",
+          "friend",
+          "male",
+          "female",
+          "unspecified",
+          "30s",
+          "40s",
+          "50s",
+          "60plus",
+          "birthday",
+          "thanks",
+          "anniversary",
+          "celebration",
+          "holiday",
+          "premium",
+          "emotional"
+        ],
+        "options": {}
+      }
+    },
+    {
+      "seller_id": 1,
+      "price": 34000,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "비건 핸드 앤 바디크림",
+      "quantity": 300,
+      "buyQuantity": 200,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/z8WQrtTQ8V.png",
+          "name": "PC030306-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/WgfJZ9xoVF.png",
+          "name": "PC030306-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/VzLs6qQM78.png",
+          "name": "PC030306-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">비건 핸드 앤 바디크림</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">34,000원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/z8WQrtTQ8V.png\" alt=\"비건 핸드 앤 바디크림 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>비건 핸드 앤 바디크림</strong>은 자연 유래 성분으로 만든 친환경 프리미엄 스킨케어 제품입니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 감사와 사랑의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/WgfJZ9xoVF.png\" alt=\"비건 핸드 앤 바디크림 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 피부가 건조하고 예민한 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 친환경 제품을 선호하는 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 품격 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 일상에서 사용할 실용적인 아이템을 원하는 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">100% 비건 성분으로 민감한 피부도 안심하고 사용할 수 있습니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/VzLs6qQM78.png\" alt=\"비건 핸드 앤 바디크림 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">비건 핸드 앤 바디크림</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">34,000원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC03", "PC0303"],
+        "sort": 1,
+        "tags": [
+          "parent",
+          "teacher",
+          "sibling",
+          "lover",
+          "friend",
+          "coworker",
+          "male",
+          "female",
+          "unspecified",
+          "20s",
+          "30s",
+          "40s",
+          "50s",
+          "60plus",
+          "birthday",
+          "thanks",
+          "anniversary",
+          "celebration",
+          "light",
+          "emotional"
+        ],
+        "options": {}
+      }
+    },
+    {
+      "seller_id": 1,
+      "price": 54000,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "블랙 방한 모자",
+      "quantity": 300,
+      "buyQuantity": 200,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/pPu7PiyjzLZ.png",
+          "name": "PC050406-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/GEY993jwUqV.png",
+          "name": "PC050406-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/W9jb_stZMxa.png",
+          "name": "PC050406-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">블랙 방한 모자</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">54,000원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/pPu7PiyjzLZ.png\" alt=\"블랙 방한 모자 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>블랙 방한 모자</strong>는 추운 겨울철 필수 아이템으로 따뜻함과 스타일을 동시에 챙길 수 있습니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 감사와 사랑의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/GEY993jwUqV.png\" alt=\"블랙 방한 모자 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 겨울철 야외활동이 많은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 특별한 날을 기념하고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 품격 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 실용적이면서 스타일리시한 아이템을 원하는 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">보온성이 뛰어난 고급 소재로 추운 겨울에도 따뜻하게 보호해줍니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/W9jb_stZMxa.png\" alt=\"블랙 방한 모자 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">블랙 방한 모자</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">54,000원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC05", "PC0504"],
+        "sort": 1,
+        "tags": [
+          "parent",
+          "teacher",
+          "sibling",
+          "lover",
+          "friend",
+          "coworker",
+          "male",
+          "female",
+          "unspecified",
+          "20s",
+          "30s",
+          "40s",
+          "50s",
+          "60plus",
+          "birthday",
+          "thanks",
+          "anniversary",
+          "celebration",
+          "practical",
+          "emotional"
+        ],
+        "options": {}
+      }
+    },
+    {
+      "seller_id": 1,
+      "price": 52000,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "하트 가죽 키링",
+      "quantity": 300,
+      "buyQuantity": 200,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/vJSexrDj49V.png",
+          "name": "PC050606-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/JNWImTyvu-Y.png",
+          "name": "PC050606-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/XxT9WFBBZq8.png",
+          "name": "PC050606-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">하트 가죽 키링</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">52,000원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/vJSexrDj49V.png\" alt=\"하트 가죽 키링 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>하트 가죽 키링</strong>은 사랑스러운 하트 디자인과 고급 가죽 소재로 만든 프리미엄 액세서리입니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 감사와 사랑의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/JNWImTyvu-Y.png\" alt=\"하트 가죽 키링 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 특별한 마음을 전하고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 특별한 날을 기념하고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 품격 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 귀여우면서도 실용적인 아이템을 원하는 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">고급 천연 가죽을 사용하여 오래 사용할 수 있습니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/XxT9WFBBZq8.png\" alt=\"하트 가죽 키링 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">하트 가죽 키링</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">52,000원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC05", "PC0506"],
+        "sort": 1,
+        "tags": [
+          "lover",
+          "friend",
+          "male",
+          "female",
+          "unspecified",
+          "20s",
+          "30s",
+          "40s",
+          "birthday",
+          "thanks",
+          "anniversary",
+          "celebration",
+          "emotional",
+          "light"
+        ],
+        "options": {}
+      }
+    },
+    {
+      "seller_id": 1,
+      "price": 122000,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "리플렉트 카본 히터 가전",
+      "quantity": 300,
+      "buyQuantity": 200,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/T0Oyex2MwL.png",
+          "name": "PC080107-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/N74-9Pg8j5.png",
+          "name": "PC080107-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/bHmfYTltjN.png",
+          "name": "PC080107-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">리플렉트 카본 히터 가전</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">122,000원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/T0Oyex2MwL.png\" alt=\"리플렉트 카본 히터 가전 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>리플렉트 카본 히터 가전</strong>은 빠르고 효율적인 난방으로 겨울철 필수 가전제품입니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 감사와 사랑의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/N74-9Pg8j5.png\" alt=\"리플렉트 카본 히터 가전 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 추운 겨울을 따뜻하게 보내고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 집들이 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 품격 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 실용적인 가전제품을 원하는 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">카본 히팅 기술로 빠르고 효율적인 난방이 가능합니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/bHmfYTltjN.png\" alt=\"리플렉트 카본 히터 가전 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">리플렉트 카본 히터 가전</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">122,000원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC08", "PC0801"],
+        "sort": 1,
+        "tags": [
+          "parent",
+          "lover",
+          "friend",
+          "sibling",
+          "male",
+          "female",
+          "unspecified",
+          "thanks",
+          "birthday",
+          "housewarming",
+          "practical",
+          "emotional",
+          "premium"
+        ],
+        "options": {}
+      }
+    },
+    {
+      "seller_id": 1,
+      "price": 52000,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "글라스 이지 화병",
+      "quantity": 300,
+      "buyQuantity": 200,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/2-cUs1mgV1v.png",
+          "name": "PC060206-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/SJ1l4rb0oUD.png",
+          "name": "PC060206-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/-s9BalEAAc2.png",
+          "name": "PC060206-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">글라스 이지 화병</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">52,000원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/2-cUs1mgV1v.png\" alt=\"글라스 이지 화병 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>글라스 이지 화병</strong>은 우아한 디자인으로 공간에 품격을 더해주는 프리미엄 인테리어 소품입니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 감사와 사랑의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/SJ1l4rb0oUD.png\" alt=\"글라스 이지 화병 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 인테리어에 관심이 많은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 집들이 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 품격 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 우아한 인테리어 소품을 원하는 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">고급 유리 소재로 제작되어 투명하고 우아한 느낌을 선사합니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/-s9BalEAAc2.png\" alt=\"글라스 이지 화병 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">글라스 이지 화병</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">52,000원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC06", "PC0602"],
+        "sort": 1,
+        "tags": [
+          "parent",
+          "lover",
+          "friend",
+          "sibling",
+          "coworker",
+          "teacher",
+          "female",
+          "unspecified",
+          "20s",
+          "30s",
+          "40s",
+          "50s",
+          "60plus",
+          "thanks",
+          "birthday",
+          "housewarming",
+          "anniversary",
+          "celebration",
+          "cute",
+          "emotional",
+          "premium"
+        ],
+        "options": {}
+      }
+    },
+    {
+      "seller_id": 1,
+      "price": 132000,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "하트 디자인 스툴",
+      "quantity": 300,
+      "buyQuantity": 200,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/SKrbeg7OBf2.png",
+          "name": "PC060207-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/TF7BKkUQSat.png",
+          "name": "PC060207-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/wdhYLfSYdpm.png",
+          "name": "PC060207-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">하트 디자인 스툴</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">132,000원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/SKrbeg7OBf2.png\" alt=\"하트 디자인 스툴 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>하트 디자인 스툴</strong>은 사랑스러운 하트 모양으로 공간에 포인트를 주는 프리미엄 가구입니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 감사와 사랑의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/TF7BKkUQSat.png\" alt=\"하트 디자인 스툴 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 귀여운 인테리어를 좋아하는 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 집들이 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 품격 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 실용적이면서 감성적인 가구를 원하는 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">튼튼한 프레임과 편안한 쿠션으로 실용성과 디자인을 모두 갖췄습니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/wdhYLfSYdpm.png\" alt=\"하트 디자인 스툴 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">하트 디자인 스툴</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">132,000원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC06", "PC0602"],
+        "sort": 1,
+        "tags": [
+          "lover",
+          "friend",
+          "sibling",
+          "coworker",
+          "male",
+          "female",
+          "unspecified",
+          "20s",
+          "30s",
+          "40s",
+          "birthday",
+          "thanks",
+          "anniversary",
+          "housewarming",
+          "celebration",
+          "emotional",
+          "cute",
+          "premium"
+        ],
+        "options": {}
+      }
+    },
+    {
+      "seller_id": 1,
+      "price": 112000,
+      "shippingFees": 3000,
+      "show": true,
+      "active": true,
+      "name": "만년필 피아노블랙",
+      "quantity": 300,
+      "buyQuantity": 200,
+      "mainImages": [
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/dy99hEWs9u3.png",
+          "name": "PC070406-IMAGE-01.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/QLN6sLD-G.png",
+          "name": "PC070406-IMAGE-02.png"
+        },
+        {
+          "path": "https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/0j703ejKOx.png",
+          "name": "PC070406-IMAGE-03.png"
+        }
+      ],
+      "content": "<div class=\"product-detail\">\n  <div class=\"product-header\" style=\"text-align:center; padding:40px 20px; background:linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius:12px; margin-bottom:30px;\">\n    <h1 style=\"font-size:28px; font-weight:700; color:#212529; margin-bottom:12px;\">만년필 피아노블랙</h1>\n    <p style=\"font-size:24px; color:#e74c3c; font-weight:600;\">112,000원</p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/dy99hEWs9u3.png\" alt=\"만년필 피아노블랙 상세이미지 1\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-intro\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:16px; border-bottom:2px solid #e74c3c; padding-bottom:8px;\">상품 소개</h2>\n    <p style=\"font-size:16px; line-height:1.8; color:#555;\">\n      <strong>만년필 피아노블랙</strong>은 우아한 광택과 부드러운 필기감을 자랑하는 프리미엄 필기구입니다.\n      정성스럽게 준비된 이 상품은 받는 분의 마음을 따뜻하게 전해드립니다.\n      소중한 분께 감사와 사랑의 마음을 담아 선물해보세요.\n    </p>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/QLN6sLD-G.png\" alt=\"만년필 피아노블랙 상세이미지 2\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-features\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">✨ 이런 분께 추천드려요</h2>\n    <ul style=\"list-style:none; padding:0; margin:0;\">\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 글씨 쓰기를 좋아하는 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 특별한 날을 기념하고 싶은 분\n      </li>\n      <li style=\"padding:12px 0; border-bottom:1px solid #dee2e6; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 품격 있는 선물을 찾고 계신 분\n      </li>\n      <li style=\"padding:12px 0; font-size:15px; color:#495057;\">\n        <span style=\"color:#e74c3c; margin-right:8px;\">✓</span> 클래식한 필기구를 선호하는 분\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"product-quality\" style=\"padding:30px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">🎁 상품 특징</h2>\n    <div style=\"display:grid; gap:16px;\">\n      <div style=\"padding:16px; background:#fff3cd; border-radius:8px;\">\n        <strong style=\"color:#856404;\">프리미엄 품질</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">고급스러운 피아노블랙 마감과 부드러운 필기감을 제공합니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#d4edda; border-radius:8px;\">\n        <strong style=\"color:#155724;\">정성스러운 포장</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">받는 분의 감동을 위해 고급스러운 패키지로 정성껏 포장해드립니다.</p>\n      </div>\n      <div style=\"padding:16px; background:#cce5ff; border-radius:8px;\">\n        <strong style=\"color:#004085;\">빠른 배송</strong>\n        <p style=\"margin:8px 0 0 0; font-size:14px; color:#666;\">주문 후 1-2일 이내 출고되며, 신선하고 안전하게 배송됩니다.</p>\n      </div>\n    </div>\n  </div>\n\n  <img src=\"https://res.cloudinary.com/ddedslqvv/image/upload/v1770925329/febc15-final08-ecad/0j703ejKOx.png\" alt=\"만년필 피아노블랙 상세이미지 3\" style=\"width:100%; margin:20px 0; border-radius:8px;\" />\n\n  <div class=\"product-info\" style=\"padding:30px; background:#f8f9fa; border-radius:12px; margin-bottom:30px;\">\n    <h2 style=\"font-size:20px; font-weight:600; color:#333; margin-bottom:20px;\">📋 상품 정보</h2>\n    <table style=\"width:100%; border-collapse:collapse;\">\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; width:30%; font-weight:600; color:#495057;\">상품명</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">만년필 피아노블랙</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">가격</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">112,000원</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송비</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">3,000원 (50,000원 이상 무료배송)</td>\n      </tr>\n      <tr>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff; font-weight:600; color:#495057;\">배송기간</td>\n        <td style=\"padding:14px; border:1px solid #dee2e6; background:#fff;\">주문 후 1-2일 이내 출고</td>\n      </tr>\n    </table>\n  </div>\n\n  <div class=\"product-notice\" style=\"padding:30px; background:#fff; border-left:4px solid #e74c3c; margin-bottom:30px;\">\n    <h2 style=\"font-size:18px; font-weight:600; color:#333; margin-bottom:16px;\">📌 구매 전 확인해주세요</h2>\n    <ul style=\"margin:0; padding-left:20px; color:#666; line-height:2;\">\n      <li>상품 이미지는 촬영 환경에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</li>\n      <li>교환/반품은 상품 수령 후 7일 이내 가능합니다.</li>\n      <li>단순 변심에 의한 교환/반품 시 왕복 배송비가 부과됩니다.</li>\n      <li>상품 불량 시 100% 교환 또는 환불해드립니다.</li>\n    </ul>\n  </div>\n</div>",
+      "extra": {
+        "category": ["PC07", "PC0704"],
+        "sort": 1,
+        "tags": [
+          "lover",
+          "friend",
+          "sibling",
+          "coworker",
+          "parent",
+          "teacher",
+          "male",
+          "female",
+          "unspecified",
+          "20s",
+          "30s",
+          "40s",
+          "50s",
+          "60plus",
+          "birthday",
+          "thanks",
+          "anniversary",
+          "celebration",
+          "emotional",
+          "practical",
+          "premium"
+        ],
+        "options": {}
+      }
     }
   ],
   "order": [
