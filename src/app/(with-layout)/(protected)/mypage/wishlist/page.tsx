@@ -43,11 +43,11 @@ export default function WishlistPage() {
     if (response.ok) {
       toast.success('찜한 상품이 삭제되었습니다.');
       // 삭제 성공 시, 찜한 상품 목록을 다시 불러오기
+      const data = await getMyproduct();
       const dataItem = data?.item;
       if (dataItem) {
         setProducts([...dataItem].sort((a, b) => b._id - a._id));
       }
-      const data = await getMyproduct();
     } else {
       toast.error('찜한 상품 삭제 실패');
     }
