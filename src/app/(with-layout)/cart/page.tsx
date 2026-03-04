@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import CartPageClient from '@/components/pages/cart/CartPageClient';
+import CartPageClient from '@/app/(with-layout)/cart/_components/CartPageClient';
 
 export const metadata: Metadata = {
   title: '장바구니',

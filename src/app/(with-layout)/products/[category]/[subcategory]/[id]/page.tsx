@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { cache } from 'react';
-import ImageGallery from '@/components/pages/product-detail/ImageGallery';
-import ProductDetailInfo from '@/components/pages/product-detail/ProductDetailInfo';
-import ProductTabs from '@/components/pages/product-detail/ProductTabs';
+import ImageGallery from '@/app/(with-layout)/products/[category]/[subcategory]/[id]/_components/ImageGallery';
+import ProductDetailInfo from '@/app/(with-layout)/products/[category]/[subcategory]/[id]/_components/ProductDetailInfo';
+import ProductTabs from '@/app/(with-layout)/products/[category]/[subcategory]/[id]/_components/ProductTabs';
 import fetchClient from '@/lib/api/fetchClient';
 import { SingleProductResponse } from '@/types/product.types';
 

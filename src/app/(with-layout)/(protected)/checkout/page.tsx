@@ -1,5 +1,5 @@
-import CheckoutClient from '@/components/pages/checkout/CheckoutClient';
-import Loading from '@/components/common/Loading';
+import CheckoutClient from '@/app/(with-layout)/(protected)/checkout/_components/CheckoutClient';
+import Loading from '@/components/ui/Loading';
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
 

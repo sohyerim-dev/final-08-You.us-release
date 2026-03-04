@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import Loading from '@/components/common/Loading';
+import Loading from '@/components/ui/Loading';
 import { Suspense } from 'react';
-import LoginForm from '@/components/pages/login/LoginForm';
+import LoginForm from '@/app/(auth)/login/_components/LoginForm';
 
 export const metadata: Metadata = {
   title: '로그인',

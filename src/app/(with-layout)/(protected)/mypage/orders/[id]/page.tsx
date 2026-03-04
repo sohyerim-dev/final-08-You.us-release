@@ -1,14 +1,14 @@
 'use client';
 
 import { use, useState, useEffect } from 'react';
-import Button from '@/components/common/Button';
-import MyPageSection from '@/components/pages/mypage/main/MyPageSection';
-import OrderStatusHeader from '@/components/pages/mypage/orders/OrderStatusHeader';
+import Button from '@/components/ui/Button';
+import MyPageSection from '@/app/(with-layout)/(protected)/mypage/_components/main/MyPageSection';
+import OrderStatusHeader from '@/app/(with-layout)/(protected)/mypage/_components/orders/OrderStatusHeader';
 import { getOrderDetail } from '@/lib/api/checkout';
 import { OrderDetailResponse } from '@/types/checkout.types';
 import Link from 'next/link';
 import Image from 'next/image';
-import Loading from '@/components/common/Loading';
+import Loading from '@/components/ui/Loading';
 
 interface OrderDetailPageProps {
   params: Promise<{ id: string }>;
@@ -17,7 +17,9 @@ interface OrderDetailPageProps {
 export default function OrderDetailPage({ params }: OrderDetailPageProps) {
   const { id } = use(params);
   const [order, setOrder] = useState<OrderDetailResponse['item'] | null>(null);
+  // const [reviews, setReviews] = useState<ReviewItem[]>([]);
   const [isError, setIsError] = useState(false);
+  console.log('상품id:', id);
 
   useEffect(() => {
     const fetchOrder = async () => {
@@ -29,7 +31,17 @@ export default function OrderDetailPage({ params }: OrderDetailPageProps) {
       }
     };
     fetchOrder();
+
+    // const fetchReviews = async () => {
+    //   const data = await getMyReview(id);
+    //   setReviews(data.item ?? []);
+    //   console.log('내후기상세보기 불러온 내용?:', data);
+    // };
+    // fetchReviews();
   }, [id]);
+
+  // console.log('내주문상세보기:', order?.products[0].review_id);
+  // console.log('내후기상세보기:', reviews);
 
   if (isError) {
     return (
@@ -47,7 +59,7 @@ export default function OrderDetailPage({ params }: OrderDetailPageProps) {
 
   return (
     <div className="mt-10 flex w-full flex-col gap-8.5 px-4 pb-8.5 *:text-gray-900 md:px-8 lg:px-12">
-      <MyPageSection title={'주문/배송내역'}>
+      <MyPageSection title={'내 주문 상세'}>
         <div className="mb-2">
           <OrderStatusHeader status={order.state} date={order.createdAt} />
           <ul>
@@ -87,17 +99,34 @@ export default function OrderDetailPage({ params }: OrderDetailPageProps) {
                     </p>
                   </div>
                 </div>
-                {order.state === 'OS040' && (
+                {order.products[0]?.review_id ? (
                   <div className="flex w-full shrink-0 flex-col gap-2 p-2 sm:w-auto lg:p-4">
-                    <Link href={`/mypage/reviews/create/${id}/${product._id}`}>
+                    <Link
+                      href={`/mypage/reviews/${order.products[0]?.review_id}/edit`}
+                    >
                       <Button
-                        aria-label={`${product.name} 후기 쓰기`}
+                        aria-label={`내가 작성한 ${product.name} 후기 보기`}
                         className="text-body-sm py-button-y w-full shrink-0"
                       >
-                        후기쓰기
+                        후기보기
                       </Button>
                     </Link>
                   </div>
+                ) : (
+                  order.state === 'OS040' && (
+                    <div className="flex w-full shrink-0 flex-col gap-2 p-2 sm:w-auto lg:p-4">
+                      <Link
+                        href={`/mypage/reviews/create/${id}/${product._id}`}
+                      >
+                        <Button
+                          aria-label={`${product.name} 후기 쓰기`}
+                          className="text-body-sm py-button-y w-full shrink-0"
+                        >
+                          후기쓰기
+                        </Button>
+                      </Link>
+                    </div>
+                  )
                 )}
               </li>
             ))}

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import ProductListClient from '@/components/pages/products/ProductListClient';
+import ProductListClient from '@/app/(with-layout)/products/_components/ProductListClient';
 
 type Props = {
   params: Promise<{ categories?: string[] }>;

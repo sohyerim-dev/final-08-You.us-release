@@ -1,7 +1,7 @@
 'use client';
 
 import { useCategoryStore } from '@/lib/zustand/categoryStore';
-import type { CategoryCode } from '@/types/categoryCode.type';
+import type { CategoryCode } from '@/types/categoryCode.types';
 import { useEffect, useRef } from 'react';
 
 export default function CategoryInit({

@@ -1,32 +1,45 @@
 import fetchClient from '@/lib/api/fetchClient';
 import { ErrorRes, UserInfoRes } from '@/types/api.types';
-import { BookmarkResponse } from '@/types/bookmark.types';
+import {
+  BookmarkResponse,
+  DeleteBookmarkResponse,
+} from '@/types/bookmark.types';
 import { MyUser, UserReset } from '@/types/mypage.types';
 import { Orders } from '@/types/order.types';
 import { ReviewItem, ReviewResponse } from '@/types/review.types';
 
+//찜한 상품 목록 불러오기
 export async function getMyproduct() {
-  //찜한 상품 목록 불러오기
   const products = await fetchClient<BookmarkResponse>('/bookmarks/product');
   // console.log(products);
 
   return products;
 }
 
-export async function getMyorder() {
-  //주문 목록 불러오기
-  const order = await fetchClient<Orders>('/orders');
+//주문 목록 불러오기
+export async function getMyorder(page = 1, limit = 5) {
+  const order = await fetchClient<Orders>('/orders', {
+    params: { page: String(page), limit: String(limit) },
+  });
   console.log('주문 목록:', order);
 
   return order;
 }
 
-export async function getMyReviews() {
-  //내 후기 목록 불러오기
-  const reviews = await fetchClient<ReviewResponse>('/replies');
+//내 후기 목록 불러오기
+export async function getMyReviews(page = 1, limit = 5) {
+  const reviews = await fetchClient<ReviewResponse>('/replies', {
+    params: { page: String(page), limit: String(limit) },
+  });
   return reviews;
 }
 
+export async function getMyReview(reviewId: string) {
+  const reviews = await fetchClient<ReviewResponse>(`/replies/${reviewId}`);
+  return reviews;
+}
+
+//내 후기 상세 불러오기
 export async function getReviewById(reviewId: string) {
   const review = await fetchClient<{ ok: number; item: ReviewItem }>(
     `/replies/${reviewId}`,
@@ -92,4 +105,18 @@ export async function updateProfile(
     console.error('프로필 수정 실패:', error);
     return { ok: 0, message: '프로필 수정에 실패했습니다.' };
   }
+}
+
+// 찜한 상품 삭제 API
+export async function deleteBookmarkItems(BookmarkId: number) {
+  const response = await fetchClient<DeleteBookmarkResponse>(
+    `/bookmarks/${BookmarkId}`,
+    {
+      method: 'DELETE',
+      body: JSON.stringify({
+        carts: BookmarkId,
+      }),
+    },
+  );
+  return response;
 }

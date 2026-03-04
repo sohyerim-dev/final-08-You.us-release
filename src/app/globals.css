@@ -1,13 +1,5 @@
 @import 'tailwindcss';
 
-@font-face {
-  font-family: 'Pretendard';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/Pretendard-Medium.woff2') format('woff2');
-  font-display: swap;
-}
-
 @layer utilities {
   .text-title-lg,
   .text-title-md,

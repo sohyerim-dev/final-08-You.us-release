@@ -89,6 +89,7 @@ const CartStore: StateCreator<CartStoreState> = (set) => ({
 export const useCartStore = create<CartStoreState>()(
   persist(CartStore, {
     name: 'guestCart',
+    partialize: (state) => ({ items: state.items }), // 비로그인 장바구니만 저장, serverCartCount는 제외
   }),
 );
 

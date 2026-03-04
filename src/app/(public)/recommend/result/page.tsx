@@ -1,4 +1,4 @@
-import RecommendResultClient from '@/components/pages/recommend/RecommendResultClient';
+import RecommendResultClient from '@/app/(public)/recommend/_components/RecommendResultClient';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -7,5 +7,10 @@ export const metadata: Metadata = {
 };
 
 export default function RecommendResultPage() {
-  return <RecommendResultClient />;
+  return (
+    <>
+      <h1 className="sr-only">선물 추천 결과</h1>
+      <RecommendResultClient />
+    </>
+  );
 }

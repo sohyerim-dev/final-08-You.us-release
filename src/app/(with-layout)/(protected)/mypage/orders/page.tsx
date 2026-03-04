@@ -1,39 +1,46 @@
 'use client';
 
-import Button from '@/components/common/Button';
-import EmptyState from '@/components/common/EmptyState';
-import MyPageSection from '@/components/pages/mypage/main/MyPageSection';
-import OrderStatusHeader from '@/components/pages/mypage/orders/OrderStatusHeader';
+import Button from '@/components/ui/Button';
+import EmptyState from '@/components/ui/EmptyState';
+import MyPageSection from '@/app/(with-layout)/(protected)/mypage/_components/main/MyPageSection';
+import OrderStatusHeader from '@/app/(with-layout)/(protected)/mypage/_components/orders/OrderStatusHeader';
 import { getMyorder } from '@/lib/api/mypage';
 import { Orders, OrderList } from '@/types/order.types';
 import Image from 'next/image';
 import Link from 'next/link';
-import Loading from '@/components/common/Loading';
+import Loading from '@/components/ui/Loading';
 import { useEffect, useState } from 'react';
+import Pagination from '@/components/ui/Pagination';
 
 export default function OrdersPage() {
   const [order, setOrder] = useState<Orders>();
   const [isLoading, setIsLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     // 주문 목록 불러오기
     const fetchOrders = async () => {
-      const data = await getMyorder();
+      setIsLoading(true);
+      const data = await getMyorder(currentPage);
       setOrder(data);
+      setTotalPages(data.pagination?.totalPages ?? 1);
       setIsLoading(false);
     };
 
     fetchOrders();
-  }, []);
+  }, [currentPage]);
 
   if (isLoading) return <Loading />;
 
   return (
-    <main className="mt-10 flex w-full flex-col gap-8.5 px-4 pb-8.5 *:text-gray-900 md:px-8 lg:px-12">
-      <h1 className="sr-only">주문 내역</h1>
+    <div className="mt-10 flex w-full flex-col gap-8.5 px-4 pb-8.5 *:text-gray-900 md:px-8 lg:px-12">
+      <h2 className="sr-only">주문 내역</h2>
 
       {/* 전체 주문 내역 리스트 */}
       <section className="flex flex-col gap-2">
-        <MyPageSection title={'주문/배송내역'}>
+        <MyPageSection title={'주문/배송상태 보기'}>
           {/* 주문 내역 카드 컴포넌트 */}
           <ul>
             {order && order.item.length > 0 ? (
@@ -102,6 +109,13 @@ export default function OrdersPage() {
                 }
               />
             )}
+            <div className="m-4 flex justify-center">
+              <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                onPageChange={setCurrentPage}
+              />
+            </div>
             <Link href="/mypage" className="w-75 lg:w-full">
               <Button
                 tabIndex={-1}
@@ -114,6 +128,6 @@ export default function OrdersPage() {
           </ul>
         </MyPageSection>
       </section>
-    </main>
+    </div>
   );
 }

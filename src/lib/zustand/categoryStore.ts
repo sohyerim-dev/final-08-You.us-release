@@ -1,4 +1,4 @@
-import { CategoryCode } from '@/types/categoryCode.type';
+import { CategoryCode } from '@/types/categoryCode.types';
 import { create } from 'zustand';
 
 interface CategoryStoreState {

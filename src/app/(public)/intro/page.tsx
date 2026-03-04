@@ -1,7 +1,7 @@
 import styles from '@/app/(public)/intro/page.module.css';
 import Image from 'next/image';
 import type { Metadata } from 'next';
-import IntroActions from '@/components/pages/intro/IntroActions';
+import IntroActions from '@/app/(public)/intro/_components/IntroActions';
 
 export const metadata: Metadata = {
   title: 'You,Us - 선물 추천 플랫폼',

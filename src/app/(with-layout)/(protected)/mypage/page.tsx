@@ -1,18 +1,18 @@
 'use client';
 
-import Button from '@/components/common/Button';
-import EmptyState from '@/components/common/EmptyState';
-import ProductCard from '@/components/common/ProductCard';
-import MyPageSection from '@/components/pages/mypage/main/MyPageSection';
-import OrderStatusHeader from '@/components/pages/mypage/orders/OrderStatusHeader';
-import ProfileCard from '@/components/pages/mypage/profile/ProfileCard';
+import Button from '@/components/ui/Button';
+import EmptyState from '@/components/ui/EmptyState';
+import ProductCard from '@/features/product/ProductCard';
+import MyPageSection from '@/app/(with-layout)/(protected)/mypage/_components/main/MyPageSection';
+import OrderStatusHeader from '@/app/(with-layout)/(protected)/mypage/_components/orders/OrderStatusHeader';
+import ProfileCard from '@/app/(with-layout)/(protected)/mypage/_components/profile/ProfileCard';
 import { getMyorder, getMyproduct, getMyReviews } from '@/lib/api/mypage';
 import { BookmarkItem } from '@/types/bookmark.types';
 import { OrderList, Orders } from '@/types/order.types';
 import { ReviewItem } from '@/types/review.types';
 import Image from 'next/image';
 import Link from 'next/link';
-import Loading from '@/components/common/Loading';
+import Loading from '@/components/ui/Loading';
 import { useEffect, useState } from 'react';
 
 export default function MyPage() {
@@ -49,7 +49,7 @@ export default function MyPage() {
   if (isLoading) return <Loading />;
 
   return (
-    <main className="mx-auto mt-10 flex max-w-[1500PX] flex-col gap-8.5 px-4 pb-8.5 text-gray-900 md:px-8 lg:min-w-[52rem] lg:px-12">
+    <div className="mx-auto mt-10 flex max-w-[1500PX] flex-col gap-8.5 px-4 pb-8.5 text-gray-900 md:px-8 lg:min-w-[52rem] lg:px-12">
       <h1 className="sr-only">마이페이지</h1>
       {/* 주문 내역, 포인트, 쿠폰 등 */}
       {/* 사용자 정보 요약 (이름, 이메일 등) */}
@@ -306,6 +306,6 @@ export default function MyPage() {
           </li>
         </ul>
       </section> */}
-    </main>
+    </div>
   );
 }

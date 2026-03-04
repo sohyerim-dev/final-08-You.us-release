@@ -37,3 +37,8 @@ export interface BookmarkResponse {
   ok: number;
   item: BookmarkItem[];
 }
+
+// 찜한 상품 삭제 API 응답 타입
+export interface DeleteBookmarkResponse {
+  ok: 1 | 0;
+}

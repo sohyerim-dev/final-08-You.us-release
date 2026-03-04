@@ -1,6 +1,12 @@
 export interface Orders {
   ok: number;
   item: OrderList[];
+  pagination: {
+    page: number;
+    limit: number;
+    total: number;
+    totalPages: number;
+  };
 }
 
 export type OrderState = 'OS010' | 'OS020' | 'OS030' | 'OS035' | 'OS040';

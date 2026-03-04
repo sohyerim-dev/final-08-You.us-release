@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { getOrderDetail } from '@/lib/api/checkout';
 import { OrderDetailResponse } from '@/types/checkout.types';
 import { fetchServerCartCount } from '@/lib/zustand/cartStore';
-import Loading from '@/components/common/Loading';
+import Loading from '@/components/ui/Loading';
 import { toast } from 'react-toastify';
 
 export default function CheckoutResult() {

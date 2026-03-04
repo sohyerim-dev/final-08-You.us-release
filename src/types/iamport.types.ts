@@ -17,6 +17,7 @@ interface RequestPayParams {
   buyer_tel?: string;
   buyer_addr?: string;
   buyer_postcode?: string;
+  m_redirect_url?: string;
 }
 
 interface RequestPayResponse {
