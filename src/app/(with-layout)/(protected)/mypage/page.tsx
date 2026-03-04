@@ -30,7 +30,10 @@ export default function MyPage() {
         ]);
 
       if (productResult.status === 'fulfilled') {
-        setProducts(productResult.value?.item);
+        const dataItem = productResult.value?.item;
+        if (dataItem) {
+          setProducts([...dataItem].sort((a, b) => b._id - a._id));
+        }
       }
       if (reviewResult.status === 'fulfilled') {
         setReview(reviewResult.value?.item);
@@ -44,7 +47,9 @@ export default function MyPage() {
     fetchData();
   }, []);
 
-  console.log('review', review);
+  // console.log('review', review);
+  console.log('products', products);
+  // console.log('order', order);
 
   if (isLoading) return <Loading />;
 
